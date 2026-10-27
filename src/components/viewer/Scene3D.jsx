@@ -1,23 +1,24 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { OrbitControls, useGLTF, Center, Bounds } from '@react-three/drei'
+import { OrbitControls, useGLTF, Center, Bounds, ContactShadows } from '@react-three/drei'
 import { TextureLoader, BoxGeometry, SRGBColorSpace } from 'three'
 
 // Slab proportions follow the photo's own aspect so the surface is never cropped or stretched.
 const MAX_SPAN = 2.4
-const DEPTH = 0.02
+const DEPTH = 0.06 // default panel thickness in scene units; config.depth overrides (e.g. thick StonIT panels)
 const SEGMENTS = 40
-const EDGE = '#1d1d20'
+const EDGE = '#9a958e' // stone-grey edges so the panel's thickness reads against the light stage
+const BACK = '#364153' // Tailwind gray-700
 
 /**
  * A thin surface panel textured with a real product photograph (or, on range pages, an
  * explicitly-labelled illustrative texture). `flex` animates a gentle bend and must only be
  * enabled for ranges verified as flexible.
  */
-function Slab({ src, flex, reduced, onReady, onError }) {
+function Slab({ src, flex, depth = DEPTH, reduced, onReady, onError }) {
   const [texture, setTexture] = useState(null)
   const [size, setSize] = useState({ w: MAX_SPAN, h: MAX_SPAN * 0.62 })
-  const geometry = useMemo(() => new BoxGeometry(size.w, size.h, DEPTH, SEGMENTS, 1, 1), [size])
+  const geometry = useMemo(() => new BoxGeometry(size.w, size.h, depth, SEGMENTS, 1, 1), [size, depth])
   const base = useMemo(() => geometry.attributes.position.array.slice(), [geometry])
 
   useEffect(() => {
@@ -55,10 +56,11 @@ function Slab({ src, flex, reduced, onReady, onError }) {
   if (!texture) return null
   return (
     <mesh geometry={geometry}>
-      {[0, 1, 2, 3].map((i) => <meshStandardMaterial key={i} attach={`material-${i}`} color={EDGE} roughness={0.8} />)}
-      {/* Unlit so the photograph renders exactly as shot, not re-lit or tone-mapped. */}
-      <meshBasicMaterial attach="material-4" map={texture} toneMapped={false} />
-      <meshStandardMaterial attach="material-5" color={EDGE} roughness={0.8} />
+      {[0, 1, 2, 3].map((i) => <meshStandardMaterial key={i} attach={`material-${i}`} color={EDGE} roughness={0.7} />)}
+      {/* Lit so the surface catches light as it turns; the emissive copy of the photo keeps
+          its colours bright and true instead of falling into shadow. */}
+      <meshStandardMaterial attach="material-4" map={texture} emissiveMap={texture} emissive="#ffffff" emissiveIntensity={0.55} roughness={0.55} metalness={0} />
+      <meshStandardMaterial attach="material-5" color={BACK} roughness={0.85} />
     </mesh>
   )
 }
@@ -74,9 +76,11 @@ function Model({ src, onReady }) {
 }
 
 // Rotates the subject toward a target angle so keyboard/button input animates smoothly.
+// Idle motion is a gentle sway (not a full spin) so the product face stays in view.
+const REST = 0.35
 function Turntable({ apiRef, auto, children }) {
   const group = useRef(null)
-  const target = useRef(0.5)
+  const target = useRef(REST)
   const { camera } = useThree()
   const controls = useThree((s) => s.controls)
 
@@ -88,16 +92,16 @@ function Turntable({ apiRef, auto, children }) {
         controls?.update()
       },
       reset: () => {
-        target.current = 0.5
+        target.current = REST
         controls?.reset()
       },
     }
   }, [apiRef, camera, controls])
 
-  useFrame((_, dt) => {
+  useFrame(({ clock }, dt) => {
     if (!group.current) return
-    if (auto) target.current += dt * 0.25
-    group.current.rotation.y += (target.current - group.current.rotation.y) * Math.min(1, dt * 6)
+    const sway = auto ? Math.sin(clock.getElapsedTime() * 0.45) * 0.45 - REST : 0
+    group.current.rotation.y += (target.current + sway - group.current.rotation.y) * Math.min(1, dt * 4)
   })
   return <group ref={group}>{children}</group>
 }
@@ -106,20 +110,25 @@ export default function Scene3D({ config, apiRef, onReady, onError, reduced }) {
   return (
     <Canvas
       dpr={[1, 2]}
-      camera={{ position: [0, 0, 3.6], fov: 40 }}
-      gl={{ antialias: true, powerPreference: 'high-performance' }}
+      camera={{ position: [0, 0, 4.6], fov: 40 }}
       style={{ width: '100%', height: '100%', touchAction: 'none' }}
-      onCreated={({ gl }) => gl.setClearColor('#070708')}
+      flat
+      gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
+      onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
     >
-      <ambientLight intensity={0.55} />
-      <directionalLight position={[3, 4, 5]} intensity={1.1} />
-      <directionalLight position={[-4, -1, -3]} intensity={0.5} color="#c8102e" />
+      {/* Bright studio lighting on a light-grey stage (the stage gradient is CSS behind the canvas). */}
+      <ambientLight intensity={1.1} />
+      <hemisphereLight args={['#ffffff', '#b8b4ae', 0.9]} />
+      <directionalLight position={[3, 4, 5]} intensity={1.8} />
+      <directionalLight position={[-4, 2, 3]} intensity={0.9} />
+      <directionalLight position={[0, -2, -4]} intensity={0.6} />
+      <ContactShadows position={[0, -1.35, 0]} opacity={0.35} scale={6} blur={2.6} far={3} />
       <Turntable apiRef={apiRef} auto={!reduced}>
         <Suspense fallback={null}>
           {config.kind === 'model' ? (
             <Model src={config.src} onReady={onReady} />
           ) : (
-            <Slab src={config.texture} flex={config.flex} reduced={reduced} onReady={onReady} onError={onError} />
+            <Slab src={config.texture} flex={config.flex} depth={config.depth} reduced={reduced} onReady={onReady} onError={onError} />
           )}
         </Suspense>
       </Turntable>

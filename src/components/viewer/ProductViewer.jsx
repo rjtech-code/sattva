@@ -79,7 +79,7 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
     <div className="min-w-0">
       <div
         ref={host}
-        className={`relative overflow-hidden border border-line bg-[#070708] ${className}`}
+        className={`viewer-stage relative overflow-hidden border border-line ${className}`}
         role="region"
         aria-label={`${title} — ${showFallback ? 'photo' : kindLabel || 'viewer'}`}
         tabIndex={has3D && mode === 'interactive' ? 0 : undefined}
@@ -89,7 +89,7 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
           photo ? (
             <img src={photo.src} alt={photo.alt || title} className="h-full w-full object-cover" width={photo.width} height={photo.height} />
           ) : (
-            <div className="flex h-full items-center justify-center p-8 text-center text-[14px] text-mist">
+            <div className="flex h-full items-center justify-center p-8 text-center text-[14px] text-gray-300">
               {has3D && !canGL ? 'Your browser does not support 3D viewing.' : 'Preview unavailable.'}
             </div>
           )
@@ -107,8 +107,8 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
 
         {has3D && mode === 'interactive' && state === 'loading' && canGL && (
           <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-4" role="status">
-            <span className="h-8 w-8 animate-spin rounded-full border border-line-2 border-t-crimson" aria-hidden="true" />
-            <span className="text-[11px] uppercase tracking-[0.22em] text-ash">Loading 3D view</span>
+            <span className="h-8 w-8 animate-spin rounded-full border border-white/20 border-t-crimson" aria-hidden="true" />
+            <span className="text-[11px] uppercase tracking-[0.22em] text-gray-300">Loading 3D view</span>
           </div>
         )}
 

@@ -146,6 +146,9 @@
   .field [aria-invalid='true'] { border-color: var(--color-crimson-hi); }
   .field .err { color: #ff8a9b; font-size: 12.5px; margin-top: 6px; }
 
+  /* 3D viewer stage: Tailwind gray-950 in both themes */
+  .viewer-stage { background: var(--color-gray-950); }
+
   .illustrative-tag {
     font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--color-mist);
     background: rgb(var(--scrim) / .7); border: 1px solid var(--color-line); padding: 4px 8px; backdrop-filter: blur(4px);

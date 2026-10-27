@@ -29,7 +29,7 @@ export default function ProductPage() {
   const specs = Object.entries(product.specs || {}).filter(([, v]) => v != null && String(v).trim() !== '')
   const current = images[shot]
   // Real-time 3D only for the product's own swatch photo; application photos stay as photos.
-  const viewer = current && current.alt !== 'application' ? { kind: 'slab', texture: current.src, flex: range.viewer?.flex } : null
+  const viewer = current && current.alt !== 'application' ? { kind: 'slab', texture: current.src, flex: range.viewer?.flex, depth: range.viewer?.depth } : null
   const related = siblings.filter((s) => s.slug !== product.slug).slice(0, 8)
 
   return (
