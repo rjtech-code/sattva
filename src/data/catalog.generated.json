@@ -1,0 +1,4870 @@
+[
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-1000-1",
+  "code": "SSV 1000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-1000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-1000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.2"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-1000-2",
+  "code": "SSV 1000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-1000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-1000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.3"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-1000-3",
+  "code": "SSV 1000/3",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-1000-3.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-1000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.4"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-2000",
+  "code": "SSV 2000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-2000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-2000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.5"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-3000-1",
+  "code": "SSV 3000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-3000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-3000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.6"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-3000-2",
+  "code": "SSV 3000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-3000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-3000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.7"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-3000-3",
+  "code": "SSV 3000/3",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-3000-3.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-3000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.8"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-3000-4",
+  "code": "SSV 3000/4",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-3000-4.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-3000-4-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.9"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-4000",
+  "code": "SSV 4000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-4000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-4000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.10"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-5000-1",
+  "code": "SSV 5000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-5000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-5000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.11"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-5000-2",
+  "code": "SSV 5000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-5000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-5000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.12"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-6000-1",
+  "code": "SSV 6000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-6000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-6000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.13"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-6000-2",
+  "code": "SSV 6000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-6000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-6000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.14"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-7000-1",
+  "code": "SSV 7000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-7000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-7000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.15"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-7000-2",
+  "code": "SSV 7000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-7000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-7000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.16"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-7000-3",
+  "code": "SSV 7000/3",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-7000-3.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-7000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.17"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-8000",
+  "code": "SSV 8000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-8000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-8000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.18"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-9000-1",
+  "code": "SSV 9000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-9000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-9000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.19"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-9000-2",
+  "code": "SSV 9000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-9000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-9000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.20"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-10000",
+  "code": "SSV 10000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-10000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-10000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.21"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-11000",
+  "code": "SSV 11000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-11000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-11000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.22"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-13000-1",
+  "code": "SSV 13000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-13000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-13000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.23"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-13000-2",
+  "code": "SSV 13000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-13000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-13000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.24"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-14000-1",
+  "code": "SSV 14000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-14000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-14000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.25"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-14000-2",
+  "code": "SSV 14000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-14000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-14000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.26"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-14000-3",
+  "code": "SSV 14000/3",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-14000-3.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-14000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.27"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-15000-1",
+  "code": "SSV 15000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-15000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-15000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.28"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-15000-2",
+  "code": "SSV 15000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-15000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-15000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.29"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-15000-3",
+  "code": "SSV 15000/3",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-15000-3.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-15000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.30"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-16000",
+  "code": "SSV 16000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-16000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-16000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.31"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-17000",
+  "code": "SSV 17000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-17000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-17000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.32"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-18000-1",
+  "code": "SSV 18000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-18000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-18000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.33"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-18000-2",
+  "code": "SSV 18000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-18000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-18000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.34"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-19000-1",
+  "code": "SSV 19000/1",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-19000-1.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-19000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.35"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-19000-2",
+  "code": "SSV 19000/2",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-19000-2.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-19000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.36"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-19000-3",
+  "code": "SSV 19000/3",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-19000-3.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-19000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.37"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-20000",
+  "code": "SSV 20000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-20000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-20000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.38"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-22000",
+  "code": "SSV 22000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-22000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-22000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.39"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-23000",
+  "code": "SSV 23000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-23000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-23000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.40"
+ },
+ {
+  "range": "stonir",
+  "collection": "natural-series",
+  "slug": "ssv-24000",
+  "code": "SSV 24000",
+  "images": [
+   {
+    "src": "/media/stonir/natural-series/ssv-24000.webp",
+    "srcSmall": "/media/stonir/natural-series/ssv-24000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Natural Series.pdf p.41"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-31000-1",
+  "code": "SSV 31000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-31000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-31000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.2"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-31000-2",
+  "code": "SSV 31000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-31000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-31000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.3"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-32000",
+  "code": "SSV 32000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-32000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-32000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.4"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-33000-1",
+  "code": "SSV 33000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-33000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-33000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.5"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-33000-2",
+  "code": "SSV 33000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-33000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-33000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.6"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-33000-3",
+  "code": "SSV 33000/3",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-33000-3.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-33000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.7"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-34000",
+  "code": "SSV 34000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-34000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-34000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.8"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-35000",
+  "code": "SSV 35000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-35000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-35000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.9"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-36000",
+  "code": "SSV 36000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-36000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-36000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.10"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-37000",
+  "code": "SSV 37000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-37000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-37000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.11"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-38000-1",
+  "code": "SSV 38000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-38000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-38000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.12"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-38000-2",
+  "code": "SSV 38000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-38000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-38000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.13"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-39000-1",
+  "code": "SSV 39000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-39000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-39000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.14"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-39000-2",
+  "code": "SSV 39000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-39000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-39000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.15"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-40000",
+  "code": "SSV 40000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-40000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-40000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.16"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-41000-1",
+  "code": "SSV 41000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-41000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-41000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.17"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-41000-2",
+  "code": "SSV 41000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-41000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-41000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.18"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-41000-3",
+  "code": "SSV 41000/3",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-41000-3.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-41000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.19"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-42000",
+  "code": "SSV 42000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-42000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-42000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.20"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-43000-1",
+  "code": "SSV 43000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-43000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-43000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.21"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-43000-2",
+  "code": "SSV 43000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-43000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-43000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.22"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-44000",
+  "code": "SSV 44000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-44000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-44000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.23"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-45000",
+  "code": "SSV 45000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-45000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-45000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.24"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-46000-1",
+  "code": "SSV 46000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-46000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-46000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.25"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-46000-2",
+  "code": "SSV 46000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-46000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-46000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.26"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-47000",
+  "code": "SSV 47000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-47000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-47000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.27"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-48000",
+  "code": "SSV 48000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-48000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-48000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.28"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-49000",
+  "code": "SSV 49000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-49000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-49000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.29"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-50000",
+  "code": "SSV 50000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-50000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-50000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.30"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-51000-1",
+  "code": "SSV 51000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-51000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-51000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.31"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-51000-2",
+  "code": "SSV 51000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-51000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-51000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.32"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-52000-1",
+  "code": "SSV 52000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-52000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-52000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.33"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-52000-2",
+  "code": "SSV 52000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-52000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-52000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.34"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-53000",
+  "code": "SSV 53000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-53000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-53000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.35"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-54000-1",
+  "code": "SSV 54000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-54000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-54000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.36"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-54000-2",
+  "code": "SSV 54000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-54000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-54000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.37"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-55000-1",
+  "code": "SSV 55000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-55000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-55000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.38"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-55000-2",
+  "code": "SSV 55000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-55000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-55000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.39"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-55000-3",
+  "code": "SSV 55000/3",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-55000-3.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-55000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.40"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-56000-1",
+  "code": "SSV 56000/1",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-56000-1.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-56000-1-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.41"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-56000-2",
+  "code": "SSV 56000/2",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-56000-2.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-56000-2-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.42"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-56000-3",
+  "code": "SSV 56000/3",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-56000-3.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-56000-3-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.43"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-57000",
+  "code": "SSV 57000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-57000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-57000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.44"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-58000",
+  "code": "SSV 58000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-58000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-58000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.45"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-59000",
+  "code": "SSV 59000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-59000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-59000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.46"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-60000",
+  "code": "SSV 60000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-60000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-60000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.47"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-61000",
+  "code": "SSV 61000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-61000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-61000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.48"
+ },
+ {
+  "range": "stonir",
+  "collection": "grainy-series",
+  "slug": "ssv-62000",
+  "code": "SSV 62000",
+  "images": [
+   {
+    "src": "/media/stonir/grainy-series/ssv-62000.webp",
+    "srcSmall": "/media/stonir/grainy-series/ssv-62000-sm.webp",
+    "width": 435,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Grainy Series.pdf p.49"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-01",
+  "code": "Bookmatch 01",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-01.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-01-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.2"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-02",
+  "code": "Bookmatch 02",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-02.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-02-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.3"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-03",
+  "code": "Bookmatch 03",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-03.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-03-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.4"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-04",
+  "code": "Bookmatch 04",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-04.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-04-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.5"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-05",
+  "code": "Bookmatch 05",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-05.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-05-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.6"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-06",
+  "code": "Bookmatch 06",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-06.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-06-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.7"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-07",
+  "code": "Bookmatch 07",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-07.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-07-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.8"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-08",
+  "code": "Bookmatch 08",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-08.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-08-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.9"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-09",
+  "code": "Bookmatch 09",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-09.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-09-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.10"
+ },
+ {
+  "range": "stonir",
+  "collection": "bookmatch-series",
+  "slug": "bookmatch-10",
+  "code": "Bookmatch 10",
+  "images": [
+   {
+    "src": "/media/stonir/bookmatch-series/bookmatch-10.webp",
+    "srcSmall": "/media/stonir/bookmatch-series/bookmatch-10-sm.webp",
+    "width": 484,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Bookmatch Series.pdf p.11"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-3000",
+  "code": "SSV 3000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-3000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-3000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.2"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-4000-1",
+  "code": "SSV 4000/1",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-4000-1.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-4000-1-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.3"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-4000-2",
+  "code": "SSV 4000/2",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-4000-2.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-4000-2-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.4"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-5000-1",
+  "code": "SSV 5000/1",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-5000-1.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-5000-1-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.5"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-5000-2",
+  "code": "SSV 5000/2",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-5000-2.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-5000-2-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.6"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-8000",
+  "code": "SSV 8000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-8000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-8000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.7"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-11000",
+  "code": "SSV 11000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-11000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-11000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.8"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-15000",
+  "code": "SSV 15000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-15000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-15000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.9"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-17000",
+  "code": "SSV 17000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-17000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-17000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.10"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-22000",
+  "code": "SSV 22000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-22000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-22000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.11"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-24000",
+  "code": "SSV 24000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-24000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-24000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Natural series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.12"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-39000",
+  "code": "SSV 39000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-39000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-39000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.13"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-41000-1",
+  "code": "SSV 41000/1",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-41000-1.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-41000-1-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.14"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-41000-2",
+  "code": "SSV 41000/2",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-41000-2.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-41000-2-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.15"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-41000-3",
+  "code": "SSV 41000/3",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-41000-3.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-41000-3-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.16"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-41000-4",
+  "code": "SSV 41000/4",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-41000-4.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-41000-4-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.17"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-43000",
+  "code": "SSV 43000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-43000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-43000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.18"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-49000",
+  "code": "SSV 49000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-49000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-49000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.19"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-50000",
+  "code": "SSV 50000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-50000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-50000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.20"
+ },
+ {
+  "range": "stonir",
+  "collection": "10x4-massive-veneer",
+  "slug": "ssv-59000",
+  "code": "SSV 59000",
+  "images": [
+   {
+    "src": "/media/stonir/10x4-massive-veneer/ssv-59000.webp",
+    "srcSmall": "/media/stonir/10x4-massive-veneer/ssv-59000-sm.webp",
+    "width": 377,
+    "height": 1100
+   }
+  ],
+  "specs": {
+   "Stone": "Grainy series",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - 10x4 Veneer Series.pdf p.21"
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-1000-1",
+  "code": "SSV 1000/1",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-1000-1.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-1000-1-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-1000-1-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-1000-1-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.2",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-1000-2",
+  "code": "SSV 1000/2",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-1000-2.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-1000-2-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-1000-2-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-1000-2-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.3",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-2000",
+  "code": "SSV 2000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-2000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-2000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-2000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-2000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.4",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-1",
+  "code": "SSV 3000/1",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-1.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-1-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-1-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-1-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.5",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-2",
+  "code": "SSV 3000/2",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-2.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-2-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-2-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-2-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.6",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-3",
+  "code": "SSV 3000/3",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-3.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-3-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-3-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-3-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.7",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-4",
+  "code": "SSV 3000/4",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-4.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-4-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-4-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-4-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.8",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-5",
+  "code": "SSV 3000/5",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-5.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-5-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-5-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-5-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.9",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-6",
+  "code": "SSV 3000/6",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-6.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-6-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-6-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-6-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.10",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-7",
+  "code": "SSV 3000/7",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-7.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-7-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-7-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-7-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.11",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-8",
+  "code": "SSV 3000/8",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-8.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-8-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-8-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-8-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.12",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-3000-9",
+  "code": "SSV 3000/9",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-9.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-9-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-3000-9-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-3000-9-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.13",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-4000",
+  "code": "SSV 4000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-4000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-4000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-4000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-4000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.14",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-5000-1",
+  "code": "SSV 5000/1",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-5000-1.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-5000-1-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-5000-1-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-5000-1-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.15",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-5000-2",
+  "code": "SSV 5000/2",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-5000-2.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-5000-2-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-5000-2-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-5000-2-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.16",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-6000-1",
+  "code": "SSV 6000/1",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-1.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-1-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-1-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-1-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.17",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-6000-2",
+  "code": "SSV 6000/2",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-2.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-2-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-2-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-2-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.18",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-6000-3",
+  "code": "SSV 6000/3",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-3.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-3-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-3-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-3-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.19",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-6000-4",
+  "code": "SSV 6000/4",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-4.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-4-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-6000-4-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-6000-4-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.20",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-7000",
+  "code": "SSV 7000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-7000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-7000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-7000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-7000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.21",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-8000",
+  "code": "SSV 8000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-8000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-8000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-8000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-8000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.22",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-10000",
+  "code": "SSV 10000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-10000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-10000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-10000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-10000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.23",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-14000",
+  "code": "SSV 14000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-14000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-14000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-14000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-14000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.25",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-16000-1",
+  "code": "SSV 16000/1",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-16000-1.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-16000-1-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-16000-1-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-16000-1-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.26",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-16000-2",
+  "code": "SSV 16000/2",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-16000-2.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-16000-2-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-16000-2-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-16000-2-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.27",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-16000-3",
+  "code": "SSV 16000/3",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-16000-3.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-16000-3-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-16000-3-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-16000-3-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.28",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-15000-1",
+  "code": "SSV 15000/1",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-15000-1.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-15000-1-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-15000-1-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-15000-1-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.29",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-15000-2",
+  "code": "SSV 15000/2",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-15000-2.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-15000-2-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-15000-2-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-15000-2-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.30",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-17000",
+  "code": "SSV 17000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-17000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-17000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-17000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-17000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.31",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-18000",
+  "code": "SSV 18000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-18000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-18000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-18000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-18000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.32",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-22000",
+  "code": "SSV 22000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-22000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-22000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-22000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-22000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.33",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-19000",
+  "code": "SSV 19000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-19000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-19000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-19000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-19000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.44",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-20000",
+  "code": "SSV 20000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-20000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-20000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-20000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-20000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.45",
+  "backlit": true
+ },
+ {
+  "range": "stonir",
+  "collection": "translucent-series",
+  "slug": "ssv-24000",
+  "code": "SSV 24000",
+  "images": [
+   {
+    "src": "/media/stonir/translucent-series/ssv-24000.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-24000-sm.webp",
+    "width": 515,
+    "height": 837,
+    "alt": "natural light"
+   },
+   {
+    "src": "/media/stonir/translucent-series/ssv-24000-backlit.webp",
+    "srcSmall": "/media/stonir/translucent-series/ssv-24000-backlit-sm.webp",
+    "width": 517,
+    "height": 837,
+    "alt": "backlit"
+   }
+  ],
+  "specs": {
+   "Stone": "Slate",
+   "Thickness": "2 mm · 4 mm",
+   "Size": "4' × 8' · 4' × 10'"
+  },
+  "source": "Stonir - Translucent Series.pdf p.49",
+  "backlit": true
+ },
+ {
+  "range": "stonit",
+  "collection": "modular-cube",
+  "slug": "modular-cube-beige",
+  "name": "Modular Cube Beige",
+  "images": [
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-beige-p2.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-beige-p2-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-beige-p2-application.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-beige-p2-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Modular Cube",
+   "Colour": "Beige"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.2"
+ },
+ {
+  "range": "stonit",
+  "collection": "modular-cube",
+  "slug": "modular-cube-white-black",
+  "name": "Modular Cube White Black",
+  "images": [
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-white-black-p3.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-white-black-p3-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-white-black-p3-application.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-white-black-p3-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Modular Cube",
+   "Colour": "White Black"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.3"
+ },
+ {
+  "range": "stonit",
+  "collection": "modular-cube",
+  "slug": "modular-cube-grey",
+  "name": "Modular Cube Grey",
+  "images": [
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-grey-p4.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-grey-p4-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-grey-p4-application.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-grey-p4-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Modular Cube",
+   "Colour": "Grey"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.4"
+ },
+ {
+  "range": "stonit",
+  "collection": "modular-cube",
+  "slug": "modular-cube-yellow",
+  "name": "Modular Cube Yellow",
+  "images": [
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-yellow-p5.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-yellow-p5-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/modular-cube/modular-cube-yellow-p5-application.webp",
+    "srcSmall": "/media/stonit/modular-cube/modular-cube-yellow-p5-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Modular Cube",
+   "Colour": "Yellow"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.5"
+ },
+ {
+  "range": "stonit",
+  "collection": "haveli-arch",
+  "slug": "haveli-arch-multi-color",
+  "name": "Haveli Arch Multi Color",
+  "images": [
+   {
+    "src": "/media/stonit/haveli-arch/haveli-arch-multi-color-p6.webp",
+    "srcSmall": "/media/stonit/haveli-arch/haveli-arch-multi-color-p6-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/haveli-arch/haveli-arch-multi-color-p6-application.webp",
+    "srcSmall": "/media/stonit/haveli-arch/haveli-arch-multi-color-p6-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Haveli Arch",
+   "Colour": "Multi Color"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.6"
+ },
+ {
+  "range": "stonit",
+  "collection": "haveli-arch",
+  "slug": "haveli-arch-beige",
+  "name": "Haveli Arch Beige",
+  "images": [
+   {
+    "src": "/media/stonit/haveli-arch/haveli-arch-beige-p7.webp",
+    "srcSmall": "/media/stonit/haveli-arch/haveli-arch-beige-p7-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/haveli-arch/haveli-arch-beige-p7-application.webp",
+    "srcSmall": "/media/stonit/haveli-arch/haveli-arch-beige-p7-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Haveli Arch",
+   "Colour": "Beige"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.7"
+ },
+ {
+  "range": "stonit",
+  "collection": "aqua-inset",
+  "slug": "aqua-inset-beige-grey",
+  "name": "Aqua Inset Beige Grey",
+  "images": [
+   {
+    "src": "/media/stonit/aqua-inset/aqua-inset-beige-grey-p8.webp",
+    "srcSmall": "/media/stonit/aqua-inset/aqua-inset-beige-grey-p8-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/aqua-inset/aqua-inset-beige-grey-p8-application.webp",
+    "srcSmall": "/media/stonit/aqua-inset/aqua-inset-beige-grey-p8-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Aqua Inset",
+   "Colour": "Beige Grey"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.8"
+ },
+ {
+  "range": "stonit",
+  "collection": "isometric-flow",
+  "slug": "isometric-flow-cream",
+  "name": "Isometric Flow Cream",
+  "images": [
+   {
+    "src": "/media/stonit/isometric-flow/isometric-flow-cream-p9.webp",
+    "srcSmall": "/media/stonit/isometric-flow/isometric-flow-cream-p9-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/isometric-flow/isometric-flow-cream-p9-application.webp",
+    "srcSmall": "/media/stonit/isometric-flow/isometric-flow-cream-p9-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Isometric Flow",
+   "Colour": "Cream"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.9"
+ },
+ {
+  "range": "stonit",
+  "collection": "isometric-flow",
+  "slug": "isometric-flow-off-white",
+  "name": "Isometric Flow Off White",
+  "images": [
+   {
+    "src": "/media/stonit/isometric-flow/isometric-flow-off-white-p10.webp",
+    "srcSmall": "/media/stonit/isometric-flow/isometric-flow-off-white-p10-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/isometric-flow/isometric-flow-off-white-p10-application.webp",
+    "srcSmall": "/media/stonit/isometric-flow/isometric-flow-off-white-p10-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Isometric Flow",
+   "Colour": "Off White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.10"
+ },
+ {
+  "range": "stonit",
+  "collection": "zuric-leaf",
+  "slug": "zuric-leaf-white",
+  "name": "Zuric Leaf White",
+  "images": [
+   {
+    "src": "/media/stonit/zuric-leaf/zuric-leaf-white-p11.webp",
+    "srcSmall": "/media/stonit/zuric-leaf/zuric-leaf-white-p11-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/zuric-leaf/zuric-leaf-white-p11-application.webp",
+    "srcSmall": "/media/stonit/zuric-leaf/zuric-leaf-white-p11-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Zuric Leaf",
+   "Colour": "White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.11"
+ },
+ {
+  "range": "stonit",
+  "collection": "quadra-heritage",
+  "slug": "quadra-heritage-black",
+  "name": "Quadra Heritage Black",
+  "images": [
+   {
+    "src": "/media/stonit/quadra-heritage/quadra-heritage-black-p12.webp",
+    "srcSmall": "/media/stonit/quadra-heritage/quadra-heritage-black-p12-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/quadra-heritage/quadra-heritage-black-p12-application.webp",
+    "srcSmall": "/media/stonit/quadra-heritage/quadra-heritage-black-p12-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Quadra Heritage",
+   "Colour": "Black"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.12"
+ },
+ {
+  "range": "stonit",
+  "collection": "facet-pavilion",
+  "slug": "facet-pavilion-yellow",
+  "name": "Facet Pavilion Yellow",
+  "images": [
+   {
+    "src": "/media/stonit/facet-pavilion/facet-pavilion-yellow-p13.webp",
+    "srcSmall": "/media/stonit/facet-pavilion/facet-pavilion-yellow-p13-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/facet-pavilion/facet-pavilion-yellow-p13-application.webp",
+    "srcSmall": "/media/stonit/facet-pavilion/facet-pavilion-yellow-p13-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Facet Pavilion",
+   "Colour": "Yellow"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.13"
+ },
+ {
+  "range": "stonit",
+  "collection": "facet-pavilion",
+  "slug": "facet-pavilion-black-white",
+  "name": "Facet Pavilion Black White",
+  "images": [
+   {
+    "src": "/media/stonit/facet-pavilion/facet-pavilion-black-white-p14.webp",
+    "srcSmall": "/media/stonit/facet-pavilion/facet-pavilion-black-white-p14-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/facet-pavilion/facet-pavilion-black-white-p14-application.webp",
+    "srcSmall": "/media/stonit/facet-pavilion/facet-pavilion-black-white-p14-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Facet Pavilion",
+   "Colour": "Black White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.14"
+ },
+ {
+  "range": "stonit",
+  "collection": "versailles-bloom",
+  "slug": "versailles-bloom-cream",
+  "name": "Versailles Bloom Cream",
+  "images": [
+   {
+    "src": "/media/stonit/versailles-bloom/versailles-bloom-cream-p15.webp",
+    "srcSmall": "/media/stonit/versailles-bloom/versailles-bloom-cream-p15-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/versailles-bloom/versailles-bloom-cream-p15-application.webp",
+    "srcSmall": "/media/stonit/versailles-bloom/versailles-bloom-cream-p15-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Versailles Bloom",
+   "Colour": "Cream"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.15"
+ },
+ {
+  "range": "stonit",
+  "collection": "flora-relief",
+  "slug": "flora-relief-brown",
+  "name": "Flora Relief Brown",
+  "images": [
+   {
+    "src": "/media/stonit/flora-relief/flora-relief-brown-p16.webp",
+    "srcSmall": "/media/stonit/flora-relief/flora-relief-brown-p16-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flora-relief/flora-relief-brown-p16-application.webp",
+    "srcSmall": "/media/stonit/flora-relief/flora-relief-brown-p16-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flora Relief",
+   "Colour": "Brown"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.16"
+ },
+ {
+  "range": "stonit",
+  "collection": "flora-relief",
+  "slug": "flora-relief-black",
+  "name": "Flora Relief Black",
+  "images": [
+   {
+    "src": "/media/stonit/flora-relief/flora-relief-black-p17.webp",
+    "srcSmall": "/media/stonit/flora-relief/flora-relief-black-p17-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flora-relief/flora-relief-black-p17-application.webp",
+    "srcSmall": "/media/stonit/flora-relief/flora-relief-black-p17-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flora Relief",
+   "Colour": "Black"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.17"
+ },
+ {
+  "range": "stonit",
+  "collection": "flora-relief",
+  "slug": "flora-relief-white",
+  "name": "Flora Relief White",
+  "images": [
+   {
+    "src": "/media/stonit/flora-relief/flora-relief-white-p18.webp",
+    "srcSmall": "/media/stonit/flora-relief/flora-relief-white-p18-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flora-relief/flora-relief-white-p18-application.webp",
+    "srcSmall": "/media/stonit/flora-relief/flora-relief-white-p18-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flora Relief",
+   "Colour": "White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.18"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-multi",
+  "name": "Maple Arch Multi",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-multi-p19.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-multi-p19-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-multi-p19-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-multi-p19-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Multi"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.19"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-black-copper",
+  "name": "Maple Arch Black Copper",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-copper-p20.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-copper-p20-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-copper-p20-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-copper-p20-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Black Copper"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.20"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-yellow",
+  "name": "Maple Arch Yellow",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-yellow-p21.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-yellow-p21-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-yellow-p21-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-yellow-p21-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Yellow"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.21"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-black-silver",
+  "name": "Maple Arch Black Silver",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-silver-p22.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-silver-p22-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-silver-p22-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-silver-p22-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Black Silver"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.22"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-black-copper-2",
+  "name": "Maple Arch Black Copper (2)",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-copper-p23.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-copper-p23-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-copper-p23-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-copper-p23-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Black Copper"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.23"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-beige",
+  "name": "Maple Arch Beige",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-beige-p24.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-beige-p24-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-beige-p24-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-beige-p24-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Beige"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.24"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-black-gold",
+  "name": "Maple Arch Black Gold",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-gold-p25.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-gold-p25-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-black-gold-p25-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-black-gold-p25-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Black Gold"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.25"
+ },
+ {
+  "range": "stonit",
+  "collection": "maple-arch",
+  "slug": "maple-arch-yellow-2",
+  "name": "Maple Arch Yellow (2)",
+  "images": [
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-yellow-p26.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-yellow-p26-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/maple-arch/maple-arch-yellow-p26-application.webp",
+    "srcSmall": "/media/stonit/maple-arch/maple-arch-yellow-p26-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Maple Arch",
+   "Colour": "Yellow"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.26"
+ },
+ {
+  "range": "stonit",
+  "collection": "petal-porcelain",
+  "slug": "petal-porcelain-beige",
+  "name": "Petal Porcelain Beige",
+  "images": [
+   {
+    "src": "/media/stonit/petal-porcelain/petal-porcelain-beige-p27.webp",
+    "srcSmall": "/media/stonit/petal-porcelain/petal-porcelain-beige-p27-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/petal-porcelain/petal-porcelain-beige-p27-application.webp",
+    "srcSmall": "/media/stonit/petal-porcelain/petal-porcelain-beige-p27-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Petal Porcelain",
+   "Colour": "Beige"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.27"
+ },
+ {
+  "range": "stonit",
+  "collection": "petal-porcelain",
+  "slug": "petal-porcelain-beige-2",
+  "name": "Petal Porcelain Beige (2)",
+  "images": [
+   {
+    "src": "/media/stonit/petal-porcelain/petal-porcelain-beige-p28.webp",
+    "srcSmall": "/media/stonit/petal-porcelain/petal-porcelain-beige-p28-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/petal-porcelain/petal-porcelain-beige-p28-application.webp",
+    "srcSmall": "/media/stonit/petal-porcelain/petal-porcelain-beige-p28-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Petal Porcelain",
+   "Colour": "Beige"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.28"
+ },
+ {
+  "range": "stonit",
+  "collection": "rubik-round",
+  "slug": "rubik-round-white",
+  "name": "Rubik Round White",
+  "images": [
+   {
+    "src": "/media/stonit/rubik-round/rubik-round-white-p29.webp",
+    "srcSmall": "/media/stonit/rubik-round/rubik-round-white-p29-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/rubik-round/rubik-round-white-p29-application.webp",
+    "srcSmall": "/media/stonit/rubik-round/rubik-round-white-p29-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Rubik Round",
+   "Colour": "White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.29"
+ },
+ {
+  "range": "stonit",
+  "collection": "alpine-peak",
+  "slug": "alpine-peak-patina",
+  "name": "Alpine Peak Patina",
+  "images": [
+   {
+    "src": "/media/stonit/alpine-peak/alpine-peak-patina-p30.webp",
+    "srcSmall": "/media/stonit/alpine-peak/alpine-peak-patina-p30-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/alpine-peak/alpine-peak-patina-p30-application.webp",
+    "srcSmall": "/media/stonit/alpine-peak/alpine-peak-patina-p30-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Alpine Peak",
+   "Colour": "Patina"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.30"
+ },
+ {
+  "range": "stonit",
+  "collection": "pure-obsidian",
+  "slug": "pure-obsidian-rustic",
+  "name": "Pure Obsidian Rustic",
+  "images": [
+   {
+    "src": "/media/stonit/pure-obsidian/pure-obsidian-rustic-p31.webp",
+    "srcSmall": "/media/stonit/pure-obsidian/pure-obsidian-rustic-p31-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/pure-obsidian/pure-obsidian-rustic-p31-application.webp",
+    "srcSmall": "/media/stonit/pure-obsidian/pure-obsidian-rustic-p31-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Pure Obsidian",
+   "Colour": "Rustic"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.31"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-off-white",
+  "name": "Flint Rock Off White",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-off-white-p32.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-off-white-p32-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-off-white-p32-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-off-white-p32-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Off White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.32"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-black",
+  "name": "Flint Rock Black",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-black-p33.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-black-p33-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-black-p33-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-black-p33-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Black"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.33"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-black-gold",
+  "name": "Flint Rock Black Gold",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-black-gold-p34.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-black-gold-p34-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-black-gold-p34-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-black-gold-p34-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Black Gold"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.34"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-beige",
+  "name": "Flint Rock Beige",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-beige-p35.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-beige-p35-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-beige-p35-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-beige-p35-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Beige"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.35"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-yellow",
+  "name": "Flint Rock Yellow",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-yellow-p36.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-yellow-p36-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-yellow-p36-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-yellow-p36-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Yellow"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.36"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-desert",
+  "name": "Flint Rock Desert",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-desert-p37.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-desert-p37-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-desert-p37-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-desert-p37-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Desert"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.37"
+ },
+ {
+  "range": "stonit",
+  "collection": "flint-rock",
+  "slug": "flint-rock-red",
+  "name": "Flint Rock Red",
+  "images": [
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-red-p38.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-red-p38-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/flint-rock/flint-rock-red-p38-application.webp",
+    "srcSmall": "/media/stonit/flint-rock/flint-rock-red-p38-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Flint Rock",
+   "Colour": "Red"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.38"
+ },
+ {
+  "range": "stonit",
+  "collection": "vertical-vista",
+  "slug": "vertical-vista-off-white",
+  "name": "Vertical Vista Off White",
+  "images": [
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-off-white-p39.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-off-white-p39-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-off-white-p39-application.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-off-white-p39-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Vertical Vista",
+   "Colour": "Off White"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.39"
+ },
+ {
+  "range": "stonit",
+  "collection": "vertical-vista",
+  "slug": "vertical-vista-black",
+  "name": "Vertical Vista Black",
+  "images": [
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-black-p40.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-black-p40-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-black-p40-application.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-black-p40-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Vertical Vista",
+   "Colour": "Black"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.40"
+ },
+ {
+  "range": "stonit",
+  "collection": "vertical-vista",
+  "slug": "vertical-vista-multi",
+  "name": "Vertical Vista Multi",
+  "images": [
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-multi-p41.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-multi-p41-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-multi-p41-application.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-multi-p41-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Vertical Vista",
+   "Colour": "Multi"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.41"
+ },
+ {
+  "range": "stonit",
+  "collection": "vertical-vista",
+  "slug": "vertical-vista-grey",
+  "name": "Vertical Vista Grey",
+  "images": [
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-grey-p42.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-grey-p42-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-grey-p42-application.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-grey-p42-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Vertical Vista",
+   "Colour": "Grey"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.42"
+ },
+ {
+  "range": "stonit",
+  "collection": "vertical-vista",
+  "slug": "vertical-vista-desert",
+  "name": "Vertical Vista Desert",
+  "images": [
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-desert-p43.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-desert-p43-sm.webp",
+    "width": 601,
+    "height": 978,
+    "alt": "panel"
+   },
+   {
+    "src": "/media/stonit/vertical-vista/vertical-vista-desert-p43-application.webp",
+    "srcSmall": "/media/stonit/vertical-vista/vertical-vista-desert-p43-application-sm.webp",
+    "width": 1400,
+    "height": 889,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Design": "Vertical Vista",
+   "Colour": "Desert"
+  },
+  "source": "STONIT - MASTER SHADE CARD.pdf p.43"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-01",
+  "code": "ACV-01",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-01.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-01-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-01-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-01-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.4"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-02",
+  "code": "ACV-02",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-02.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-02-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-02-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-02-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.6"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-03",
+  "code": "ACV-03",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-03.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-03-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-03-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-03-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.8"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-04",
+  "code": "ACV-04",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-04.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-04-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-04-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-04-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.10"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-05",
+  "code": "ACV-05",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-05.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-05-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-05-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-05-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.12"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-06",
+  "code": "ACV-06",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-06.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-06-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-06-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-06-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.14"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-07",
+  "code": "ACV-07",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-07.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-07-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-07-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-07-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.16"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-08",
+  "code": "ACV-08",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-08.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-08-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-08-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-08-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.18"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-09",
+  "code": "ACV-09",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-09.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-09-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-09-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-09-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.20"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-10",
+  "code": "ACV-10",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-10.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-10-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-10-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-10-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.22"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-11",
+  "code": "ACV-11",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-11.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-11-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-11-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-11-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.24"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-12",
+  "code": "ACV-12",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-12.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-12-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-12-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-12-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.26"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-13",
+  "code": "ACV-13",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-13.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-13-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-13-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-13-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.28"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-14",
+  "code": "ACV-14",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-14.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-14-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-14-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-14-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.30"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-15",
+  "code": "ACV-15",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-15.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-15-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-15-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-15-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.32"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-16",
+  "code": "ACV-16",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-16.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-16-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-16-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-16-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.34"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-17",
+  "code": "ACV-17",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-17.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-17-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-17-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-17-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.36"
+ },
+ {
+  "range": "art-i-canvas-veneer",
+  "collection": "canvas-series",
+  "slug": "acv-18",
+  "code": "ACV-18",
+  "images": [
+   {
+    "src": "/media/art-i/canvas-series/acv-18.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-18-sm.webp",
+    "width": 462,
+    "height": 1003,
+    "alt": "design"
+   },
+   {
+    "src": "/media/art-i/canvas-series/acv-18-application.webp",
+    "srcSmall": "/media/art-i/canvas-series/acv-18-application-sm.webp",
+    "width": 992,
+    "height": 1123,
+    "alt": "application"
+   }
+  ],
+  "specs": {
+   "Series": "Canvas Series",
+   "Size": "4' × 8'"
+  },
+  "source": "ART-i Canvas Veneer.pdf p.38"
+ }
+]
