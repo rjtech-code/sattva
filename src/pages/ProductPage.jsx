@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Seo from '../components/ui/Seo'
 import { Breadcrumbs, ButtonLink, Eyebrow } from '../components/ui/Bits'
-import Picture from '../components/ui/Picture'
+import Picture, { slotAspect } from '../components/ui/Picture'
 import ProductViewer from '../components/viewer/ProductViewer'
 import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
@@ -44,6 +44,7 @@ function ProductDetail() {
     ? { kind: 'slab', texture: images[0].src, glow: images[1]?.src, flex: range.viewer?.flex, depth: range.viewer?.depth }
     : { kind: 'slab', texture: current.src, flex: range.viewer?.flex, depth: range.viewer?.depth }
   const related = siblings.filter((s) => s.slug !== product.slug).slice(0, 8)
+  const tile = slotAspect(siblings.map((s) => s.images?.[0]), { fallback: 0.45 })
 
   return (
     <>
@@ -123,7 +124,7 @@ function ProductDetail() {
               {related.map((s) => (
                 <li key={s.slug} className="w-[38%] shrink-0 snap-start sm:w-auto">
                   <Link to={`${base}/${s.slug}`} className="group block">
-                    <Picture image={s.images[0]} aspect={0.45} className="border border-line" sizes="160px" alt={`${range.name} ${s.code || s.name}`} />
+                    <Picture image={s.images[0]} aspect={tile} className="border border-line" sizes="160px" alt={`${range.name} ${s.code || s.name}`} />
                     <p className="mt-2 text-[12px] tracking-[0.06em] text-mist group-hover:text-paper">{s.code || s.name}</p>
                   </Link>
                 </li>

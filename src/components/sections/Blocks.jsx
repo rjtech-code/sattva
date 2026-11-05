@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MapPin } from 'lucide-react'
 import Icon from '../ui/Icon'
-import Picture from '../ui/Picture'
+import Picture, { slotAspect } from '../ui/Picture'
 import Reveal from '../ui/Reveal'
 import { ArrowLink, ButtonLink, Eyebrow } from '../ui/Bits'
 import { PILLARS, PROCESS, PARTNER_TYPES, CAPABILITIES, ABOUT } from '../../data/content'
@@ -60,12 +60,13 @@ export function WhyStoni() {
 /* ── Range cards — the Ston-i portfolio ────────────────────────────────── */
 export function RangeCards({ headingLevel = 'h3' }) {
   const H = headingLevel
+  const aspect = slotAspect(RANGES.map((r) => rangeCover(r)))
   return (
     <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
       {RANGES.map((r, i) => (
         <Reveal as="li" key={r.slug} delay={i * 110}>
           <Link to={`/products/${r.slug}`} className="group panel flex h-full flex-col transition-colors hover:border-line-2">
-            <Picture image={rangeCover(r) || r.identity.texture} aspect={4 / 3.2} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt={`${r.name} — ${r.tagline}`} />
+            <Picture image={rangeCover(r) || r.identity.texture} aspect={aspect} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt={`${r.name} — ${r.tagline}`} />
             <div className="flex flex-1 flex-col p-6 lg:p-7">
               <H className="display-md">{r.wordmark}{r.wordmarkSub ? ` ${r.wordmarkSub}` : ''}</H>
               <p className="mt-2 text-[13px] tracking-[0.06em] text-mist">{r.tagline}</p>

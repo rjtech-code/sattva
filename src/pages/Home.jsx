@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
-import Picture, { fitFor } from '../components/ui/Picture'
+import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
@@ -145,7 +145,9 @@ function Architecture() {
 function ApplicationsTeaser() {
   // Two applications from each range, linking to that range's applications.
   // Only photos already close to the 4:3 tile, so none are cropped.
-  const items = RANGES.flatMap((r) => applicationsFor(r.slug).filter((a) => fitFor(a.image, 4 / 3) === 'cover').slice(0, 2).map((a) => ({ ...a, range: r })))
+  // Landscape application photos only (Art-i's are full-page portraits), sized to their average shape.
+  const items = RANGES.flatMap((r) => applicationsFor(r.slug).filter((a) => a.image.width > a.image.height).slice(0, 3).map((a) => ({ ...a, range: r })))
+  const aspect = slotAspect(items.map((a) => a.image))
   return (
     <section className="section border-t border-line" aria-labelledby="applications-teaser">
       <div className="wrap">
@@ -157,7 +159,7 @@ function ApplicationsTeaser() {
           {items.map((a, i) => (
             <Reveal as="li" key={a.image.src} delay={i * 60}>
               <Link to={`/applications#${a.range.slug}`} className="group relative block overflow-hidden border border-line">
-                <Picture image={a.image} aspect={4 / 3} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, 50vw" alt={a.image.alt} />
+                <Picture image={a.image} aspect={aspect} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, 50vw" alt={a.image.alt} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5">
                   <p className="text-[10px] uppercase tracking-[0.22em] text-white/70">{a.range.name}</p>

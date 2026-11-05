@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
 import Reveal from '../components/ui/Reveal'
-import Picture from '../components/ui/Picture'
+import Picture, { slotAspect } from '../components/ui/Picture'
 import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
 import PageHero from '../components/sections/PageHero'
 import { CtaBand } from '../components/sections/Blocks'
 import { RANGES } from '../data/ranges'
 import { applicationsFor } from '../data/catalog'
-import { APP_SLOT } from './RangePage'
 import { tex } from '../data/media'
 
 // Applications, organised by product range. "Where to use" lists come from each range's
@@ -68,7 +67,7 @@ export default function Applications() {
                   {gallery.map((a, i) => (
                     <Reveal as="li" key={a.image.src} delay={(i % 4) * 50}>
                       <Link to={a.to} className="group block">
-                        <Picture image={a.image} aspect={APP_SLOT[r.slug]} className="border border-line" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={a.image.alt} />
+                        <Picture image={a.image} aspect={slotAspect(gallery.map((g) => g.image))} className="border border-line" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={a.image.alt} />
                         <p className="mt-2.5 text-[12.5px] uppercase tracking-[0.12em] text-paper group-hover:text-crimson-hi">{a.title}</p>
                         {(a.subtitle || a.area) && <p className="text-[12px] text-ash">{a.subtitle || a.area}</p>}
                       </Link>

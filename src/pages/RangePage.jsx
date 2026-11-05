@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
-import Picture from '../components/ui/Picture'
+import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, Breadcrumbs, ButtonLink, Eyebrow } from '../components/ui/Bits'
@@ -115,10 +115,9 @@ function HeroCtas({ range, label, center }) {
 
 const HEROES = { strata: StrataHero, flow: FlowHero, canvas: CanvasHero }
 
-// Card shapes matched to each range's imagery, so nothing is zoomed to fit:
-// Stonir sheets turn into wide strips; StonIT panels and Art-i designs stay portrait.
-const SLOT = { stonir: 2.2, stonit: 0.55, 'art-i-canvas-veneer': 0.5 }
-export const APP_SLOT = { stonir: 2, stonit: 4 / 3, 'art-i-canvas-veneer': 3 / 4 }
+// Card shapes are the average shape of the images they show (slotAspect), so they fill with
+// little or no cropping. Stonir sheets are laid landscape (rotated) as wide strips.
+const LANDSCAPE_COVERS = { stonir: true }
 
 export default function RangePage() {
   const { range: slug } = useParams()
@@ -130,6 +129,8 @@ export default function RangePage() {
   const collections = collectionsFor(range.slug)
   const products = productsFor(range.slug)
   const apps = applicationsFor(range.slug).slice(0, 4)
+  const appAspect = slotAspect(apps.map((a) => a.image))
+  const coverAspect = slotAspect(collections.map((c) => collectionCover(c)), { landscape: !!LANDSCAPE_COVERS[range.slug] })
   const docs = [...range.documents, ...collections.flatMap((c) => c.documents || [])].filter((d, i, a) => a.findIndex((x) => x.href === d.href) === i)
   const others = RANGES.filter((r) => r.slug !== range.slug)
   const vp = range.viewerProduct
@@ -189,7 +190,7 @@ export default function RangePage() {
               return (
                 <Reveal as="li" key={c.slug} delay={(i % 4) * 60}>
                   <Link to={`/products/${range.slug}/${c.slug}`} className="group panel !bg-ink flex h-full flex-col hover:border-line-2">
-                    <Picture image={collectionCover(c)} aspect={SLOT[range.slug]} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={`${c.name} — ${range.name}`} />
+                    <Picture image={collectionCover(c)} aspect={coverAspect} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={`${c.name} — ${range.name}`} />
                     <div className="flex flex-1 flex-col p-4 sm:p-6">
                       <p className={collections.length > 6 ? 'font-display text-[1.15rem] uppercase sm:text-[1.3rem]' : 'display-sm'}>{c.name}</p>
                       <p className="mt-1 text-[12px] text-ash">{n} {range.slug === 'stonit' ? (n === 1 ? 'colour' : 'colours') : (n === 1 ? 'design' : 'designs')}</p>
@@ -277,7 +278,7 @@ export default function RangePage() {
                 {apps.map((a) => (
                   <li key={a.image.src}>
                     <Link to={a.to} className="group block">
-                      <Picture image={a.image} aspect={APP_SLOT[range.slug]} className="border border-line" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={a.image.alt} />
+                      <Picture image={a.image} aspect={appAspect} className="border border-line" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={a.image.alt} />
                       <p className="mt-2 text-[12px] uppercase tracking-[0.12em] text-mist group-hover:text-paper">{a.title}</p>
                     </Link>
                   </li>

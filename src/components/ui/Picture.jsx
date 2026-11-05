@@ -3,23 +3,31 @@
 // - srcset uses each file's real width, so the browser never stretches the small file.
 // - Entries with a `light` counterpart (generated textures) swap with the theme via CSS;
 //   the hidden copy is display:none, so lazy copies are never downloaded.
-// - `aspect` (width / height of the slot) turns on smart fitting — images are never zoomed
-//   and cropped to fit a slot of a different shape:
-//     close match            → fills the slot
-//     stone sheet (rotatable) of the opposite orientation → turned 90° (filling it when the
-//       proportions match, otherwise shown whole)
-//     anything else (room photos, artwork) → shown whole (contain) on a neutral stage
+// - `aspect` (width / height of the slot) turns on smart fitting. Slots should be sized with
+//   slotAspect() — the average shape of the images shown in them — so images fill them with
+//   little or no cropping; any small remaining difference is filled (cover), never left as bars.
+//   Stone sheets (rotatable) in a slot of the opposite orientation are turned 90° to fill it.
 // - showTag labels generated textures where they could be mistaken for product photography.
 // Below-the-fold images lazy-load by default; pass priority for the LCP image.
 const smallWidth = (im) => im.smallWidth || Math.round(im.width * Math.min(1, 480 / Math.max(im.width, im.height)))
-const near = (a, b) => Math.abs(Math.log(a / b)) < 0.2
 
 export function fitFor(image, aspect) {
   if (!aspect || !image?.width || !image?.height || image.illustrative) return 'cover' // textures are decorative
   const ia = image.width / image.height
-  if (near(ia, aspect)) return 'cover'
-  if (image.rotatable && (ia < 1) !== (aspect < 1)) return near(1 / ia, aspect) ? 'rotate' : 'rotate-contain'
-  return 'contain'
+  if (image.rotatable && (ia < 1) !== (aspect < 1)) return 'rotate'
+  return 'cover'
+}
+
+/** Average shape (geometric mean of width/height) of a set of images, for sizing their slots.
+ *  `landscape` treats stone sheets as turned 90° (as fitFor does in landscape slots). */
+export function slotAspect(images, { landscape = false, fallback = 4 / 3 } = {}) {
+  const list = images.filter((im) => im?.width && im?.height)
+  if (!list.length) return fallback
+  const logs = list.map((im) => {
+    const a = im.width / im.height
+    return Math.log(landscape && im.rotatable && a < 1 ? 1 / a : a)
+  })
+  return Math.exp(logs.reduce((s, x) => s + x, 0) / logs.length)
 }
 
 function Img({ image, alt, sizes, priority, className, style }) {
@@ -47,19 +55,18 @@ export default function Picture({ image, className = '', imgClassName = '', prio
   const fit = fitFor(image, aspect)
   // Rotated: the image's own box is the slot turned 90°, then rotated back into place.
   const rotated = fit.startsWith('rotate')
-    ? { position: 'absolute', left: '50%', top: '50%', width: `${100 / aspect}%`, height: `${aspect * 100}%`, maxWidth: 'none', transform: 'translate(-50%, -50%) rotate(90deg)', objectFit: fit === 'rotate' ? 'cover' : 'contain' }
+    ? { position: 'absolute', left: '50%', top: '50%', width: `${100 / aspect}%`, height: `${aspect * 100}%`, maxWidth: 'none', transform: 'translate(-50%, -50%) rotate(90deg)', objectFit: 'cover' }
     : undefined
-  const fitClass = fit === 'contain' ? 'h-full w-full !object-contain' : ''
   const frameStyle = aspect ? { aspectRatio: aspect } : undefined
   return (
-    <div className={`media-frame ${fit.includes('contain') ? 'bg-coal-2' : ''} ${className}`} style={frameStyle}>
+    <div className={`media-frame ${className}`} style={frameStyle}>
       {image.light ? (
         <>
-          <Img image={image} alt={a} sizes={sizes} priority={priority} className={`only-dark ${imgClassName} ${fitClass}`} style={rotated} />
-          <Img image={image.light} alt={a} sizes={sizes} className={`only-light ${imgClassName} ${fitClass}`} style={rotated} />
+          <Img image={image} alt={a} sizes={sizes} priority={priority} className={`only-dark ${imgClassName}`} style={rotated} />
+          <Img image={image.light} alt={a} sizes={sizes} className={`only-light ${imgClassName}`} style={rotated} />
         </>
       ) : (
-        <Img image={image} alt={a} sizes={sizes} priority={priority} className={`${imgClassName} ${fitClass}`} style={rotated} />
+        <Img image={image} alt={a} sizes={sizes} priority={priority} className={imgClassName} style={rotated} />
       )}
       {showTag && image.illustrative && (
         <span className="illustrative-tag absolute bottom-3 right-3">Illustrative texture</span>

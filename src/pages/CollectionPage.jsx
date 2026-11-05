@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { DocRequestList } from '../components/CatalogueRequest'
 import Seo from '../components/ui/Seo'
-import Picture from '../components/ui/Picture'
+import Picture, { slotAspect } from '../components/ui/Picture'
 import { Breadcrumbs, ButtonLink, Eyebrow } from '../components/ui/Bits'
 import { CtaBand } from '../components/sections/Blocks'
 import NotFound from './NotFound'
@@ -15,6 +15,7 @@ export default function CollectionPage() {
   if (!collection) return <NotFound />
 
   const products = productsFor(range.slug, collection.slug)
+  const tile = slotAspect(products.map((p) => p.images?.[0]), { fallback: 0.45 })
   const path = `/products/${range.slug}/${collection.slug}`
 
   return (
@@ -51,7 +52,7 @@ export default function CollectionPage() {
                 <li key={p.slug}>
                   <Link to={`${path}/${p.slug}`} className="group block border border-line bg-coal hover:border-line-2">
                     {p.images?.[0] ? (
-                      <Picture image={p.images[0]} aspect={0.45} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 20vw, 50vw" alt={`${range.name} ${p.code || p.name}`} />
+                      <Picture image={p.images[0]} aspect={tile} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 20vw, 50vw" alt={`${range.name} ${p.code || p.name}`} />
                     ) : (
                       <div className="flex aspect-[9/20] items-center justify-center text-[12px] text-ash">Image pending</div>
                     )}
