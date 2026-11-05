@@ -43,7 +43,7 @@ export default function Products() {
             <div className={`wrap section grid items-center gap-10 lg:grid-cols-2 lg:gap-20 ${i % 2 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
               <Reveal>
                 <Link to={`/products/${r.slug}`} aria-label={`${r.name} — ${r.tagline}`} tabIndex={-1}>
-                  <Picture image={rangeCover(r) || r.identity.texture} className="aspect-[4/3]" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 50vw, 100vw" alt="" />
+                  <Picture image={rangeCover(r) || r.identity.texture} aspect={4 / 3} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 50vw, 100vw" alt="" />
                 </Link>
               </Reveal>
               <Reveal delay={100}>

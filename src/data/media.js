@@ -5,14 +5,9 @@
 // `illustrative: true` so components can label them. Real client photography
 // goes in public/media/<range>/<collection>/… and is referenced from catalog.js.
 
-const t = (name, alt) => ({
-  src: `/textures/${name}.webp`,
-  srcSmall: `/textures/${name}-960.webp`,
-  width: 1920,
-  height: 1200,
-  alt,
-  illustrative: true,
-})
+const file = (name) => ({ src: `/textures/${name}.webp`, srcSmall: `/textures/${name}-960.webp`, smallWidth: 960, width: 1920, height: 1200 })
+// Each texture has a light-theme counterpart (scripts/gen_light_textures.py).
+const t = (name, alt) => ({ ...file(name), light: file(`${name}-light`), alt, illustrative: true })
 
 export const tex = {
   marbleDark: t('marble-dark', 'Dark stone texture with fine white veining'),

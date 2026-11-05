@@ -24,11 +24,25 @@ export const BRAND = {
 // Verified contact channels. Only the location is confirmed in the supplied brief;
 // add phone / email / social URLs here once the client confirms them — every
 // component reads from this object and hides channels that are absent.
+// Accepts "9351xxxxxx", "+91 93510 xxxxx" or "919351xxxxxx"; returns digits with country code.
+function whatsappNumber(raw = '') {
+  const d = String(raw).replace(/\D/g, '')
+  if (d.length === 10) return `91${d}`
+  if (d.length === 11 && d.startsWith('0')) return `91${d.slice(1)}`
+  return d || null
+}
+
 export const CONTACT = {
   location: COMPANY.location,
   phone: null,
   email: null,
-  whatsapp: null,
+  // Business WhatsApp number (country code + number, digits only, e.g. 9198xxxxxxxx).
+  // Enquiries and catalogue requests are sent here. Set VITE_WHATSAPP_NUMBER in the host env.
+  whatsapp: whatsappNumber(import.meta.env.VITE_WHATSAPP_NUMBER),
+  get whatsappDisplay() {
+    const d = this.whatsapp
+    return d && d.length === 12 && d.startsWith('91') ? `+91 ${d.slice(2, 7)} ${d.slice(7)}` : d && `+${d}`
+  },
   social: [], // e.g. { label: 'LinkedIn', href: 'https://…' }
 }
 
@@ -55,7 +69,6 @@ export const NAV = [
     ],
   },
   { label: 'Applications', to: '/applications' },
-  { label: 'Projects', to: '/projects' },
   { label: 'B2B Partners', to: '/partners' },
   { label: 'Resources', to: '/resources' },
   { label: 'Contact', to: '/contact' },

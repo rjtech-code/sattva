@@ -4,20 +4,21 @@ import { Breadcrumbs, Eyebrow } from '../components/ui/Bits'
 import EnquiryForm from '../components/EnquiryForm'
 import { COMPANY, CONTACT } from '../data/site'
 import { tex } from '../data/media'
+import Picture from '../components/ui/Picture'
 
 export default function Contact() {
   const channels = [
     { icon: MapPin, label: 'Manufacturing base', value: CONTACT.location },
     CONTACT.phone && { icon: Phone, label: 'Phone', value: CONTACT.phone, href: `tel:${CONTACT.phone.replace(/\s/g, '')}` },
     CONTACT.email && { icon: Mail, label: 'Email', value: CONTACT.email, href: `mailto:${CONTACT.email}` },
-    CONTACT.whatsapp && { icon: MessageCircle, label: 'WhatsApp', value: CONTACT.whatsapp, href: `https://wa.me/${CONTACT.whatsapp.replace(/\D/g, '')}` },
+    CONTACT.whatsapp && { icon: MessageCircle, label: 'WhatsApp', value: CONTACT.whatsappDisplay, href: `https://wa.me/${CONTACT.whatsapp}` },
   ].filter(Boolean)
 
   return (
     <>
       <Seo title="Contact" path="/contact" description="Contact Ston-i Surfaces and Sattva Sattvik Private Limited, Jaipur — B2B partnership, product information and catalogue requests." />
       <section className="relative isolate overflow-hidden pt-32">
-        <img src={tex.marbleCrimson.src} alt="" className="absolute right-0 top-0 -z-10 h-[70vh] w-full object-cover opacity-50 lg:w-2/3" width="1920" height="1200" />
+        <Picture image={tex.marbleCrimson} priority className="!absolute right-0 top-0 -z-10 h-[70vh] w-full lg:w-2/3" imgClassName="h-full w-full object-cover opacity-50" alt="" />
         <div className="absolute inset-0 -z-10 scrim-l" />
         <div className="absolute inset-x-0 top-[40vh] -z-10 h-[30vh] bg-gradient-to-b from-transparent to-ink" />
         <div className="wrap pb-20">

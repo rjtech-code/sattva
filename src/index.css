@@ -40,6 +40,9 @@
 }
 :root[data-theme='light'] { color-scheme: light; }
 :root[data-theme='light'] .theme-dim { opacity: .35; }
+.only-light { display: none; }
+:root[data-theme='light'] .only-light { display: block; }
+:root[data-theme='light'] .only-dark { display: none; }
 :root[data-theme='light'] .field select { background-image: linear-gradient(45deg, transparent 50%, #4a4a50 50%), linear-gradient(135deg, #4a4a50 50%, transparent 50%); }
 :root[data-theme='light'] .field .err { color: #b80d29; }
 
@@ -106,6 +109,7 @@
   .btn-ghost { border: 1px solid var(--color-line-2); color: var(--color-paper); }
   .btn-ghost:hover { border-color: var(--color-paper); }
   .btn[disabled] { opacity: .55; pointer-events: none; }
+  @media (max-width: 639px) { .btn { white-space: normal; text-align: center; padding-block: 12px; } }
 
   .link-arrow {
     display: inline-flex; align-items: center; gap: 8px;
@@ -127,8 +131,9 @@
   .hairline { border-color: var(--color-line); }
 
   .media-frame { position: relative; overflow: hidden; background: var(--color-coal-2); }
-  .media-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-out-soft); }
-  a:hover .media-frame img, .media-frame:hover img.zoomable { transform: scale(1.045); }
+  .media-frame img { width: 100%; height: 100%; object-fit: cover; transition: scale 1.2s var(--ease-out-soft); }
+  /* `scale` (not transform) so it composes with the 90° rotation used for sheets in landscape slots */
+  a:hover .media-frame img, .media-frame:hover img.zoomable { scale: 1.045; }
 
   .scrim-b { background: linear-gradient(to top, rgb(var(--scrim) / .92), rgb(var(--scrim) / .35) 55%, rgb(var(--scrim) / 0)); }
   .scrim-l { background: linear-gradient(to right, rgb(var(--scrim) / .96) 0%, rgb(var(--scrim) / .78) 40%, rgb(var(--scrim) / .15) 100%); }
@@ -148,6 +153,9 @@
 
   /* 3D viewer stage: Tailwind gray-950 in both themes */
   .viewer-stage { background: var(--color-gray-950); }
+  /* Light theme: warm cream stage; viewer captions switch to dark text */
+  :root[data-theme='light'] .viewer-stage { background: #f4efe4; }
+  :root[data-theme='light'] .viewer-stage .text-gray-300 { color: var(--color-mist); }
 
   .illustrative-tag {
     font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--color-mist);

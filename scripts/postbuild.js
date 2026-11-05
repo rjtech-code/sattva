@@ -13,7 +13,7 @@ const routes = [
   ...RANGES.map((r) => `/products/${r.slug}`),
   ...COLLECTIONS.map((c) => `/products/${c.range}/${c.slug}`),
   ...PRODUCTS.map((p) => `/products/${p.range}/${p.collection}/${p.slug}`),
-  '/applications', '/projects', '/partners', '/resources', '/contact',
+  '/applications', '/partners', '/resources', '/contact',
 ]
 
 let robots = 'User-agent: *\nAllow: /\nDisallow: /api/\n'

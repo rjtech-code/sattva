@@ -1,15 +1,22 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
-import Picture from '../components/ui/Picture'
+import Picture, { fitFor } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
 import { CtaBand, PartnerGrid, ProcessSteps, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
 import { tex } from '../data/media'
 import { RANGES } from '../data/ranges'
-import { productImage, rangeCover } from '../data/catalog'
-import { APPLICATIONS, STRATEGY } from '../data/content'
+import { applicationsFor, productImage } from '../data/catalog'
+import { STRATEGY } from '../data/content'
 import { BRAND, COMPANY } from '../data/site'
+
+// One real sheet per range, shown at its own proportions (no cropping).
+const HERO_SHEETS = [
+  { range: RANGES[0], image: productImage('stonir', 'natural-series', 'ssv-3000-1') },
+  { range: RANGES[1], image: productImage('stonit', 'haveli-arch', 'haveli-arch-multi-color') },
+  { range: RANGES[2], image: productImage('art-i-canvas-veneer', 'canvas-series', 'acv-13') },
+]
 
 function Hero() {
   return (
@@ -19,22 +26,22 @@ function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-transparent to-ink/40" aria-hidden="true" />
 
       {/* Layered material panels — one per range — echoing the collage's architectural composition */}
-      <div className="pointer-events-none absolute right-[-6%] top-1/2 -z-10 hidden h-[78%] w-[46%] -translate-y-1/2 lg:block" aria-hidden="true">
-        {RANGES.map((r, i) => (rangeCover(r) || null) && (
+      <div className="pointer-events-none absolute right-[3%] top-1/2 -z-10 hidden h-[70%] w-[38%] -translate-y-1/2 lg:block xl:right-[5%]" aria-hidden="true">
+        {HERO_SHEETS.map(({ range: r, image: im }, i) => im && (
           <div
             key={r.slug}
-            className="absolute top-0 h-full w-[34%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)]"
-            style={{ left: `${i * 27}%`, transform: `translateY(${(i - 1) * 6}%) skewY(-4deg)`, zIndex: 3 - i }}
+            className="absolute top-0 h-full overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)]"
+            style={{ aspectRatio: im.width / im.height, left: `${i * 30}%`, transform: `translateY(${(i - 1) * 6}%) skewY(-4deg)`, zIndex: 3 - i }}
           >
-            <img src={rangeCover(r).srcSmall} alt="" className="h-full w-full object-cover" width={rangeCover(r).width} height={rangeCover(r).height} />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/80 to-transparent" />
-            <span className="absolute bottom-5 left-5 font-display text-[15px] tracking-[0.2em] text-paper/90">{r.wordmark}</span>
+            <img src={im.src} alt="" className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
+            <span className="absolute left-5 top-5 font-display text-[15px] tracking-[0.2em] text-white">{r.wordmark}</span>
           </div>
         ))}
       </div>
 
       <div className="wrap pb-16 pt-32 lg:py-40">
-        <Reveal className="max-w-[44rem]">
+        <Reveal className="max-w-[44rem] lg:max-w-[57%]">
           <Eyebrow className="mb-7">{BRAND.name}</Eyebrow>
           <h1 className="display-xl">Surfaces that expand the possibilities of design.</h1>
           <p className="lede mt-7 max-w-[30rem]">
@@ -59,7 +66,7 @@ function Intro() {
     <section className="section">
       <div className="wrap grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <Reveal className="relative">
-          <Picture image={tex.marbleDark} className="aspect-[5/4]" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 50vw, 100vw" alt="" />
+          <Picture image={tex.marbleDark} aspect={5 / 4} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 50vw, 100vw" alt="" />
           <div className="absolute -bottom-6 -right-2 hidden border border-line bg-ink px-6 py-5 sm:block lg:-right-8">
             <p className="text-[10px] uppercase tracking-[0.26em] text-ash">Manufactured in</p>
             <p className="mt-1 font-display text-[22px]">{COMPANY.city}, {COMPANY.state}</p>
@@ -96,7 +103,7 @@ function Portfolio() {
       <div className="wrap mt-5">
         <Reveal>
           <Link to="/products#future-brands" className="group relative flex flex-col gap-4 overflow-hidden border border-line p-7 sm:flex-row sm:items-center sm:justify-between">
-            <img src={tex.marbleCrimson.srcSmall} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40" loading="lazy" width="960" height="600" />
+            <Picture image={tex.marbleCrimson} className="!absolute inset-0 -z-10" imgClassName="h-full w-full object-cover opacity-40" sizes="100vw" alt="" />
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-coal via-coal/80 to-transparent" />
             <div>
               <p className="display-sm">Future brands</p>
@@ -136,7 +143,9 @@ function Architecture() {
 }
 
 function ApplicationsTeaser() {
-  const items = APPLICATIONS.filter((a) => a.image && !a.imageNote).slice(0, 6)
+  // Two applications from each range, linking to that range's applications.
+  // Only photos already close to the 4:3 tile, so none are cropped.
+  const items = RANGES.flatMap((r) => applicationsFor(r.slug).filter((a) => fitFor(a.image, 4 / 3) === 'cover').slice(0, 2).map((a) => ({ ...a, range: r })))
   return (
     <section className="section border-t border-line" aria-labelledby="applications-teaser">
       <div className="wrap">
@@ -146,14 +155,14 @@ function ApplicationsTeaser() {
         </div>
         <ul className="mt-12 grid grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-4">
           {items.map((a, i) => (
-            <Reveal as="li" key={a.slug} delay={i * 60}>
-              <Link to={`/applications#${a.slug}`} className="group relative block aspect-[4/3] overflow-hidden border border-line">
-                {(() => {
-                  const im = productImage(a.image[0], a.image[1], a.image[2], 1)
-                  return im && <img src={im.srcSmall} alt="" loading="lazy" width={im.width} height={im.height} className="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105" />
-                })()}
-                <div className="absolute inset-0 scrim-b" />
-                <p className="absolute bottom-4 left-4 right-4 text-[12px] uppercase tracking-[0.16em] sm:bottom-5 sm:left-5 sm:text-[13px]">{a.title}</p>
+            <Reveal as="li" key={a.image.src} delay={i * 60}>
+              <Link to={`/applications#${a.range.slug}`} className="group relative block overflow-hidden border border-line">
+                <Picture image={a.image} aspect={4 / 3} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, 50vw" alt={a.image.alt} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5">
+                  <p className="text-[10px] uppercase tracking-[0.22em] text-white/70">{a.range.name}</p>
+                  <p className="mt-1 text-[12px] uppercase tracking-[0.14em] text-white sm:text-[13px]">{a.title}</p>
+                </div>
               </Link>
             </Reveal>
           ))}

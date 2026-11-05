@@ -33,8 +33,7 @@ export async function handleEnquiry(raw, env = process.env, { devStore } = {}) {
       body: JSON.stringify({
         from: env.ENQUIRY_FROM_EMAIL,
         to: env.ENQUIRY_TO_EMAIL.split(',').map((s) => s.trim()),
-        reply_to: record.email,
-        subject: `Website enquiry (${record.type}) — ${record.name}${record.company ? `, ${record.company}` : ''}`,
+        subject: `Website enquiry (${record.type}) — ${record.name}, ${record.city} · +91 ${record.phone}`,
         text: lines,
       }),
     })

@@ -2,6 +2,7 @@ import { Suspense, useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import { CatalogueRequestProvider } from '../CatalogueRequest'
 
 // Scrolls to the top on navigation, or to the #hash target when one is present.
 function ScrollManager() {
@@ -37,7 +38,7 @@ function PageLoading() {
 
 export default function Layout() {
   return (
-    <>
+    <CatalogueRequestProvider>
       <ScrollManager />
       <Header />
       <main id="main" tabIndex={-1} className="outline-none">
@@ -46,6 +47,6 @@ export default function Layout() {
         </Suspense>
       </main>
       <Footer />
-    </>
+    </CatalogueRequestProvider>
   )
 }

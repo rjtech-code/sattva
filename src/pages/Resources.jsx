@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
-import { Download, Plus } from 'lucide-react'
+import { Plus } from 'lucide-react'
+import { DocRequestList } from '../components/CatalogueRequest'
+import { ArrowLink } from '../components/ui/Bits'
 import Seo from '../components/ui/Seo'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import PageHero from '../components/sections/PageHero'
 import { CtaBand, SectionHead } from '../components/sections/Blocks'
 import { FAQS, RESOURCE_CATEGORIES } from '../data/resources'
-import { RANGES } from '../data/ranges'
 import { tex } from '../data/media'
 
 export default function Resources() {
@@ -33,18 +34,13 @@ export default function Resources() {
                 <Icon name={c.icon} size={28} className="text-crimson-hi" />
                 <h2 className="display-sm mt-6">{c.title}</h2>
                 <p className="mt-2 text-[14px] text-mist">{c.text}</p>
-                {c.documents.length ? (
-                  <ul className="mt-6 divide-y divide-line border-t border-line">
-                    {c.documents.map((d) => (
-                      <li key={d.href}>
-                        <a href={d.href} download className="flex items-center justify-between gap-3 py-3 text-[14px] hover:text-crimson-hi">
-                          <span className="flex items-center gap-2"><Download size={14} aria-hidden="true" />{d.label}</span>
-                          <span className="text-[11.5px] text-ash">{[RANGES.find((r) => r.slug === d.range)?.name, d.size].filter(Boolean).join(' · ')}</span>
-                        </a>
-                      </li>
-                    ))}
+                {c.documents.length > 0 && <DocRequestList docs={c.documents} className="mt-6" />}
+                {c.links?.length > 0 && (
+                  <ul className="mt-6 space-y-3 border-t border-line pt-5">
+                    {c.links.map((l) => <li key={l.to}><ArrowLink to={l.to}>{l.label}</ArrowLink></li>)}
                   </ul>
-                ) : (
+                )}
+                {!c.documents.length && !c.links?.length && (
                   <div className="mt-auto pt-6">
                     <p className="mb-3 text-[12px] text-ash">Available on request</p>
                     <Link to={`/contact?type=catalogue`} className="link-arrow">Request<Icon name="ArrowRight" size={14} strokeWidth={1.75} /></Link>

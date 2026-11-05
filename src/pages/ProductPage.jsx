@@ -1,21 +1,30 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, Download } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Seo from '../components/ui/Seo'
 import { Breadcrumbs, ButtonLink, Eyebrow } from '../components/ui/Bits'
+import Picture from '../components/ui/Picture'
 import ProductViewer from '../components/viewer/ProductViewer'
+import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
 import { getRange } from '../data/ranges'
 import { getCollection, getProduct, productsFor } from '../data/catalog'
 
 const VIEW_LABEL = { 'natural light': 'Natural light', backlit: 'Backlit', application: 'Application', panel: 'Panel', design: 'Design' }
 
+// Keyed by product so view state (selected image, backlight) resets on prev/next navigation.
 export default function ProductPage() {
+  const { range, collection, product } = useParams()
+  return <ProductDetail key={`${range}/${collection}/${product}`} />
+}
+
+function ProductDetail() {
   const { range: r, collection: c, product: p } = useParams()
   const range = getRange(r)
   const collection = range && getCollection(range.slug, c)
   const product = collection && getProduct(range.slug, collection.slug, p)
-  const [shot, setShot] = useState(0)
+  // Translucent sheets open on their backlit view.
+  const [shot, setShot] = useState(() => (product?.backlit ? 1 : 0))
   if (!product) return <NotFound />
 
   const base = `/products/${range.slug}/${collection.slug}`
@@ -29,7 +38,11 @@ export default function ProductPage() {
   const specs = Object.entries(product.specs || {}).filter(([, v]) => v != null && String(v).trim() !== '')
   const current = images[shot]
   // Real-time 3D only for the product's own swatch photo; application photos stay as photos.
-  const viewer = current && current.alt !== 'application' ? { kind: 'slab', texture: current.src, flex: range.viewer?.flex, depth: range.viewer?.depth } : null
+  const isApplication = current?.alt === 'application'
+  // Translucent: one 3D sheet built from the natural-light photo, with the backlit photo as its glow state.
+  const viewer = !current || isApplication ? null : product.backlit
+    ? { kind: 'slab', texture: images[0].src, glow: images[1]?.src, flex: range.viewer?.flex, depth: range.viewer?.depth }
+    : { kind: 'slab', texture: current.src, flex: range.viewer?.flex, depth: range.viewer?.depth }
   const related = siblings.filter((s) => s.slug !== product.slug).slice(0, 8)
 
   return (
@@ -49,7 +62,7 @@ export default function ProductPage() {
       <section className="section !pt-10">
         <div className="wrap grid gap-10 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
           <div className="min-w-0">
-            <ProductViewer key={shot} config={viewer} photo={current && { ...current, alt: `${fullName} — ${VIEW_LABEL[current.alt] || 'photo'}` }} title={fullName} />
+            <ProductViewer key={shot} config={viewer} photo={current && { ...current, alt: `${fullName} — ${VIEW_LABEL[current.alt] || 'photo'}` }} photoFit={isApplication ? 'cover' : 'contain'} initialLit={current?.alt === 'backlit'} title={fullName} className="h-[460px] sm:h-[560px] lg:h-[620px]" />
             {images.length > 1 && (
               <ul className="mt-4 flex flex-wrap gap-2" aria-label="Product views">
                 {images.map((im, i) => (
@@ -76,7 +89,7 @@ export default function ProductPage() {
             <h1 className="display-lg">{title}</h1>
             <p className="mt-3 text-[12px] uppercase tracking-[0.2em] text-ash">{range.tagline}</p>
             {collection.description && <p className="lede mt-6">{collection.description}</p>}
-            {product.backlit && <p className="mt-4 border-l-2 border-crimson pl-4 text-[14px] text-mist">Shown in natural light and backlit — switch views below the image.</p>}
+            {product.backlit && <p className="mt-4 border-l-2 border-crimson pl-4 text-[14px] text-mist">Translucent sheet — use <span className="text-paper">Backlight on/off</span> under the 3D view to see it lit from behind.</p>}
 
             {specs.length > 0 && (
               <dl className="mt-8 border-t border-line">
@@ -90,22 +103,11 @@ export default function ProductPage() {
             )}
 
             <div className="mt-10 flex flex-wrap gap-3">
-              <ButtonLink to={`/contact?type=product&range=${range.slug}&product=${encodeURIComponent(`${range.name} ${title}`)}`}>Enquire about {title}</ButtonLink>
+              <ButtonLink to={`/contact?type=product&range=${range.slug}&product=${encodeURIComponent(`${range.name} ${title}`)}`}>Enquire about this product</ButtonLink>
               <ButtonLink to={`/products/${range.slug}#specifications`} variant="ghost" arrow={false}>Range specifications</ButtonLink>
             </div>
 
-            {collection.documents?.length > 0 && (
-              <ul className="mt-10 divide-y divide-line border-y border-line">
-                {collection.documents.map((d) => (
-                  <li key={d.href}>
-                    <a href={d.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-4 py-3 text-[14px] hover:text-crimson-hi">
-                      <span className="flex items-center gap-3"><Download size={15} aria-hidden="true" className="text-crimson-hi" />{d.label}</span>
-                      <span className="shrink-0 text-[12px] text-ash">PDF · {d.size}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
+            <DocRequestList docs={collection.documents} className="mt-10" />
           </div>
         </div>
       </section>
@@ -121,7 +123,7 @@ export default function ProductPage() {
               {related.map((s) => (
                 <li key={s.slug} className="w-[38%] shrink-0 snap-start sm:w-auto">
                   <Link to={`${base}/${s.slug}`} className="group block">
-                    <div className="media-frame aspect-[3/4] border border-line"><img src={s.images[0].srcSmall} alt={`${range.name} ${s.code || s.name}`} loading="lazy" width={s.images[0].width} height={s.images[0].height} /></div>
+                    <Picture image={s.images[0]} aspect={0.45} className="border border-line" sizes="160px" alt={`${range.name} ${s.code || s.name}`} />
                     <p className="mt-2 text-[12px] tracking-[0.06em] text-mist group-hover:text-paper">{s.code || s.name}</p>
                   </Link>
                 </li>

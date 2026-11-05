@@ -16,7 +16,7 @@ for p in raw:
     if seen[key] > 1:
         p['slug'] = f"{p['slug']}-{seen[key]}"
         if p.get('name'):
-            p['name'] = f"{p['name']} ({seen[key]})"
+            p['name'] = f"{p['name']} — Variant {seen[key]}"
     for k in ('page', 'collectionName'):
         p.pop(k, None)
     out.append({k: v for k, v in p.items() if v not in (None, '', [], {})})

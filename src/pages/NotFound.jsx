@@ -1,12 +1,13 @@
 import Seo from '../components/ui/Seo'
 import { ArrowLink, ButtonLink } from '../components/ui/Bits'
 import { tex } from '../data/media'
+import Picture from '../components/ui/Picture'
 
 export default function NotFound() {
   return (
     <section className="relative isolate flex min-h-[90svh] items-center overflow-hidden">
       <Seo title="Page not found" description="The page you were looking for could not be found." noindex />
-      <img src={tex.marbleDark.src} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40" width="1920" height="1200" />
+      <Picture image={tex.marbleDark} className="!absolute inset-0 -z-10" imgClassName="h-full w-full object-cover opacity-40" alt="" />
       <div className="absolute inset-0 -z-10 scrim-l" />
       <div className="wrap py-32">
         <p className="font-display text-[clamp(5rem,16vw,11rem)] leading-none text-crimson-hi">404</p>

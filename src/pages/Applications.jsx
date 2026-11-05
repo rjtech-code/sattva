@@ -1,103 +1,91 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
 import Reveal from '../components/ui/Reveal'
+import Picture from '../components/ui/Picture'
+import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
 import PageHero from '../components/sections/PageHero'
 import { CtaBand } from '../components/sections/Blocks'
-import { APPLICATIONS } from '../data/content'
 import { RANGES } from '../data/ranges'
+import { applicationsFor } from '../data/catalog'
+import { APP_SLOT } from './RangePage'
 import { tex } from '../data/media'
-import { productImage } from '../data/catalog'
 
-const appImage = (a) => (a.image ? productImage(a.image[0], a.image[1], a.image[2], 1) : null)
-
-const GROUPS = ['All', ...new Set(APPLICATIONS.map((a) => a.group))]
-const TEXTURES = [tex.stonir, tex.marbleDark, tex.stonit, tex.arti, tex.marbleCrimson, tex.charcoal]
-
+// Applications, organised by product range. "Where to use" lists come from each range's
+// catalogue; images are application photos/visuals from the same catalogues.
 export default function Applications() {
-  const [group, setGroup] = useState('All')
-  const list = APPLICATIONS.filter((a) => group === 'All' || a.group === group)
-
   return (
     <>
       <Seo
-        title="Applications"
+        title="Applications by Product"
         path="/applications"
-        description="Application areas for Ston-i Surfaces materials — interior and feature walls, furniture, ceilings, partitions, hospitality, retail and more. Suitability is confirmed per product."
+        description="Where to use Stonir flexible stone veneer, StonIT FRP rock panels and Art-i Canvas Veneer — interior and exterior applications from each range’s catalogue."
       />
       <PageHero
         eyebrow="Applications"
         title={<>Where surfaces<br />create spaces</>}
-        lede="From walls to furniture, surface materials bring natural beauty and lasting character to a wide range of architectural applications."
-        image={tex.stonir}
+        lede="Each range is made for different spaces. Explore applications by product — from feature walls and facades to bar counters, ceilings and pooja rooms."
+        image={tex.marbleDark}
         breadcrumbs={[{ label: 'Home', to: '/' }, { label: 'Applications' }]}
       />
 
-      <section className="section">
-        <div className="wrap">
-          <div className="flex flex-col gap-6 border-b border-line pb-6 md:flex-row md:items-end md:justify-between">
-            <div role="group" aria-label="Filter applications" className="no-scrollbar -mx-4 flex gap-6 overflow-x-auto px-4 md:mx-0 md:px-0">
-              {GROUPS.map((g) => (
-                <button
-                  key={g}
-                  type="button"
-                  aria-pressed={group === g}
-                  onClick={() => setGroup(g)}
-                  className={`relative shrink-0 pb-2 text-[11px] uppercase tracking-[0.2em] ${group === g ? 'text-paper after:absolute after:inset-x-0 after:-bottom-px after:h-[2px] after:bg-crimson' : 'text-ash hover:text-mist'}`}
-                >
-                  {g}
-                </button>
-              ))}
-            </div>
-            <p className="max-w-md text-[13px] text-ash">Application areas are those named in each range’s catalogue. Images are application visuals from the client catalogues. Confirm product suitability with our team for your project.</p>
-          </div>
+      {/* Range switcher */}
+      <nav aria-label="Applications by product" className="sticky top-[72px] z-30 border-b border-line bg-ink/90 backdrop-blur">
+        <ul className="wrap no-scrollbar flex gap-8 overflow-x-auto py-4 text-[11px] uppercase tracking-[0.2em] text-mist">
+          {RANGES.map((r) => <li key={r.slug} className="shrink-0"><a href={`#${r.slug}`} className="hover:text-paper">{r.name}</a></li>)}
+        </ul>
+      </nav>
 
-          <ul className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:gap-4">
-            {list.map((a) => {
-              const i = APPLICATIONS.indexOf(a)
-              const photo = appImage(a)
-              const ranges = RANGES.filter((r) => a.ranges.includes(r.slug))
-              return (
-                <Reveal as="li" key={a.slug} id={a.slug} className="scroll-mt-28">
-                  <div className="group relative aspect-[4/3] overflow-hidden border border-line">
-                    {photo ? (
-                      <img src={photo.srcSmall} alt={`${a.title} — application visual`} loading="lazy" width={photo.width} height={photo.height} className="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105" />
-                    ) : (
-                      <img src={TEXTURES[i % TEXTURES.length].srcSmall} alt="" loading="lazy" width="960" height="600" className="theme-dim h-full w-full object-cover opacity-50" />
-                    )}
-                    <div className="absolute inset-0 scrim-b" />
-                    {a.imageNote && <span className="illustrative-tag absolute right-2 top-2 !text-[8.5px]">{a.imageNote}</span>}
-                    <div className="absolute inset-x-4 bottom-4 sm:inset-x-5 sm:bottom-5">
-                      <p className="text-[10px] uppercase tracking-[0.22em] text-ash">{a.group}</p>
-                      <p className="mt-1 text-[13px] uppercase tracking-[0.14em] sm:text-[14px]">{a.title}</p>
-                      {a.note && <p className="text-[11px] text-mist">{a.note}</p>}
-                      {ranges.length > 0 && (
-                        <p className="mt-2 flex flex-wrap gap-x-3 text-[11px] text-mist">
-                          {ranges.map((r) => <Link key={r.slug} to={`/products/${r.slug}`} className="underline-offset-4 hover:underline">{r.name}</Link>)}
-                        </p>
-                      )}
-                    </div>
+      {RANGES.map((r, idx) => {
+        const gallery = applicationsFor(r.slug)
+        const art = r.slug === 'art-i-canvas-veneer'
+        return (
+          <section key={r.slug} id={r.slug} className={`section scroll-mt-32 border-b border-line ${idx % 2 ? 'bg-coal' : ''}`} aria-labelledby={`${r.slug}-apps`}>
+            <div className="wrap">
+              <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+                <Reveal>
+                  <Eyebrow className="mb-5">{r.tagline}</Eyebrow>
+                  <h2 id={`${r.slug}-apps`} className="display-lg">{r.name}</h2>
+                  <p className="lede mt-5">{r.summary}</p>
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    <ButtonLink to={`/products/${r.slug}`}>Explore {r.name}</ButtonLink>
+                    <ButtonLink to={`/contact?type=product&range=${r.slug}`} variant="ghost">Discuss your project</ButtonLink>
                   </div>
                 </Reveal>
-              )
-            })}
-          </ul>
-        </div>
-      </section>
+                <Reveal delay={80} className="grid gap-8 sm:grid-cols-2">
+                  {Object.entries(r.uses || {}).filter(([g]) => g !== 'Applied on').map(([group, list]) => (
+                    <div key={group}>
+                      <h3 className="mb-4 border-b border-crimson/60 pb-3 text-[11px] font-semibold uppercase tracking-[0.22em]">{group === 'Spaces' ? 'Suitable spaces' : `${group} uses`}</h3>
+                      <ul className="space-y-2 text-[14.5px] text-mist">
+                        {list.map((u) => <li key={u} className="flex gap-2"><span className="mt-[11px] h-px w-3 shrink-0 bg-crimson" aria-hidden="true" />{u}</li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </Reveal>
+              </div>
 
-      <section className="section border-t border-line bg-coal">
-        <div className="wrap grid gap-5 md:grid-cols-3">
-          {RANGES.map((r) => (
-            <Link key={r.slug} to={`/products/${r.slug}`} className="panel !bg-ink group p-7 hover:border-line-2">
-              <p className="text-[10.5px] uppercase tracking-[0.24em] text-ash">Explore the range</p>
-              <p className="display-sm mt-3">{r.name}</p>
-              <p className="mt-1 text-[13px] text-mist">{r.tagline}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
+              {gallery.length > 0 && (
+                <ul className={`mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 ${art ? 'lg:grid-cols-6' : 'lg:grid-cols-4'}`}>
+                  {gallery.map((a, i) => (
+                    <Reveal as="li" key={a.image.src} delay={(i % 4) * 50}>
+                      <Link to={a.to} className="group block">
+                        <Picture image={a.image} aspect={APP_SLOT[r.slug]} className="border border-line" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={a.image.alt} />
+                        <p className="mt-2.5 text-[12.5px] uppercase tracking-[0.12em] text-paper group-hover:text-crimson-hi">{a.title}</p>
+                        {(a.subtitle || a.area) && <p className="text-[12px] text-ash">{a.subtitle || a.area}</p>}
+                      </Link>
+                    </Reveal>
+                  ))}
+                </ul>
+              )}
+              <div className="mt-8 flex flex-col gap-3 text-[12px] text-ash sm:flex-row sm:items-center sm:justify-between">
+                <p>{r.slug === 'stonir' ? 'Project photographs from the Stonir catalogue.' : 'Application visuals from the catalogue — tap one to see the product.'}</p>
+                <ArrowLink to={`/products/${r.slug}`} className="shrink-0">All {r.name} products</ArrowLink>
+              </div>
+            </div>
+          </section>
+        )
+      })}
 
-      <CtaBand eyebrow="Project enquiry" title="Real spaces. Lasting impressions." text="Tell us about your application and we’ll recommend the right range." primary={{ to: '/contact?type=product', label: 'Discuss your project' }} secondary={{ to: '/projects', label: 'Projects & Inspiration' }} />
+      <CtaBand eyebrow="Project enquiry" title="Tell us about your space." text="Share your application and we’ll suggest the right range, design and format." primary={{ to: '/contact?type=product', label: 'Discuss your project' }} secondary={{ to: '/resources', label: 'Catalogues' }} />
     </>
   )
 }

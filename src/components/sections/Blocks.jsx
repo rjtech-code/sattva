@@ -65,7 +65,7 @@ export function RangeCards({ headingLevel = 'h3' }) {
       {RANGES.map((r, i) => (
         <Reveal as="li" key={r.slug} delay={i * 110}>
           <Link to={`/products/${r.slug}`} className="group panel flex h-full flex-col transition-colors hover:border-line-2">
-            <Picture image={rangeCover(r) || r.identity.texture} className="aspect-[4/3.2]" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt={`${r.name} — ${r.tagline}`} />
+            <Picture image={rangeCover(r) || r.identity.texture} aspect={4 / 3.2} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt={`${r.name} — ${r.tagline}`} />
             <div className="flex flex-1 flex-col p-6 lg:p-7">
               <H className="display-md">{r.wordmark}{r.wordmarkSub ? ` ${r.wordmarkSub}` : ''}</H>
               <p className="mt-2 text-[13px] tracking-[0.06em] text-mist">{r.tagline}</p>

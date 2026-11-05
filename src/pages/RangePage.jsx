@@ -1,5 +1,4 @@
 import { Link, useParams } from 'react-router-dom'
-import { Download } from 'lucide-react'
 import Seo from '../components/ui/Seo'
 import Picture from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
@@ -7,10 +6,10 @@ import Icon from '../components/ui/Icon'
 import { ArrowLink, Breadcrumbs, ButtonLink, Eyebrow } from '../components/ui/Bits'
 import { CtaBand, SectionHead } from '../components/sections/Blocks'
 import ProductViewer from '../components/viewer/ProductViewer'
+import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
 import { RANGES, getRange } from '../data/ranges'
-import { collectionCover, collectionsFor, productImage, productsFor, rangeCover } from '../data/catalog'
-import { APPLICATIONS } from '../data/content'
+import { applicationsFor, collectionCover, collectionsFor, productImage, productsFor, rangeCover } from '../data/catalog'
 import { BRAND } from '../data/site'
 
 /* Three hero compositions — one per range identity — sharing the same type system. */
@@ -24,13 +23,13 @@ function StrataHero({ range, crumbs }) {
   ]
   return (
     <section className="relative isolate min-h-[92svh] overflow-hidden border-b border-line">
-      <Picture image={rangeCover(range)} priority className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-45 blur-[2px] scale-110" alt="" />
-      <div className="absolute inset-0 -z-10 scrim-l" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/30 to-ink/60" />
-      <div className="pointer-events-none absolute right-[4%] top-[16%] -z-10 hidden h-[64%] w-[30%] lg:block" aria-hidden="true">
+      <div className="absolute inset-0 -z-20 stage-glow" />
+      <Picture image={range.identity.texture} className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-25" alt="" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
+      <div className="pointer-events-none absolute right-[16%] top-[15%] -z-10 hidden h-[68%] w-[14%] lg:block" aria-hidden="true">
         {layers.map((im, i) => im && (
-          <div key={im.src} className="absolute inset-0 overflow-hidden border border-line-2 shadow-2xl shadow-black" style={{ transform: `translate(${(i - 1) * -26}%, ${(i - 1) * 7}%) rotate(${-6 + i * 4}deg)`, zIndex: i }}>
-            <img src={im.srcSmall} alt="" className="h-full w-full object-cover" width={im.width} height={im.height} />
+          <div key={im.src} className="absolute left-0 top-0 h-full overflow-hidden border border-line-2 shadow-2xl shadow-black" style={{ aspectRatio: im.width / im.height, transform: `translate(${(i - 1) * -38}%, ${(i - 1) * 6}%) rotate(${-6 + i * 4}deg)`, zIndex: i }}>
+            <img src={im.src} alt="" className="h-full w-full object-cover" width={im.width} height={im.height} />
           </div>
         ))}
         <span className="absolute -left-[46%] top-[52%] z-10 h-[2px] w-[44%] bg-crimson" />
@@ -53,7 +52,7 @@ function FlowHero({ range, crumbs }) {
   // StonIT: a real installation behind a deep radial scrim, centred editorial composition.
   return (
     <section className="relative isolate min-h-[92svh] overflow-hidden border-b border-line">
-      <Picture image={productImage('stonit', 'flint-rock', 'flint-rock-black', 1)} priority className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-80" alt="" />
+      <Picture image={range.identity.texture} priority className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-70" alt="" />
       <div className="absolute inset-0 -z-10 scrim-radial" />
       <div className="wrap flex min-h-[92svh] flex-col pb-16 pt-28">
         <Breadcrumbs items={crumbs} />
@@ -93,7 +92,7 @@ function CanvasHero({ range, crumbs }) {
         </div>
         <Reveal delay={150} className="relative mx-auto w-full max-w-[440px]">
           <div className="border border-line-2 bg-coal-2 p-4 shadow-[0_50px_100px_-30px_rgb(0_0_0)] sm:p-6">
-            <Picture image={art} priority className="aspect-[2/3]" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 34vw, 100vw" alt="Art-i Canvas Veneer design ACV-13" />
+            <Picture image={art} priority aspect={0.5} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 34vw, 100vw" alt="Art-i Canvas Veneer design ACV-13" />
           </div>
           <div className="absolute -bottom-6 left-4 border-l-2 border-crimson bg-ink px-5 py-3 sm:left-8">
             <p className="font-display text-[17px] uppercase tracking-[0.12em]">ACV-13</p>
@@ -116,20 +115,10 @@ function HeroCtas({ range, label, center }) {
 
 const HEROES = { strata: StrataHero, flow: FlowHero, canvas: CanvasHero }
 
-function DocList({ docs }) {
-  return (
-    <ul className="divide-y divide-line border-y border-line">
-      {docs.map((d) => (
-        <li key={d.href}>
-          <a href={d.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between gap-4 py-4 text-[14.5px] hover:text-crimson-hi">
-            <span className="flex items-center gap-3"><Download size={16} aria-hidden="true" className="shrink-0 text-crimson-hi" />{d.label}</span>
-            <span className="shrink-0 text-[12px] text-ash">PDF · {d.size}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  )
-}
+// Card shapes matched to each range's imagery, so nothing is zoomed to fit:
+// Stonir sheets turn into wide strips; StonIT panels and Art-i designs stay portrait.
+const SLOT = { stonir: 2.2, stonit: 0.55, 'art-i-canvas-veneer': 0.5 }
+export const APP_SLOT = { stonir: 2, stonit: 4 / 3, 'art-i-canvas-veneer': 3 / 4 }
 
 export default function RangePage() {
   const { range: slug } = useParams()
@@ -140,7 +129,7 @@ export default function RangePage() {
   const crumbs = [{ label: 'Home', to: '/' }, { label: 'Products', to: '/products' }, { label: range.name }]
   const collections = collectionsFor(range.slug)
   const products = productsFor(range.slug)
-  const apps = APPLICATIONS.filter((a) => a.ranges.includes(range.slug))
+  const apps = applicationsFor(range.slug).slice(0, 4)
   const docs = [...range.documents, ...collections.flatMap((c) => c.documents || [])].filter((d, i, a) => a.findIndex((x) => x.href === d.href) === i)
   const others = RANGES.filter((r) => r.slug !== range.slug)
   const vp = range.viewerProduct
@@ -174,7 +163,7 @@ export default function RangePage() {
         {range.features.length > 0 && (
           <div className="wrap mt-16">
             <h3 className="eyebrow mb-8">Key features</h3>
-            <ul className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+            <ul className={`grid gap-px border border-line bg-line sm:grid-cols-2 ${range.features.length % 3 === 0 ? 'lg:grid-cols-3' : range.features.length === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-5'}`}>
               {range.features.map((f, i) => (
                 <Reveal as="li" key={f.title} delay={(i % 3) * 80} className="bg-ink p-7 lg:p-8">
                   <Icon name={f.icon} size={26} className="text-crimson-hi" />
@@ -200,7 +189,7 @@ export default function RangePage() {
               return (
                 <Reveal as="li" key={c.slug} delay={(i % 4) * 60}>
                   <Link to={`/products/${range.slug}/${c.slug}`} className="group panel !bg-ink flex h-full flex-col hover:border-line-2">
-                    <Picture image={collectionCover(c)} className={collections.length > 6 ? 'aspect-square' : 'aspect-[4/3]'} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={`${c.name} — ${range.name}`} />
+                    <Picture image={collectionCover(c)} aspect={SLOT[range.slug]} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={`${c.name} — ${range.name}`} />
                     <div className="flex flex-1 flex-col p-4 sm:p-6">
                       <p className={collections.length > 6 ? 'font-display text-[1.15rem] uppercase sm:text-[1.3rem]' : 'display-sm'}>{c.name}</p>
                       <p className="mt-1 text-[12px] text-ash">{n} {range.slug === 'stonit' ? (n === 1 ? 'colour' : 'colours') : (n === 1 ? 'design' : 'designs')}</p>
@@ -273,7 +262,7 @@ export default function RangePage() {
           <div className="wrap">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
               <SectionHead eyebrow="Applications" title={<span id="uses-h">Where to use {range.name}.</span>} />
-              <ArrowLink to="/applications">All applications</ArrowLink>
+              <ArrowLink to={`/applications#${range.slug}`}>All {range.name} applications</ArrowLink>
             </div>
             <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
               {Object.entries(range.uses).map(([group, list]) => (
@@ -284,8 +273,15 @@ export default function RangePage() {
               ))}
             </div>
             {apps.length > 0 && (
-              <ul className="mt-12 flex flex-wrap gap-2">
-                {apps.map((a) => <li key={a.slug}><Link to={`/applications#${a.slug}`} className="inline-block border border-line px-3 py-1.5 text-[12.5px] text-mist hover:border-crimson hover:text-paper">{a.title}</Link></li>)}
+              <ul className="mt-12 grid grid-cols-2 gap-3 lg:grid-cols-4">
+                {apps.map((a) => (
+                  <li key={a.image.src}>
+                    <Link to={a.to} className="group block">
+                      <Picture image={a.image} aspect={APP_SLOT[range.slug]} className="border border-line" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 25vw, 50vw" alt={a.image.alt} />
+                      <p className="mt-2 text-[12px] uppercase tracking-[0.12em] text-mist group-hover:text-paper">{a.title}</p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             )}
           </div>
@@ -309,9 +305,9 @@ export default function RangePage() {
             </div>
           )}
           <div id="catalogues" className="scroll-mt-24">
-            <SectionHead eyebrow="Catalogues & shade cards" title="Download." />
-            <div className="mt-10"><DocList docs={docs} /></div>
-            <p className="mt-4 text-[12px] text-ash">Opens the PDF in Google Drive.</p>
+            <SectionHead eyebrow="Catalogues & shade cards" title="Get the catalogue." />
+            <div className="mt-10"><DocRequestList docs={docs} /></div>
+            <p className="mt-4 text-[12px] text-ash">We’ll send the PDF to you on WhatsApp.</p>
           </div>
         </div>
       </section>

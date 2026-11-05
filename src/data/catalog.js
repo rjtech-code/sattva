@@ -10,6 +10,7 @@
 
 import generated from './catalog.generated.json'
 import { DOCS } from './documents'
+import { STONIR_APPLICATIONS } from './content'
 
 const STONIT_DOCS = [DOCS.stonitMaster, DOCS.stonitIntro]
 
@@ -76,7 +77,10 @@ export const COLLECTIONS = [
   },
 ]
 
-export const PRODUCTS = generated
+// Stone sheets (every Stonir image, StonIT panel swatches) may be turned 90° to fill a landscape
+// slot; Art-i artwork and application photos never are.
+const canRotate = (p, im) => p.range === 'stonir' ? im.alt !== 'application' : im.alt === 'panel'
+export const PRODUCTS = generated.map((p) => ({ ...p, images: p.images.map((im) => ({ ...im, rotatable: canRotate(p, im) })) }))
 
 export const collectionsFor = (range) => COLLECTIONS.filter((c) => c.range === range && PRODUCTS.some((p) => p.range === range && p.collection === c.slug))
 export const getCollection = (range, slug) => COLLECTIONS.find((c) => c.range === range && c.slug === slug)
@@ -91,6 +95,26 @@ export const productImage = (range, collection, slug, i = 0) => {
 }
 // A range's representative image — set via identity.cover in ranges.js, else its first product.
 export const rangeCover = (r) => {
+  if (r.identity?.coverImage) return r.identity.coverImage
   const c = r.identity?.cover
   return (c && productImage(r.slug, c.collection, c.slug, c.image)) || productsFor(r.slug)[0]?.images?.[0]
+}
+
+// Application gallery for a range: Stonir's curated project photos, or each product's own
+// application visual (one per StonIT design, every Art-i design). Items link to the product.
+export const applicationsFor = (rangeSlug) => {
+  if (rangeSlug === 'stonir') return STONIR_APPLICATIONS.map((a) => ({ ...a, to: '/products/stonir' }))
+  const seen = new Set()
+  return productsFor(rangeSlug)
+    .filter((p) => p.images?.some((im) => im.alt === 'application'))
+    .filter((p) => (rangeSlug === 'stonit' ? !seen.has(p.collection) && seen.add(p.collection) : true))
+    .map((p) => {
+      const c = getCollection(p.range, p.collection)
+      return {
+        title: rangeSlug === 'stonit' ? c?.name : p.code,
+        subtitle: rangeSlug === 'stonit' ? p.specs?.Colour : c?.name,
+        image: { ...p.images.find((im) => im.alt === 'application'), alt: `${p.code || p.name} — application visual` },
+        to: `/products/${p.range}/${p.collection}/${p.slug}`,
+      }
+    })
 }

@@ -10,7 +10,7 @@ export default function PageHero({ eyebrow, title, lede, image, breadcrumbs, chi
         <Picture
           image={image}
           priority
-          className="!absolute inset-0 -z-10 lg:left-[38%] opacity-90"
+          className="!absolute inset-0 -z-10 opacity-90 lg:left-[30%] lg:[mask-image:linear-gradient(to_right,transparent,black_35%)]"
           imgClassName="h-full w-full object-cover"
           alt=""
         />

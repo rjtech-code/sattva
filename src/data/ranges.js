@@ -64,7 +64,12 @@ export const RANGES = [
       ['Fixing the sheet', 'Apply firm, even pressure by hand or roller; ensure no air bubbles remain.'],
       ['Finishing', 'Clean any extra adhesive with a damp cloth before it dries.'],
     ],
-    identity: { layout: 'strata', texture: tex.stonir, cover: { collection: 'natural-series', slug: 'ssv-3000-1', image: 0 } },
+    identity: {
+      layout: 'strata',
+      texture: tex.stonir,
+      // Range card / portfolio image: a Stonir installation from the catalogue's project gallery.
+      coverImage: { src: '/media/stonir/applications/living-room-feature-wall.webp', srcSmall: '/media/stonir/applications/living-room-feature-wall-sm.webp', width: 692, height: 490, alt: 'Stonir flexible stone veneer feature wall in a living room' },
+    },
     viewer: { kind: 'slab', texture: '/media/stonir/natural-series/ssv-3000-1.webp', flex: true },
     viewerProduct: { collection: 'natural-series', slug: 'ssv-3000-1' },
     documents: [DOCS.stonirIntro],
@@ -111,7 +116,7 @@ export const RANGES = [
       ['Checking', 'Confirm installation against the design guidance and matching grooving.'],
     ],
     identity: { layout: 'flow', texture: tex.stonit, cover: { collection: 'haveli-arch', slug: 'haveli-arch-multi-color', image: 1 } },
-    viewer: { kind: 'slab', texture: '/media/stonit/flint-rock/flint-rock-black-p33.webp', flex: false, depth: 0.14 },
+    viewer: { kind: 'slab', texture: '/media/stonit/flint-rock/flint-rock-black-p33.webp', flex: false },
     viewerProduct: { collection: 'flint-rock', slug: 'flint-rock-black' },
     documents: [DOCS.stonitIntro, DOCS.stonitMaster],
   },

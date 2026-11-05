@@ -1,5 +1,5 @@
 import { Component, lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
-import { Box, Image as ImageIcon, RotateCcw, RotateCw, ZoomIn, ZoomOut, Maximize2, RefreshCcw } from 'lucide-react'
+import { Box, Image as ImageIcon, RotateCcw, RotateCw, ZoomIn, ZoomOut, Maximize2, RefreshCcw, Lightbulb, LightbulbOff } from 'lucide-react'
 import SequenceViewer from './SequenceViewer'
 
 // three.js is only downloaded when a 3D viewer actually scrolls into view.
@@ -33,9 +33,11 @@ const LABEL = {
  *  config.kind 'model'    — real-time 3D from a supplied .glb/.gltf
  *  config.kind 'sequence' — 360° image sequence (not real-time 3D; labelled as such)
  *  no config              — static photo only
- * `photo` is the fallback / "Photo" tab. `illustrative` configs carry a visible disclaimer.
+ * `photo` is the fallback / "Photo" tab; `photoFit` 'contain' shows a whole sheet, 'cover' fills (application shots).
+ * `config.glow` (translucent sheets) adds a backlight toggle; `initialLit` sets its starting state.
+ * `illustrative` configs carry a visible disclaimer.
  */
-export default function ProductViewer({ config, photo, title, className = 'h-[360px] sm:h-[460px] lg:h-[540px]' }) {
+export default function ProductViewer({ config, photo, photoFit = 'contain', initialLit = true, title, className = 'h-[360px] sm:h-[460px] lg:h-[540px]' }) {
   const host = useRef(null)
   const apiRef = useRef(null)
   const has3D = config && (config.kind === 'slab' || config.kind === 'model')
@@ -45,6 +47,8 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
   const [reduced] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches)
   const [canGL] = useState(webglAvailable)
   const [attempt, setAttempt] = useState(0)
+  const [lit, setLit] = useState(initialLit)
+  const canGlow = !!config?.glow
 
   useEffect(() => {
     const io = new IntersectionObserver(([e]) => e.isIntersecting && (setNear(true), io.disconnect()), { rootMargin: '300px' })
@@ -87,7 +91,7 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
       >
         {showFallback ? (
           photo ? (
-            <img src={photo.src} alt={photo.alt || title} className="h-full w-full object-cover" width={photo.width} height={photo.height} />
+            <img src={photo.src} alt={photo.alt || title} className={`h-full w-full ${photoFit === 'cover' ? 'object-cover' : 'object-contain p-4 sm:p-6'}`} width={photo.width} height={photo.height} />
           ) : (
             <div className="flex h-full items-center justify-center p-8 text-center text-[14px] text-gray-300">
               {has3D && !canGL ? 'Your browser does not support 3D viewing.' : 'Preview unavailable.'}
@@ -99,7 +103,7 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
           near && (
             <ViewerBoundary key={attempt} onError={onError}>
               <Suspense fallback={null}>
-                <Scene3D config={config} apiRef={apiRef} onReady={onReady} onError={onError} reduced={reduced} />
+                <Scene3D config={config} apiRef={apiRef} onReady={onReady} onError={onError} reduced={reduced} lit={lit} />
               </Suspense>
             </ViewerBoundary>
           )
@@ -154,6 +158,12 @@ export default function ProductViewer({ config, photo, title, className = 'h-[36
               </button>
             ))}
           </div>
+          {canGlow && (
+            <button type="button" onClick={() => setLit((v) => !v)} aria-pressed={lit} className={`flex items-center gap-2 border px-3.5 py-2 text-[10.5px] font-semibold uppercase tracking-[0.18em] ${lit ? 'border-crimson bg-crimson text-white' : 'border-line text-mist hover:text-paper'}`}>
+              {lit ? <Lightbulb size={15} aria-hidden="true" /> : <LightbulbOff size={15} aria-hidden="true" />}
+              Backlight {lit ? 'on' : 'off'}
+            </button>
+          )}
           <p className="text-[11px] tracking-[0.12em] text-ash">Drag to rotate · Pinch or scroll to zoom</p>
         </div>
       )}

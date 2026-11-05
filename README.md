@@ -21,7 +21,8 @@ npm run lint
 3. `api/enquiry.js` deploys as a serverless function at `POST /api/enquiry`.
 4. Set environment variables (see `.env.example`):
    - `VITE_SITE_URL`: the production origin. Enables canonical URLs, Open Graph URLs and `sitemap.xml`.
-   - Enquiry delivery, at least one of:
+   - `VITE_WHATSAPP_NUMBER`: business WhatsApp number (e.g. `919829012345`). Enquiry forms and catalogue requests open WhatsApp with the visitor's details pre-filled, addressed to this number. Catalogue PDFs are never linked directly.
+   - Optional server copy of each enquiry (and the only delivery route when no WhatsApp number is set), one of:
      - `RESEND_API_KEY` + `ENQUIRY_TO_EMAIL` + `ENQUIRY_FROM_EMAIL` (email via Resend)
      - `ENQUIRY_WEBHOOK_URL` (POSTs the enquiry JSON to a CRM / Zapier / Apps Script)
 

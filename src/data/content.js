@@ -76,28 +76,24 @@ export const PARTNER_TYPES = [
   { icon: 'Hammer', title: 'Fabricators', group: 'specifier' },
 ]
 
-// Source: "Where to use" / "Application area" sections of each range catalogue.
-// `ranges` lists only ranges whose catalogue names that application.
-// `image` points to an application visual from the client catalogues (product slug + image index).
-export const APPLICATIONS = [
-  { slug: 'feature-walls', title: 'Feature & Accent Walls', group: 'Interior', ranges: ['stonir', 'stonit', 'art-i-canvas-veneer'], image: ['art-i-canvas-veneer', 'canvas-series', 'acv-04'] },
-  { slug: 'living-tv-walls', title: 'Living Rooms & TV Walls', group: 'Interior', ranges: ['stonir', 'stonit'], image: ['stonit', 'flora-relief', 'flora-relief-brown'] },
-  { slug: 'bedrooms', title: 'Bedroom Walls', group: 'Interior', ranges: ['stonir', 'stonit', 'art-i-canvas-veneer'], image: ['art-i-canvas-veneer', 'canvas-series', 'acv-01'] },
-  { slug: 'staircases', title: 'Staircase Walls', group: 'Interior', ranges: ['stonir', 'stonit'], image: ['stonit', 'modular-cube', 'modular-cube-white-black'] },
-  { slug: 'dining-bars', title: 'Dining Areas & Bar Walls', group: 'Interior', ranges: ['stonit'], image: ['stonit', 'flora-relief', 'flora-relief-black'] },
-  { slug: 'pooja-rooms', title: 'Pooja Rooms', group: 'Interior', ranges: ['stonit'], image: ['art-i-canvas-veneer', 'canvas-series', 'acv-11'], imageNote: 'Shown: Art-i Canvas Veneer ACV-11' },
-  { slug: 'furniture-doors', title: 'Furniture, Wardrobes & Doors', group: 'Interior', ranges: ['stonir'], image: null },
-  { slug: 'ceilings', title: 'Ceilings', group: 'Interior', ranges: ['stonir'], image: ['art-i-canvas-veneer', 'canvas-series', 'acv-08'], imageNote: 'Shown: Art-i Canvas Veneer ACV-08' },
-  { slug: 'backlit', title: 'Backlit Walls & Features', group: 'Interior', ranges: ['stonir'], image: null, note: 'Stonir Translucent Series' },
-  { slug: 'lobbies-reception', title: 'Lobbies & Reception Areas', group: 'Commercial', ranges: ['stonir', 'stonit'], image: ['stonit', 'maple-arch', 'maple-arch-black-copper'] },
-  { slug: 'hospitality', title: 'Hotels & Restaurants', group: 'Commercial', ranges: ['stonir', 'art-i-canvas-veneer'], image: ['art-i-canvas-veneer', 'canvas-series', 'acv-09'] },
-  { slug: 'retail-public', title: 'Shops, Malls & Public Places', group: 'Commercial', ranges: ['art-i-canvas-veneer'], image: ['art-i-canvas-veneer', 'canvas-series', 'acv-14'] },
-  { slug: 'commercial-interiors', title: 'Commercial Interiors & Offices', group: 'Commercial', ranges: ['stonir', 'art-i-canvas-veneer'], image: ['stonit', 'vertical-vista', 'vertical-vista-grey'], imageNote: 'Shown: StonIT Vertical Vista' },
-  { slug: 'facades', title: 'Facades & Building Elevations', group: 'Exterior', ranges: ['stonir', 'stonit'], image: ['stonit', 'flint-rock', 'flint-rock-black-gold'] },
-  { slug: 'entrances-compound', title: 'Entrances & Compound Walls', group: 'Exterior', ranges: ['stonir', 'stonit'], image: null },
-  { slug: 'outdoor-landscape', title: 'Balconies, Gardens & Landscaping', group: 'Exterior', ranges: ['stonir', 'stonit'], image: null },
+// Application galleries, grouped by product range (Applications page, Home teaser).
+// Stonir: project-gallery photographs from the Stonir Introduction Catalogue (p.1, 38–40).
+// StonIT / Art-i: the application visual of each product in their catalogues (see catalog.js).
+const stonirApp = (slug, title, area, w, h) => ({
+  title, area, image: { src: `/media/stonir/applications/${slug}.webp`, srcSmall: `/media/stonir/applications/${slug}-sm.webp`, width: w, height: h, alt: `Stonir flexible stone veneer — ${title.toLowerCase()}` },
+})
+export const STONIR_APPLICATIONS = [
+  stonirApp('living-room-feature-wall', 'Living room feature wall', 'Interior', 692, 490),
+  stonirApp('meeting-area-accent-wall', 'Meeting area accent wall', 'Interior', 730, 361),
+  stonirApp('partition-wall', 'Partition wall', 'Interior', 730, 360),
+  stonirApp('fireplace-wall', 'Fireplace wall', 'Interior', 730, 361),
+  stonirApp('bar-counter', 'Bar counter', 'Interior', 800, 395),
+  stonirApp('kitchen-island', 'Kitchen island', 'Interior', 730, 362),
+  stonirApp('bedroom-wall', 'Bedroom wall', 'Interior', 404, 405),
+  stonirApp('tv-shelving-wall', 'TV & shelving wall', 'Interior', 371, 371),
+  stonirApp('building-facade', 'Building facade', 'Exterior', 750, 370),
+  stonirApp('compound-wall', 'Compound wall', 'Exterior', 723, 337),
+  stonirApp('exterior-landscape-wall', 'Exterior & landscape wall', 'Exterior', 442, 309),
 ]
 
-// Verified project records. Empty until the client supplies approved projects:
-// { slug, title, category, location?, ranges: ['stonir'], images: [{src, alt}], caption }
-export const PROJECTS = []
+

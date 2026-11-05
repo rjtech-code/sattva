@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Mail, Phone } from 'lucide-react'
+import { MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
 import { COMPANY, CONTACT, NAV } from '../../data/site'
 import { RANGES } from '../../data/ranges'
 import { Wordmark } from './Header'
@@ -19,13 +19,14 @@ export default function Footer() {
           </p>
           <ul className="mt-6 space-y-2.5 text-[13.5px] text-mist">
             <li className="flex items-center gap-3"><MapPin size={15} className="text-crimson-hi" aria-hidden="true" />{CONTACT.location}</li>
+            {CONTACT.whatsapp && <li className="flex items-center gap-3"><MessageCircle size={15} className="text-crimson-hi" aria-hidden="true" /><a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-paper">WhatsApp {CONTACT.whatsappDisplay}</a></li>}
             {CONTACT.phone && <li className="flex items-center gap-3"><Phone size={15} className="text-crimson-hi" aria-hidden="true" /><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`} className="hover:text-paper">{CONTACT.phone}</a></li>}
             {CONTACT.email && <li className="flex items-center gap-3"><Mail size={15} className="text-crimson-hi" aria-hidden="true" /><a href={`mailto:${CONTACT.email}`} className="hover:text-paper">{CONTACT.email}</a></li>}
           </ul>
         </div>
 
         <FooterCol title="Products" links={[{ label: 'Ston-i Surfaces', to: '/products' }, ...RANGES.map((r) => ({ label: r.name, to: `/products/${r.slug}` }))]} />
-        <FooterCol title="Company" links={[...about, { label: 'Applications', to: '/applications' }, { label: 'Projects', to: '/projects' }]} />
+        <FooterCol title="Company" links={[...about, { label: 'Applications', to: '/applications' }]} />
         <FooterCol title="Work with us" links={[{ label: 'B2B Partners', to: '/partners' }, { label: 'Resources', to: '/resources' }, { label: 'FAQs', to: '/resources#faqs' }, { label: 'Contact', to: '/contact' }]} />
       </div>
 

@@ -28,7 +28,7 @@ export default function About() {
 
       <section className="section">
         <div className="wrap grid items-center gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
-          <Reveal><Picture image={tex.stonir} className="aspect-[16/10]" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 45vw, 100vw" alt="" /></Reveal>
+          <Reveal><Picture image={tex.stonir} aspect={16 / 10} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 45vw, 100vw" alt="" /></Reveal>
           <Reveal delay={100}>
             <h2 className="display-md">Built on innovation.<br />Driven by purpose.</h2>
             <p className="lede mt-6">{ABOUT.purpose}</p>

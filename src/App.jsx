@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 
@@ -12,7 +12,6 @@ const RangePage = lazy(() => import('./pages/RangePage'))
 const CollectionPage = lazy(() => import('./pages/CollectionPage'))
 const ProductPage = lazy(() => import('./pages/ProductPage'))
 const Applications = lazy(() => import('./pages/Applications'))
-const Projects = lazy(() => import('./pages/Projects'))
 const Partners = lazy(() => import('./pages/Partners'))
 const Resources = lazy(() => import('./pages/Resources'))
 const Contact = lazy(() => import('./pages/Contact'))
@@ -31,7 +30,8 @@ export default function App() {
         <Route path="/products/:range/:collection" element={<CollectionPage />} />
         <Route path="/products/:range/:collection/:product" element={<ProductPage />} />
         <Route path="/applications" element={<Applications />} />
-        <Route path="/projects" element={<Projects />} />
+        {/* Projects page retired — keep old links working */}
+        <Route path="/projects" element={<Navigate to="/applications" replace />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<Contact />} />
