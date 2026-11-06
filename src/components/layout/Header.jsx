@@ -1,18 +1,22 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { ChevronDown, Menu, X } from 'lucide-react'
-import { NAV, BRAND } from '../../data/site'
+import { NAV, BRAND, COMPANY } from '../../data/site'
 import { ButtonLink } from '../ui/Bits'
 import ThemeToggle from '../ui/ThemeToggle'
 
+// Company name first (client direction), with the Ston-i Surfaces brand and its Italian
+// design origin beneath it.
 export function Wordmark({ compact = false }) {
   return (
-    <Link to="/" className="group flex flex-col leading-none" aria-label={`${BRAND.name} — home`}>
-      <span className="font-display text-[19px] sm:text-[21px] tracking-[0.2em] text-paper">
-        STON<span className="text-crimson-hi">-</span>I <span className="text-mist">SURFACES</span>
+    <Link to="/" className="group flex flex-col leading-none" aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}>
+      <span className="whitespace-nowrap font-display text-[15px] tracking-[0.12em] text-paper sm:text-[21px] sm:tracking-[0.18em]">
+        SATTVA SATTVIK <span className="text-[0.72em] tracking-[0.16em] text-mist">PVT. LTD.</span>
       </span>
       {!compact && (
-        <span className="mt-1.5 text-[8.5px] tracking-[0.34em] uppercase text-ash"><span className="text-crimson-hi">{BRAND.italy.badge}</span> · Sattva Sattvik</span>
+        <span className="mt-1.5 whitespace-nowrap text-[8px] uppercase tracking-[0.26em] text-ash sm:text-[8.5px] sm:tracking-[0.32em]">
+          STON<span className="text-crimson-hi">-</span>I SURFACES · <span className="text-crimson-hi">{BRAND.italy.badge}</span>
+        </span>
       )}
     </Link>
   )
