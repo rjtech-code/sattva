@@ -3,7 +3,7 @@
 // Source: client "About Sattva Sattvik" copy.
 export const ABOUT = {
   intro:
-    'Sattva Sattvik Private Limited is a Jaipur-based manufacturing and product-development company focused on creating innovative surface solutions for India and the world.',
+    'Sattva Sattvik Private Limited is a Rajasthan, India–based manufacturing and product-development company focused on creating innovative surface solutions for India and the world.',
   idea:
     'At the heart of Sattva Sattvik is a simple idea — to develop better, more versatile surface materials and make them accessible through a strong B2B network across India and worldwide.',
   brand:
@@ -29,7 +29,7 @@ export const PILLARS = [
   { n: '01', icon: 'Mountain', title: 'Natural Material', text: 'Stonir retains the distinctive look and texture of natural stone.' },
   { n: '02', icon: 'Lightbulb', title: 'Innovation', text: 'Surface materials developed through Sattva Sattvik’s R&D and product development.' },
   { n: '03', icon: 'PenTool', title: 'Italian Design', text: 'A brand designed in Italy — the “i” in Ston-i — with three distinct ranges, from stone veneer to art-led canvas.' },
-  { n: '04', icon: 'Factory', title: 'Made in India', text: 'Manufactured by Sattva Sattvik Private Limited in Jaipur, Rajasthan — supplied worldwide.' },
+  { n: '04', icon: 'Factory', title: 'Made in India', text: 'Manufactured by Sattva Sattvik Private Limited in Rajasthan, India — supplied worldwide.' },
   { n: '05', icon: 'Shapes', title: 'Versatility', text: 'Developed for versatility in handling, application and design.' },
 ]
 
@@ -46,7 +46,7 @@ export const CAPABILITIES = [
 // are not verified and are deliberately not stated.
 export const PROCESS = [
   { icon: 'Layers', title: 'Raw Materials', text: 'Selection and preparation of input materials.' },
-  { icon: 'Cog', title: 'Processing', text: 'Production of surface material in our Jaipur facility.' },
+  { icon: 'Cog', title: 'Processing', text: 'Production of surface material in our manufacturing facility in India.' },
   { icon: 'ScanSearch', title: 'Quality Check', text: 'Inspection at defined stages of production.' },
   { icon: 'Sparkles', title: 'Finishing', text: 'Surface finishing to the range’s specification.' },
   { icon: 'Package', title: 'Packing', text: 'Packing for protection in transit.' },

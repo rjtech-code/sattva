@@ -16,7 +16,7 @@ export const RESOURCE_CATEGORIES = [
 export const FAQS = [
   {
     q: 'Who manufactures Ston-i Surfaces products?',
-    a: 'Ston-i Surfaces is the market-facing brand of Sattva Sattvik Private Limited, a manufacturing and product-development company based in Jaipur, Rajasthan.',
+    a: 'Ston-i Surfaces is the market-facing brand of Sattva Sattvik Private Limited, a manufacturing and product-development company based in Rajasthan, India.',
   },
   {
     q: 'What product ranges are available?',

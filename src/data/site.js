@@ -7,11 +7,11 @@ export const COMPANY = {
   legalName: 'Sattva Sattvik Private Limited',
   shortName: 'Sattva Sattvik',
   role: 'Manufacturing & Product Development Company',
-  location: 'Jaipur, Rajasthan, India',
-  city: 'Jaipur',
+  // Location is shown at state level only (client preference): "Rajasthan, India".
+  location: 'Rajasthan, India',
+  region: 'Rajasthan, India',
   state: 'Rajasthan',
-  // Approximate city coordinates (public geographic fact), shown as a typographic marker only.
-  coordinates: '26.91° N, 75.79° E',
+  country: 'India',
 }
 
 export const BRAND = {
@@ -61,7 +61,7 @@ export const NAV = [
     to: '/about',
     children: [
       { label: 'Sattva Sattvik', to: '/about', note: 'The company behind Ston-i' },
-      { label: 'Manufacturing', to: '/manufacturing', note: 'Made in Jaipur, India' },
+      { label: 'Manufacturing', to: '/manufacturing', note: 'Made in Rajasthan, India' },
       { label: 'R&D / Innovation', to: '/innovation', note: 'Materials. Research. Possibility.' },
     ],
   },

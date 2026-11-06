@@ -70,14 +70,14 @@ function Intro() {
           <Picture image={tex.marbleDark} aspect={5 / 4} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 50vw, 100vw" alt="" />
           <div className="absolute -bottom-6 -right-2 hidden border border-line bg-ink px-6 py-5 sm:block lg:-right-8">
             <p className="text-[10px] uppercase tracking-[0.26em] text-ash">Manufactured in</p>
-            <p className="mt-1 font-display text-[22px]">{COMPANY.city}, {COMPANY.state}</p>
+            <p className="mt-1 font-display text-[22px]">{COMPANY.region}</p>
           </div>
         </Reveal>
         <Reveal delay={120}>
           <Eyebrow className="mb-6">The company behind the brand</Eyebrow>
           <h2 className="display-lg">Built by manufacturing. Defined by material innovation.</h2>
           <p className="lede mt-7">
-            {BRAND.name} is an architectural surface-material brand by <span className="text-paper">{COMPANY.legalName}</span>, a manufacturing and product-development company based in {COMPANY.city}, {COMPANY.state}.
+            {BRAND.name} is an architectural surface-material brand by <span className="text-paper">{COMPANY.legalName}</span>, a manufacturing and product-development company based in {COMPANY.region}.
           </p>
           <p className="lede mt-4">Through {BRAND.name}, {COMPANY.shortName} develops and supplies innovative surface materials for B2B markets in India and worldwide.</p>
           <ArrowLink to="/about" className="mt-9">Discover Sattva Sattvik</ArrowLink>
@@ -216,7 +216,7 @@ export default function Home() {
     <>
       <Seo
         path="/"
-        description="Ston-i Surfaces — architectural surface materials by Sattva Sattvik Private Limited, Jaipur. Explore Stonir flexible stone veneer, StonIT and Art-i Canvas Veneer, and partner with us."
+        description="Ston-i Surfaces — architectural surface materials by Sattva Sattvik Private Limited, India. Explore Stonir flexible stone veneer, StonIT and Art-i Canvas Veneer, and partner with us."
       />
       <Hero />
       <Intro />

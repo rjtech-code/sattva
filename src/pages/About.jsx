@@ -14,7 +14,7 @@ export default function About() {
       <Seo
         title="About Sattva Sattvik"
         path="/about"
-        description="Sattva Sattvik Private Limited is a Jaipur-based manufacturing and product-development company creating innovative surface solutions for India and the world through Ston-i Surfaces — a brand designed in Italy, made in India."
+        description="Sattva Sattvik Private Limited is a Rajasthan, India–based manufacturing and product-development company creating innovative surface solutions for India and the world through Ston-i Surfaces — a brand designed in Italy, made in India."
       />
       <PageHero
         eyebrow="Our company"

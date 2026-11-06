@@ -144,7 +144,7 @@ export function MissionPanel() {
       <div className="relative flex flex-col justify-between gap-10 border-t border-line bg-coal p-7 sm:p-10 lg:border-l lg:border-t-0">
         <div>
           <p className="text-[12px] tracking-[0.12em] text-mist">Manufacturing Base</p>
-          <p className="mt-3 flex items-center gap-2 text-crimson-hi"><MapPin size={16} aria-hidden="true" /> {COMPANY.city}, {COMPANY.state}</p>
+          <p className="mt-3 flex items-center gap-2 text-crimson-hi"><MapPin size={16} aria-hidden="true" /> {COMPANY.region}</p>
         </div>
         <div className="relative mx-auto h-40 w-40" aria-hidden="true">
           <span className="absolute inset-0 rounded-full border border-line" />
@@ -152,7 +152,7 @@ export function MissionPanel() {
           <span className="absolute inset-12 rounded-full border border-line-2" />
           <span className="absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-crimson shadow-[0_0_24px_6px_rgb(200_16_46/0.55)]" />
         </div>
-        <p className="font-display text-[15px] tracking-[0.1em] text-ash">{COMPANY.coordinates}</p>
+        <p className="font-display text-[15px] tracking-[0.1em] text-ash">Made in India · Supplied worldwide</p>
       </div>
     </div>
   )
@@ -219,7 +219,7 @@ export function BrandOrigin() {
         <Reveal delay={100}>
           <Eyebrow className="mb-6">Italian by design</Eyebrow>
           <h2 id="brand-origin" className="display-lg">Born in Italy. Made in India. Growing worldwide.</h2>
-          <p className="lede mt-6">{BRAND.meaning} Ston-i Surfaces brings Italian design thinking to stone surfaces, manufactured by {COMPANY.shortName} in {COMPANY.city}, India, for architects, designers and partners around the world.</p>
+          <p className="lede mt-6">{BRAND.meaning} Ston-i Surfaces brings Italian design thinking to stone surfaces, manufactured by {COMPANY.shortName} in {COMPANY.region}, for architects, designers and partners around the world.</p>
           <OriginStrip className="mt-8" />
         </Reveal>
       </div>
