@@ -4,7 +4,7 @@ import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
-import { CtaBand, PartnerGrid, ProcessSteps, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
+import { BrandOrigin, CtaBand, OriginStrip, PartnerGrid, ProcessSteps, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
 import { tex } from '../data/media'
 import { RANGES } from '../data/ranges'
 import { applicationsFor, productImage } from '../data/catalog'
@@ -51,7 +51,8 @@ function Hero() {
             <ButtonLink to="/products">Explore Products</ButtonLink>
             <ButtonLink to="/partners#enquiry" variant="ghost">B2B Enquiry</ButtonLink>
           </div>
-          <p className="mt-14 flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-ash">
+          <OriginStrip className="mt-12" compact />
+          <p className="mt-5 flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-ash">
             <span className="h-px w-8 bg-crimson" aria-hidden="true" />
             {BRAND.attribution}
           </p>
@@ -78,7 +79,7 @@ function Intro() {
           <p className="lede mt-7">
             {BRAND.name} is an architectural surface-material brand by <span className="text-paper">{COMPANY.legalName}</span>, a manufacturing and product-development company based in {COMPANY.city}, {COMPANY.state}.
           </p>
-          <p className="lede mt-4">Through {BRAND.name}, {COMPANY.shortName} develops and supplies innovative surface materials for the B2B market across India.</p>
+          <p className="lede mt-4">Through {BRAND.name}, {COMPANY.shortName} develops and supplies innovative surface materials for B2B markets in India and worldwide.</p>
           <ArrowLink to="/about" className="mt-9">Discover Sattva Sattvik</ArrowLink>
         </Reveal>
       </div>
@@ -179,7 +180,7 @@ function ManufacturingTeaser() {
     <section className="section border-t border-line bg-coal" aria-labelledby="mfg-teaser">
       <div className="wrap">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-end">
-          <SectionHead eyebrow="Manufacturing" title={<span id="mfg-teaser">Built in Jaipur. Growing across India.</span>} />
+          <SectionHead eyebrow="Manufacturing" title={<span id="mfg-teaser">Built in India. Growing across the world.</span>} />
           <Reveal>
             <p className="lede">We don’t merely trade these products — {COMPANY.shortName} manufactures and develops them, from material preparation to dispatch.</p>
             <ArrowLink to="/manufacturing" className="mt-6">Our manufacturing</ArrowLink>
@@ -219,6 +220,7 @@ export default function Home() {
       />
       <Hero />
       <Intro />
+      <BrandOrigin />
       <WhyStoni />
       <Portfolio />
       <Architecture />

@@ -19,6 +19,14 @@ export const BRAND = {
   wordmark: 'STON-I SURFACES',
   descriptor: 'Architectural Surface Materials',
   attribution: 'A Sattva Sattvik Company',
+  // Brand origin, as supplied by the client: designed in Italy, made in India, sold worldwide.
+  // The "i" in Ston-i stands for Italy.
+  origin: [
+    { label: 'Designed in', place: 'Italy' },
+    { label: 'Made in', place: 'India' },
+    { label: 'Growing', place: 'Worldwide' },
+  ],
+  meaning: 'The “i” in Ston-i stands for Italy — where the brand was born and designed.',
 }
 
 // Verified contact channels. Only the location is confirmed in the supplied brief;
@@ -53,7 +61,7 @@ export const NAV = [
     to: '/about',
     children: [
       { label: 'Sattva Sattvik', to: '/about', note: 'The company behind Ston-i' },
-      { label: 'Manufacturing', to: '/manufacturing', note: 'Built in Jaipur' },
+      { label: 'Manufacturing', to: '/manufacturing', note: 'Made in Jaipur, India' },
       { label: 'R&D / Innovation', to: '/innovation', note: 'Materials. Research. Possibility.' },
     ],
   },

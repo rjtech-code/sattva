@@ -16,11 +16,11 @@ export default function Manufacturing() {
       <Seo
         title="Manufacturing"
         path="/manufacturing"
-        description="Ston-i Surfaces products are manufactured by Sattva Sattvik Private Limited in Jaipur, Rajasthan — from material preparation and processing to quality checks, finishing, packing and dispatch."
+        description="Ston-i Surfaces — designed in Italy, made in India. Products are manufactured by Sattva Sattvik Private Limited in Jaipur, Rajasthan — from material preparation and processing to quality checks, finishing, packing and dispatch."
       />
       <PageHero
         eyebrow="Manufacturing"
-        title={<>Built in Jaipur.<br />Growing across India.</>}
+        title={<>Built in India.<br />Growing across the world.</>}
         lede={`Our manufacturing facility in ${COMPANY.city} is the foundation of our business. We don’t merely trade these products — we manufacture and develop them.`}
         image={tex.stonit}
         breadcrumbs={[{ label: 'Home', to: '/' }, { label: 'About', to: '/about' }, { label: 'Manufacturing' }]}

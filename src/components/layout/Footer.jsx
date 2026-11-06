@@ -3,6 +3,7 @@ import { MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
 import { COMPANY, CONTACT, NAV } from '../../data/site'
 import { RANGES } from '../../data/ranges'
 import { Wordmark } from './Header'
+import { OriginStrip } from '../sections/Blocks'
 
 const about = NAV.find((n) => n.label === 'About').children
 
@@ -15,8 +16,9 @@ export default function Footer() {
         <div>
           <Wordmark />
           <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-mist">
-            Architectural surface materials, manufactured by {COMPANY.legalName}.
+            Architectural surface materials, designed in Italy and manufactured in India by {COMPANY.legalName}.
           </p>
+          <OriginStrip className="mt-5" compact stacked />
           <ul className="mt-6 space-y-2.5 text-[13.5px] text-mist">
             <li className="flex items-center gap-3"><MapPin size={15} className="text-crimson-hi" aria-hidden="true" />{CONTACT.location}</li>
             {CONTACT.whatsapp && <li className="flex items-center gap-3"><MessageCircle size={15} className="text-crimson-hi" aria-hidden="true" /><a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-paper">WhatsApp {CONTACT.whatsappDisplay}</a></li>}
@@ -33,7 +35,7 @@ export default function Footer() {
       <div className="border-t border-line">
         <div className="wrap flex flex-col gap-3 py-6 text-[11.5px] tracking-[0.08em] text-ash sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} {COMPANY.legalName}. Ston-i Surfaces is a brand of {COMPANY.shortName}.</p>
-          <p className="uppercase tracking-[0.24em] text-[10px]">Manufacturing · R&amp;D · Product Development</p>
+          <p className="uppercase tracking-[0.24em] text-[10px]">Designed in Italy · Made in India</p>
           {CONTACT.social.length > 0 && (
             <ul className="flex gap-4">
               {CONTACT.social.map((s) => (

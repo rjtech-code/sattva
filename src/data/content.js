@@ -3,9 +3,9 @@
 // Source: client "About Sattva Sattvik" copy.
 export const ABOUT = {
   intro:
-    'Sattva Sattvik Private Limited is a Jaipur-based manufacturing and product-development company focused on creating innovative surface solutions for the Indian market.',
+    'Sattva Sattvik Private Limited is a Jaipur-based manufacturing and product-development company focused on creating innovative surface solutions for India and the world.',
   idea:
-    'At the heart of Sattva Sattvik is a simple idea — to develop better, more versatile surface materials and make them accessible through a strong B2B network across India.',
+    'At the heart of Sattva Sattvik is a simple idea — to develop better, more versatile surface materials and make them accessible through a strong B2B network across India and worldwide.',
   brand:
     'Our manufacturing capabilities, product development, and market understanding come together under Ston-i Surfaces, our market-facing brand dedicated to innovative architectural surface solutions.',
   stoni:
@@ -13,7 +13,7 @@ export const ABOUT = {
   // Source: About collage panel.
   purpose:
     'From material development and manufacturing to quality and supply, we work towards building stronger surface-material brands for the future.',
-  mission: 'To build one of India’s strongest B2B surface-material networks.',
+  mission: 'To build one of the strongest B2B surface-material networks — across India and the world.',
 }
 
 // Source: brand-architecture brief §22.
@@ -28,8 +28,8 @@ export const STRATEGY = [
 export const PILLARS = [
   { n: '01', icon: 'Mountain', title: 'Natural Material', text: 'Stonir retains the distinctive look and texture of natural stone.' },
   { n: '02', icon: 'Lightbulb', title: 'Innovation', text: 'Surface materials developed through Sattva Sattvik’s R&D and product development.' },
-  { n: '03', icon: 'PenTool', title: 'Design', text: 'Three distinct ranges for architectural surfaces — from stone veneer to art-led canvas.' },
-  { n: '04', icon: 'Factory', title: 'Manufacturing', text: 'Manufactured by Sattva Sattvik Private Limited in Jaipur, Rajasthan.' },
+  { n: '03', icon: 'PenTool', title: 'Italian Design', text: 'A brand designed in Italy — the “i” in Ston-i — with three distinct ranges, from stone veneer to art-led canvas.' },
+  { n: '04', icon: 'Factory', title: 'Made in India', text: 'Manufactured by Sattva Sattvik Private Limited in Jaipur, Rajasthan — supplied worldwide.' },
   { n: '05', icon: 'Shapes', title: 'Versatility', text: 'Developed for versatility in handling, application and design.' },
 ]
 
@@ -50,7 +50,7 @@ export const PROCESS = [
   { icon: 'ScanSearch', title: 'Quality Check', text: 'Inspection at defined stages of production.' },
   { icon: 'Sparkles', title: 'Finishing', text: 'Surface finishing to the range’s specification.' },
   { icon: 'Package', title: 'Packing', text: 'Packing for protection in transit.' },
-  { icon: 'Truck', title: 'Dispatch', text: 'Supply to B2B partners across India.' },
+  { icon: 'Truck', title: 'Dispatch', text: 'Supply to B2B partners across India and worldwide.' },
 ]
 
 // Source: R&D collage + brief §12.

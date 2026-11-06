@@ -10,6 +10,7 @@ Source of truth for every fact, image and document on the site. Update this file
 | S2 | Client "About Sattva Sattvik" copy | Company intro, Jaipur base, idea, Ston-i Surfaces role, Stonir sentence | `src/data/content.js › ABOUT`, About page, Home intro | Verified — **text was truncated** after the Stonir paragraph in the message received |
 | S3 | Multi-page design collage (`1.png`) | Page compositions; About/Manufacturing/R&D/B2B headings and short lines | Layouts; "Built on innovation…", mission line, process stages, R&D cards | Visual spec. Mock phone numbers, emails, addresses in the collage were **not** used |
 | S4 | Gajbala project (`gajbala.zip`) | Vite + React + R3F site, photo-textured 3D slab viewer, dev form middleware | Stack choice; `Scene3D.jsx` adapts its slab technique; dev enquiry middleware pattern | Reference only — no Gajbala content, images or Marmomac/exhibition pages carried over. Zip had no `public/` assets |
+| S6 | Client instruction (Nov 2026) | Brand origin: **Designed in Italy, Made in India, Growing Worldwide**; the “i” in Ston-i stands for Italy | `site.js › BRAND.origin / meaning`, Home hero + “Ston + i” section, About, footer, WHY STON-i pillars, Manufacturing headline | Client-supplied claim. Not independently verified |
 | S5 | Client Drive folder `1N6MIPEwxZMelJvrOKzzlY8P4xKWt6t21` (public) | 9 catalogue PDFs (below) | All product data, product images, specs, applications, downloads | Verified — files downloaded and read 2026-10-27 |
 
 ### Drive catalogue PDFs (S5)

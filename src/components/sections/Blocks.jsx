@@ -7,7 +7,7 @@ import { ArrowLink, ButtonLink, Eyebrow } from '../ui/Bits'
 import { PILLARS, PROCESS, PARTNER_TYPES, CAPABILITIES, ABOUT } from '../../data/content'
 import { RANGES } from '../../data/ranges'
 import { rangeCover } from '../../data/catalog'
-import { COMPANY } from '../../data/site'
+import { BRAND, COMPANY } from '../../data/site'
 import { tex } from '../../data/media'
 
 export function SectionHead({ eyebrow, title, lede, align = 'left', className = '' }) {
@@ -179,6 +179,48 @@ export function CtaBand({
             <ButtonLink to={primary.to}>{primary.label}</ButtonLink>
             {secondary && <ButtonLink to={secondary.to} variant="ghost">{secondary.label}</ButtonLink>}
           </div>
+        </Reveal>
+      </div>
+    </section>
+  )
+}
+
+/* ── Brand origin: Designed in Italy · Made in India · Growing Worldwide ── */
+export function OriginStrip({ className = '', compact = false, stacked = false }) {
+  return (
+    <ul className={`flex ${stacked ? 'flex-col gap-2' : 'flex-wrap items-center gap-x-5 gap-y-2'} ${className}`} aria-label="Brand origin">
+      {BRAND.origin.map((o, i) => (
+        <li key={o.place} className="flex items-center gap-5">
+          {stacked ? <span className="h-px w-4 bg-crimson" aria-hidden="true" /> : i > 0 && <span className="h-3 w-px bg-crimson" aria-hidden="true" />}
+          <span className={`uppercase ${compact ? 'text-[10px] tracking-[0.24em]' : 'text-[10.5px] tracking-[0.28em]'} text-ash`}>
+            {o.label} <span className="text-paper">{o.place}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+/* ── "Ston + i": the name, and the Italian origin of the brand ─────────── */
+export function BrandOrigin() {
+  return (
+    <section className="section border-t border-line" aria-labelledby="brand-origin">
+      <div className="wrap grid items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
+        <Reveal>
+          <p className="font-display leading-none tracking-[0.04em]" aria-hidden="true">
+            <span className="text-[clamp(4.5rem,13vw,10rem)]">STON</span>
+            <span className="text-[clamp(4.5rem,13vw,10rem)] text-crimson-hi">-I</span>
+          </p>
+          <div className="mt-6 grid max-w-md grid-cols-2 border-t border-line pt-5 text-[11px] uppercase tracking-[0.22em] text-ash">
+            <p><span className="block font-display text-[1.6rem] normal-case tracking-normal text-paper">Ston</span>Stone</p>
+            <p><span className="block font-display text-[1.6rem] normal-case tracking-normal text-crimson-hi">i</span>Italy</p>
+          </div>
+        </Reveal>
+        <Reveal delay={100}>
+          <Eyebrow className="mb-6">Italian by design</Eyebrow>
+          <h2 id="brand-origin" className="display-lg">Born in Italy. Made in India. Growing worldwide.</h2>
+          <p className="lede mt-6">{BRAND.meaning} Ston-i Surfaces brings Italian design thinking to stone surfaces, manufactured by {COMPANY.shortName} in {COMPANY.city}, India, for architects, designers and partners around the world.</p>
+          <OriginStrip className="mt-8" />
         </Reveal>
       </div>
     </section>
