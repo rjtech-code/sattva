@@ -17,6 +17,7 @@ const Resources = lazy(() => import('./pages/Resources'))
 const Contact = lazy(() => import('./pages/Contact'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
+
 export default function App() {
   return (
     <Routes>
