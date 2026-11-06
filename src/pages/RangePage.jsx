@@ -4,7 +4,7 @@ import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, Breadcrumbs, ButtonLink, Eyebrow } from '../components/ui/Bits'
-import { CtaBand, SectionHead } from '../components/sections/Blocks'
+import { CtaBand, ItalyBadge, SectionHead } from '../components/sections/Blocks'
 import ProductViewer from '../components/viewer/ProductViewer'
 import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
@@ -37,6 +37,7 @@ function StrataHero({ range, crumbs }) {
       <div className="wrap flex min-h-[92svh] flex-col justify-end pb-16 pt-32 lg:pb-24">
         <Breadcrumbs items={crumbs} />
         <Reveal className="mt-10">
+          <ItalyBadge className="mb-6" />
           <p className="eyebrow mb-6">{range.tagline}</p>
           <h1 className="font-display text-[clamp(4rem,14vw,11rem)] leading-[0.82] tracking-[0.04em]">{range.wordmark}</h1>
           <p className="display-sm mt-8 !normal-case italic text-paper/90">{range.headline}</p>
@@ -57,6 +58,7 @@ function FlowHero({ range, crumbs }) {
       <div className="wrap flex min-h-[92svh] flex-col pb-16 pt-28">
         <Breadcrumbs items={crumbs} />
         <Reveal className="my-auto py-16 text-center">
+          <div className="mb-8"><ItalyBadge /></div>
           <p className="eyebrow mb-8 justify-center">A {BRAND.name} range</p>
           <h1 className="font-display text-[clamp(4rem,15vw,12rem)] leading-[0.8] tracking-[0.08em]">{range.wordmark}</h1>
           <div className="mx-auto mt-10 h-[2px] w-16 bg-crimson" aria-hidden="true" />
@@ -80,6 +82,7 @@ function CanvasHero({ range, crumbs }) {
         <div>
           <Breadcrumbs items={crumbs} />
           <Reveal className="mt-12">
+            <ItalyBadge className="mb-6" />
             <p className="eyebrow mb-6">{range.tagline}</p>
             <h1 className="font-display leading-[0.85]">
               <span className="block text-[clamp(4rem,12vw,9rem)] tracking-[0.06em]">{range.wordmark}</span>
@@ -147,7 +150,7 @@ export default function RangePage() {
           <Reveal>
             <Eyebrow className="mb-6">Introduction</Eyebrow>
             <h2 className="display-lg">{range.name}</h2>
-            <p className="mt-4 text-[11px] uppercase tracking-[0.26em] text-ash">A {BRAND.name} brand · A Sattva Sattvik company</p>
+            <p className="mt-4 text-[11px] uppercase tracking-[0.26em] text-ash">A {BRAND.name} brand · Designed in Italy · Made in India</p>
             {range.stats && (
               <dl className="mt-10 grid max-w-md grid-cols-3 border-t border-line pt-6">
                 {range.stats.map(([v, k]) => (

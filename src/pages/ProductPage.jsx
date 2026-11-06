@@ -88,7 +88,7 @@ function ProductDetail() {
           <div>
             <Eyebrow className="mb-5">{range.name} · {collection.name}</Eyebrow>
             <h1 className="display-lg">{title}</h1>
-            <p className="mt-3 text-[12px] uppercase tracking-[0.2em] text-ash">{range.tagline}</p>
+            <p className="mt-3 text-[12px] uppercase tracking-[0.2em] text-ash">{range.tagline} · <span className="text-paper">Italian design</span> · Made in India</p>
             {collection.description && <p className="lede mt-6">{collection.description}</p>}
             {product.backlit && <p className="mt-4 border-l-2 border-crimson pl-4 text-[14px] text-mist">Translucent sheet — use <span className="text-paper">Backlight on/off</span> under the 3D view to see it lit from behind.</p>}
 

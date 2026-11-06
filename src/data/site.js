@@ -27,6 +27,14 @@ export const BRAND = {
     { label: 'Growing', place: 'Worldwide' },
   ],
   meaning: 'The “i” in Ston-i stands for Italy — where the brand was born and designed.',
+  // Italy is the core of the brand story (client direction): its birthplace and where its
+  // innovation began. Used across the site wherever the brand is introduced.
+  italy: {
+    badge: 'Italian Design',
+    tagline: 'Born in Italy',
+    story: 'Ston-i was born in Italy. The idea, the design and the innovation behind its surfaces began there — and the “i” in its name is Italy.',
+    short: 'An Italian-born surface brand, made in India for the world.',
+  },
 }
 
 // Verified contact channels. Only the location is confirmed in the supplied brief;

@@ -30,7 +30,7 @@ export function WhyStoni() {
         <Reveal className="text-center">
           <p className="eyebrow justify-center mb-6">The Ston-i difference</p>
           <h2 id="why-stoni" className="display-xl">Why Ston-i?</h2>
-          <p className="mt-5 font-display text-[clamp(1.25rem,2.2vw,1.75rem)] italic text-mist">Stone, Reimagined.</p>
+          <p className="mt-5 font-display text-[clamp(1.25rem,2.2vw,1.75rem)] italic text-mist">Stone, Reimagined in Italy.</p>
           <div className="mx-auto mt-8 h-[2px] w-14 bg-crimson" aria-hidden="true" />
         </Reveal>
 
@@ -188,10 +188,10 @@ export function CtaBand({
 /* ── Brand origin: Designed in Italy · Made in India · Growing Worldwide ── */
 export function OriginStrip({ className = '', compact = false, stacked = false }) {
   return (
-    <ul className={`flex ${stacked ? 'flex-col gap-2' : 'flex-wrap items-center gap-x-5 gap-y-2'} ${className}`} aria-label="Brand origin">
+    <ul className={`flex ${stacked ? 'flex-col gap-2' : 'flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5'} ${className}`} aria-label="Brand origin">
       {BRAND.origin.map((o, i) => (
         <li key={o.place} className="flex items-center gap-5">
-          {stacked ? <span className="h-px w-4 bg-crimson" aria-hidden="true" /> : i > 0 && <span className="h-3 w-px bg-crimson" aria-hidden="true" />}
+          {stacked ? <span className="h-px w-4 bg-crimson" aria-hidden="true" /> : i > 0 && <span className="hidden h-3 w-px bg-crimson sm:block" aria-hidden="true" />}
           <span className={`uppercase ${compact ? 'text-[10px] tracking-[0.24em]' : 'text-[10.5px] tracking-[0.28em]'} text-ash`}>
             {o.label} <span className="text-paper">{o.place}</span>
           </span>
@@ -217,12 +217,25 @@ export function BrandOrigin() {
           </div>
         </Reveal>
         <Reveal delay={100}>
-          <Eyebrow className="mb-6">Italian by design</Eyebrow>
-          <h2 id="brand-origin" className="display-lg">Born in Italy. Made in India. Growing worldwide.</h2>
-          <p className="lede mt-6">{BRAND.meaning} Ston-i Surfaces brings Italian design thinking to stone surfaces, manufactured by {COMPANY.shortName} in {COMPANY.region}, for architects, designers and partners around the world.</p>
+          <ItalyBadge className="mb-6" label="Born in Italy" />
+          <h2 id="brand-origin" className="display-lg">Italy is where Ston-i began.</h2>
+          <p className="lede mt-6">{BRAND.italy.story}</p>
+          <p className="lede mt-4">Ston-i Surfaces carries that Italian design thinking into stone surfaces, manufactured by {COMPANY.shortName} in {COMPANY.region}, for architects, designers and partners around the world.</p>
           <OriginStrip className="mt-8" />
         </Reveal>
       </div>
     </section>
+  )
+}
+
+/* ── "Italian Design" badge with a small tricolore — the brand's Italian origin ── */
+export function ItalyBadge({ className = '', label = BRAND.italy.badge }) {
+  return (
+    <span className={`inline-flex items-center gap-3 border border-line-2 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.26em] text-paper ${className}`}>
+      <span className="flex h-2.5 w-[18px] overflow-hidden" aria-hidden="true">
+        <span className="flex-1 bg-[#009246]" /><span className="flex-1 bg-white" /><span className="flex-1 bg-[#ce2b37]" />
+      </span>
+      {label}
+    </span>
   )
 }

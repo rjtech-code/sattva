@@ -2,7 +2,7 @@ import { SITE_URL, BRAND } from '../../data/site'
 
 // React 19 hoists <title>, <meta> and <link> into <head>, so each route sets its own.
 export default function Seo({ title, description, path, image = '/textures/marble-crimson.webp', noindex }) {
-  const fullTitle = title ? `${title} | ${BRAND.name}` : `${BRAND.name} — Architectural Surface Materials by Sattva Sattvik`
+  const fullTitle = title ? `${title} | ${BRAND.name}` : `${BRAND.name} — Italian-Designed Architectural Surfaces`
   const url = SITE_URL && path != null ? `${SITE_URL}${path}` : null
   const img = SITE_URL ? `${SITE_URL}${image}` : image
   return (

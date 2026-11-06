@@ -3,7 +3,7 @@ import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink } from '../components/ui/Bits'
 import PageHero from '../components/sections/PageHero'
-import { CtaBand, SectionHead } from '../components/sections/Blocks'
+import { CtaBand, ItalyBadge, SectionHead } from '../components/sections/Blocks'
 import { RND } from '../data/content'
 import { COMPANY } from '../data/site'
 import { tex } from '../data/media'
@@ -14,12 +14,12 @@ export default function Innovation() {
       <Seo
         title="R&D / Innovation"
         path="/innovation"
-        description="Sattva Sattvik continuously develops and explores new surface-material possibilities for architecture and interiors — new materials, finishes, formats and prototypes."
+        description="Ston-i’s innovation began in Italy. Sattva Sattvik continuously develops and explores new surface-material possibilities for architecture and interiors — new materials, finishes, formats and prototypes."
       />
       <PageHero
         eyebrow="R&D / Innovation"
         title={<>Materials. Research.<br />Possibility.</>}
-        lede={`${COMPANY.shortName} continuously develops and explores new surface-material possibilities for architecture and interiors.`}
+        lede={`The innovation behind Ston-i began in Italy, where the brand was born. ${COMPANY.shortName} carries it forward — continuously developing and exploring new surface-material possibilities for architecture and interiors.`}
         image={tex.marbleCrimson}
         breadcrumbs={[{ label: 'Home', to: '/' }, { label: 'About', to: '/about' }, { label: 'R&D / Innovation' }]}
       />
@@ -42,7 +42,8 @@ export default function Innovation() {
       <section className="section border-t border-line bg-coal">
         <div className="wrap grid gap-10 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <h2 className="display-lg">Innovation today.<br />Better surfaces tomorrow.</h2>
+            <ItalyBadge className="mb-6" label="Innovation born in Italy" />
+            <h2 className="display-lg">Born in Italy.<br />Better surfaces tomorrow.</h2>
           </Reveal>
           <Reveal delay={100}>
             <p className="lede">The Ston-i Surfaces portfolio is designed to grow. New categories developed by our team can join Stonir, StonIT and Art-i Canvas Veneer as future brands.</p>

@@ -3,7 +3,7 @@ import Picture from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import { ArrowLink, Eyebrow } from '../components/ui/Bits'
 import PageHero from '../components/sections/PageHero'
-import { CapabilityStrip, CtaBand, MissionPanel, OriginStrip, RangeCards, SectionHead } from '../components/sections/Blocks'
+import { CapabilityStrip, CtaBand, ItalyBadge, MissionPanel, OriginStrip, RangeCards, SectionHead } from '../components/sections/Blocks'
 import { ABOUT, STRATEGY } from '../data/content'
 import { BRAND, COMPANY } from '../data/site'
 import { tex } from '../data/media'
@@ -48,11 +48,12 @@ export default function About() {
       <section className="section border-t border-line" aria-labelledby="brand-rel">
         <div className="wrap grid gap-12 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <Eyebrow className="mb-6">Our market-facing brand</Eyebrow>
+            <ItalyBadge className="mb-6" label="Born in Italy" />
             <h2 id="brand-rel" className="display-lg">{BRAND.name}</h2>
+            <p className="mt-3 font-display text-[1.35rem] italic text-mist">An Italian-born brand, made in India.</p>
             <p className="lede mt-6">{ABOUT.brand}</p>
             <p className="lede mt-4">{ABOUT.stoni}</p>
-            <p className="lede mt-4">{BRAND.meaning} Designed in Italy and made in India, it is built for markets across the world.</p>
+            <p className="lede mt-4">{BRAND.italy.story} Manufactured in India by Sattva Sattvik, it is built for markets across the world.</p>
             <OriginStrip className="mt-8" />
           </Reveal>
           {/* Corporate → brand → ranges, as two connected identities */}

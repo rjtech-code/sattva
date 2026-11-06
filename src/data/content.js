@@ -27,7 +27,7 @@ export const STRATEGY = [
 // Descriptions restate client copy only — no sourcing, performance or sustainability claims.
 export const PILLARS = [
   { n: '01', icon: 'Mountain', title: 'Natural Material', text: 'Stonir retains the distinctive look and texture of natural stone.' },
-  { n: '02', icon: 'Lightbulb', title: 'Innovation', text: 'Surface materials developed through Sattva Sattvik’s R&D and product development.' },
+  { n: '02', icon: 'Lightbulb', title: 'Italian Innovation', text: 'The innovation behind Ston-i began in Italy, and is developed further through Sattva Sattvik’s R&D.' },
   { n: '03', icon: 'PenTool', title: 'Italian Design', text: 'A brand designed in Italy — the “i” in Ston-i — with three distinct ranges, from stone veneer to art-led canvas.' },
   { n: '04', icon: 'Factory', title: 'Made in India', text: 'Manufactured by Sattva Sattvik Private Limited in Rajasthan, India — supplied worldwide.' },
   { n: '05', icon: 'Shapes', title: 'Versatility', text: 'Developed for versatility in handling, application and design.' },

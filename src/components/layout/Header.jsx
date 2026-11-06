@@ -12,7 +12,7 @@ export function Wordmark({ compact = false }) {
         STON<span className="text-crimson-hi">-</span>I <span className="text-mist">SURFACES</span>
       </span>
       {!compact && (
-        <span className="mt-1.5 text-[8.5px] tracking-[0.34em] uppercase text-ash">{BRAND.attribution}</span>
+        <span className="mt-1.5 text-[8.5px] tracking-[0.34em] uppercase text-ash"><span className="text-crimson-hi">{BRAND.italy.badge}</span> · Sattva Sattvik</span>
       )}
     </Link>
   )

@@ -4,7 +4,7 @@ import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
-import { BrandOrigin, CtaBand, OriginStrip, PartnerGrid, ProcessSteps, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
+import { BrandOrigin, CtaBand, ItalyBadge, OriginStrip, PartnerGrid, ProcessSteps, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
 import { tex } from '../data/media'
 import { RANGES } from '../data/ranges'
 import { applicationsFor, productImage } from '../data/catalog'
@@ -42,10 +42,10 @@ function Hero() {
 
       <div className="wrap pb-16 pt-32 lg:py-40">
         <Reveal className="max-w-[44rem] lg:max-w-[57%]">
-          <Eyebrow className="mb-7">{BRAND.name}</Eyebrow>
+          <div className="mb-7 flex flex-wrap items-center gap-x-6 gap-y-3"><ItalyBadge /><Eyebrow>{BRAND.name}</Eyebrow></div>
           <h1 className="display-xl">Surfaces that expand the possibilities of design.</h1>
           <p className="lede mt-7 max-w-[30rem]">
-            Innovative architectural surface materials manufactured by {COMPANY.shortName} and developed for the evolving needs of the B2B market.
+            Italian-born architectural surface materials — designed in Italy, manufactured in India by {COMPANY.shortName}, and developed for B2B markets worldwide.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <ButtonLink to="/products">Explore Products</ButtonLink>
@@ -216,11 +216,11 @@ export default function Home() {
     <>
       <Seo
         path="/"
-        description="Ston-i Surfaces — architectural surface materials by Sattva Sattvik Private Limited, India. Explore Stonir flexible stone veneer, StonIT and Art-i Canvas Veneer, and partner with us."
+        description="Ston-i Surfaces — an Italian-born architectural surface brand: designed in Italy, made in India by Sattva Sattvik Private Limited. Explore Stonir flexible stone veneer, StonIT and Art-i Canvas Veneer, and partner with us."
       />
       <Hero />
-      <Intro />
       <BrandOrigin />
+      <Intro />
       <WhyStoni />
       <Portfolio />
       <Architecture />
