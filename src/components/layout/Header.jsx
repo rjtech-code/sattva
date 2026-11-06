@@ -10,8 +10,8 @@ import ThemeToggle from '../ui/ThemeToggle'
 export function Wordmark({ compact = false }) {
   return (
     <Link to="/" className="group flex flex-col leading-none" aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}>
-      <span className="whitespace-nowrap font-display text-[15px] tracking-[0.12em] text-paper sm:text-[21px] sm:tracking-[0.18em]">
-        SATTVA SATTVIK <span className="text-[0.72em] tracking-[0.16em] text-mist">PVT. LTD.</span>
+      <span className="whitespace-nowrap font-display text-[18px] tracking-[0.1em] text-paper sm:text-[24px] sm:tracking-[0.14em] xl:text-[27px]">
+        SATTVA SATTVIK <span className="align-middle text-[0.5em] tracking-[0.14em] text-mist">PVT. LTD.</span>
       </span>
       {!compact && (
         <span className="mt-1.5 whitespace-nowrap text-[8px] uppercase tracking-[0.26em] text-ash sm:text-[8.5px] sm:tracking-[0.32em]">
@@ -118,7 +118,7 @@ export default function Header() {
         <Wordmark />
 
         <nav aria-label="Primary" className="hidden xl:block">
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-4 2xl:gap-6">
             {NAV.map((item) =>
               item.children ? (
                 <Dropdown key={item.label} item={item} pathname={pathname} />
