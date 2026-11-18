@@ -170,7 +170,7 @@ export default function Header() {
                     </button>
                   )}
                 </div>
-                {item.children && openGroup === item.label && (
+                {item.children?.length > 0 && openGroup === item.label && (
                   <ul className="pb-4 pl-1">
                     {item.children.map((c) => (
                       <li key={c.label}>
