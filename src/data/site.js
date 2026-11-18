@@ -64,15 +64,9 @@ export const CONTACT = {
 
 export const NAV = [
   { label: 'Home', to: '/' },
-  {
-    label: 'About',
-    to: '/about',
-    children: [
-      { label: 'Sattva Sattvik', to: '/about', note: 'The company behind Ston-i' },
-      { label: 'Manufacturing', to: '/manufacturing', note: 'Made in Rajasthan, India' },
-      { label: 'R&D / Innovation', to: '/innovation', note: 'Materials. Research. Possibility.' },
-    ],
-  },
+  // About is a direct link for now. Manufacturing and Innovation pages remain
+  // in the app but are intentionally hidden from the main navigation.
+  { label: 'About', to: '/about' },
   {
     label: 'Products',
     to: '/products',
