@@ -28,7 +28,7 @@ function StrataHero({ range, crumbs }) {
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
       <div className="pointer-events-none absolute right-[16%] top-[15%] -z-10 hidden h-[68%] w-[14%] lg:block" aria-hidden="true">
         {layers.map((im, i) => im && (
-          <div key={im.src} className="absolute left-0 top-0 h-full overflow-hidden border border-line-2 shadow-2xl shadow-black" style={{ aspectRatio: im.width / im.height, transform: `translate(${(i - 1) * -38}%, ${(i - 1) * 6}%) rotate(${-6 + i * 4}deg)`, zIndex: i }}>
+          <div key={im.src} className="material-stack-card absolute left-0 top-0 h-full overflow-hidden border border-line-2 shadow-2xl shadow-black" style={{ aspectRatio: im.width / im.height, transform: `translate(${(i - 1) * -38}%, ${(i - 1) * 6}%) rotate(${-6 + i * 4}deg)`, zIndex: i, animationDelay: `${i * 180}ms` }}>
             <img src={im.src} alt="" className="h-full w-full object-cover" width={im.width} height={im.height} />
           </div>
         ))}
