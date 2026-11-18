@@ -56,7 +56,7 @@ function Hero() {
           return (
             <div
               key={r.slug}
-              className="absolute top-0 h-full w-[43%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
+              className="material-stack-card absolute top-0 h-full w-[43%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
               style={{
                 left: '50%',
                 transform: `translateX(calc(-50% + ${x}%)) translateZ(${translateZ}px) rotateY(${rotateY}deg) rotateZ(${depth === 0 ? 0 : -2}deg) scale(${scale})`,
@@ -65,6 +65,7 @@ function Hero() {
                 opacity: 1,
                 transition: 'transform 1350ms cubic-bezier(0.22, 1, 0.36, 1)',
                 willChange: 'transform',
+                animationDelay: `${depth * 180}ms`,
               }}
             >
               <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
