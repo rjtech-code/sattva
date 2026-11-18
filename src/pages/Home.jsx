@@ -39,28 +39,31 @@ function Hero() {
       <div className="absolute inset-0 -z-10 scrim-l" aria-hidden="true" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-transparent to-ink/40" aria-hidden="true" />
 
-      {/* Three equal-size material panels keep the original left / centre / right layout.
-          The active panel moves to the front in sequence; the other two stay behind it. */}
+      {/* Three material panels form a receding 3D stack, each peeking out to the right. */}
       <div
-        className="pointer-events-none absolute right-[3%] top-1/2 z-0 hidden h-[68%] w-[40%] -translate-y-1/2 [perspective:1400px] lg:block xl:right-[5%]"
+        className="pointer-events-none absolute right-[3%] top-1/2 z-0 hidden h-[68%] w-[40%] -translate-y-1/2 [perspective:1600px] lg:block xl:right-[5%]"
         aria-label="Featured material ranges"
         aria-roledescription="carousel"
       >
         {HERO_SHEETS.map(({ range: r, image: im }, i) => {
           if (!im) return null
-          const relativePosition = (i - activeSheet + HERO_SHEETS.length) % HERO_SHEETS.length
-          const offset = relativePosition === 0 ? 0 : relativePosition === 1 ? 1 : -1
+          const depth = (i - activeSheet + HERO_SHEETS.length) % HERO_SHEETS.length
+          const isFront = depth === 0
+          const x = depth === 0 ? -18 : depth === 1 ? 5 : 27
+          const scale = depth === 0 ? 1 : depth === 1 ? 0.88 : 0.77
+          const rotateY = depth === 0 ? -2 : depth === 1 ? -15 : -23
+          const translateZ = depth === 0 ? 70 : depth === 1 ? -90 : -250
           return (
             <div
               key={r.slug}
-              className="absolute top-0 h-full w-[34%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
+              className="absolute top-0 h-full w-[43%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
               style={{
                 left: '50%',
-                transform: `translateX(calc(-50% + ${offset * 39}%)) translateY(${offset === 0 ? 0 : 5}%) rotateY(${offset * -19}deg) rotateZ(${offset * -2}deg) skewY(-4deg) scale(${offset === 0 ? 1 : 0.88})`,
+                transform: `translateX(calc(-50% + ${x}%)) translateZ(${translateZ}px) rotateY(${rotateY}deg) rotateZ(${depth === 0 ? 0 : -2}deg) scale(${scale})`,
                 transformOrigin: 'center center',
-                zIndex: offset === 0 ? 5 : 3 - Math.abs(offset),
+                zIndex: 5 - depth,
                 opacity: 1,
-                transition: 'transform 1250ms cubic-bezier(0.22, 1, 0.36, 1)',
+                transition: 'transform 1350ms cubic-bezier(0.22, 1, 0.36, 1)',
                 willChange: 'transform',
               }}
             >
