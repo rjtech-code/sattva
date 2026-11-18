@@ -66,7 +66,7 @@ export const NAV = [
   { label: 'Home', to: '/' },
   // About is a direct link for now. Manufacturing and Innovation pages remain
   // in the app but are intentionally hidden from the main navigation.
-  { label: 'About', to: '/about' },
+  { label: 'About', to: '/about', children: [] },
   {
     label: 'Products',
     to: '/products',
