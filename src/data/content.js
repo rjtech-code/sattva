@@ -83,7 +83,7 @@ const stonirApp = (slug, title, area, w, h) => ({
   title, area, image: { src: `/media/stonir/applications/${slug}.webp`, srcSmall: `/media/stonir/applications/${slug}-sm.webp`, width: w, height: h, alt: `Stonir flexible stone veneer — ${title.toLowerCase()}` },
 })
 export const STONIR_APPLICATIONS = [
-  stonirApp('living-room-feature-wall', 'Living room feature wall', 'Interior', 692, 490),
+  stonirApp('meeting-area-accent-wall', 'Meeting area accent wall', 'Interior', 692, 490),
   stonirApp('meeting-area-accent-wall', 'Meeting area accent wall', 'Interior', 730, 361),
   stonirApp('partition-wall', 'Partition wall', 'Interior', 730, 360),
   stonirApp('fireplace-wall', 'Fireplace wall', 'Interior', 730, 361),
