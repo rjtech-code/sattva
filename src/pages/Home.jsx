@@ -49,10 +49,10 @@ function Hero() {
           if (!im) return null
           const depth = (i - activeSheet + HERO_SHEETS.length) % HERO_SHEETS.length
           const isFront = depth === 0
-          const x = depth === 0 ? -18 : depth === 1 ? 5 : 27
-          const scale = depth === 0 ? 1 : depth === 1 ? 0.88 : 0.77
-          const rotateY = depth === 0 ? -2 : depth === 1 ? -15 : -23
-          const translateZ = depth === 0 ? 70 : depth === 1 ? -90 : -250
+          const x = depth === 0 ? -22 : depth === 1 ? 11 : 40
+          const scale = depth === 0 ? 1 : depth === 1 ? 0.91 : 0.82
+          const rotateY = depth === 0 ? -2 : depth === 1 ? -12 : -19
+          const translateZ = depth === 0 ? 55 : depth === 1 ? -35 : -115
           return (
             <div
               key={r.slug}
