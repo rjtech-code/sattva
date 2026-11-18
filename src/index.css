@@ -140,6 +140,11 @@
   .scrim-radial { background: radial-gradient(ellipse at center, rgb(var(--scrim) / .35), rgb(var(--scrim) / .95) 70%); }
   .stage-glow { background: radial-gradient(ellipse at 70% 40%, var(--color-coal-3), var(--color-ink) 65%); }
 
+  /* Three-panel stone stack: staggered reveal with a slow, independent floating motion. */
+  .material-stack-card { animation: material-card-arrive 950ms var(--ease-out-soft) both, material-card-float 7s ease-in-out 950ms infinite; }
+  @keyframes material-card-arrive { from { opacity: 0; translate: 0 34px; } to { opacity: 1; translate: 0 0; } }
+  @keyframes material-card-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+
   .field label { display: block; font-size: 10.5px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--color-mist); margin-bottom: 8px; }
   .field input, .field select, .field textarea {
     width: 100%; background: var(--color-ink); border: 1px solid var(--color-line-2); color: var(--color-paper);
