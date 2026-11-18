@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
 import Picture, { slotAspect } from '../components/ui/Picture'
@@ -19,25 +20,56 @@ const HERO_SHEETS = [
 ]
 
 function Hero() {
+  const [activeSheet, setActiveSheet] = useState(0)
+
+  // Keep the material roller moving gently; the manual controls use the same transition.
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveSheet((current) => (current + 1) % HERO_SHEETS.length)
+    }, 5600)
+    return () => window.clearInterval(timer)
+  }, [])
+
+  const showPrevious = () => setActiveSheet((current) => (current - 1 + HERO_SHEETS.length) % HERO_SHEETS.length)
+  const showNext = () => setActiveSheet((current) => (current + 1) % HERO_SHEETS.length)
+
   return (
     <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden border-b border-line lg:items-center">
       <Picture image={tex.marbleCrimson} priority className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-80" alt="" />
       <div className="absolute inset-0 -z-10 scrim-l" aria-hidden="true" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-transparent to-ink/40" aria-hidden="true" />
 
-      {/* Layered material panels — one per range — echoing the collage's architectural composition */}
-      <div className="pointer-events-none absolute right-[3%] top-1/2 -z-10 hidden h-[70%] w-[38%] -translate-y-1/2 lg:block xl:right-[5%]" aria-hidden="true">
-        {HERO_SHEETS.map(({ range: r, image: im }, i) => im && (
-          <div
-            key={r.slug}
-            className="absolute top-0 h-full overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)]"
-            style={{ aspectRatio: im.width / im.height, left: `${i * 30}%`, transform: `translateY(${(i - 1) * 6}%) skewY(-4deg)`, zIndex: 3 - i }}
-          >
-            <img src={im.src} alt="" className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
-            <span className="absolute left-5 top-5 font-display text-[15px] tracking-[0.2em] text-white">{r.wordmark}</span>
-          </div>
-        ))}
+      {/* Three real material panels travel around a continuous, perspective roller. */}
+      <div
+        className="pointer-events-none absolute right-[3%] top-1/2 z-0 hidden h-[68%] w-[40%] -translate-y-1/2 [perspective:1400px] lg:block xl:right-[5%]"
+        aria-label="Featured material ranges"
+        aria-roledescription="carousel"
+      >
+        {HERO_SHEETS.map(({ range: r, image: im }, i) => {
+          if (!im) return null
+          const relativePosition = (i - activeSheet + HERO_SHEETS.length) % HERO_SHEETS.length
+          const offset = relativePosition === 0 ? 0 : relativePosition === 1 ? 1 : -1
+          return (
+            <div
+              key={r.slug}
+              className="absolute top-0 h-full overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
+              style={{
+                aspectRatio: im.width / im.height,
+                left: '50%',
+                transform: `translateX(calc(-50% + ${offset * 39}%)) translateY(${offset === 0 ? 0 : 5}%) rotateY(${offset * -19}deg) rotateZ(${offset * -2}deg) skewY(-4deg) scale(${offset === 0 ? 1 : 0.88})`,
+                transformOrigin: 'center center',
+                zIndex: offset === 0 ? 5 : 3 - Math.abs(offset),
+                opacity: 1,
+                transition: 'transform 1250ms cubic-bezier(0.22, 1, 0.36, 1), left 1250ms cubic-bezier(0.22, 1, 0.36, 1)',
+                willChange: 'transform',
+              }}
+            >
+              <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
+              <span className="absolute left-5 top-5 font-display text-[15px] tracking-[0.2em] text-white">{r.wordmark}</span>
+            </div>
+          )
+        })}
       </div>
 
       <div className="wrap pb-16 pt-32 lg:py-40">
@@ -57,6 +89,28 @@ function Hero() {
             {BRAND.attribution}
           </p>
         </Reveal>
+      </div>
+
+      <div className="absolute bottom-[4.5%] right-[6%] z-20 hidden items-center gap-3 lg:flex">
+        <button
+          type="button"
+          onClick={showPrevious}
+          className="pointer-events-auto inline-flex items-center gap-2 border border-white/25 bg-ink/80 px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm transition-colors hover:border-crimson hover:bg-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-crimson"
+          aria-label="Previous featured material"
+        >
+          <Icon name="ArrowLeft" size={14} /> Previous
+        </button>
+        <span className="font-mono text-[10px] tracking-[0.2em] text-white/65" aria-live="polite">
+          0{activeSheet + 1} / 0{HERO_SHEETS.length}
+        </span>
+        <button
+          type="button"
+          onClick={showNext}
+          className="pointer-events-auto inline-flex items-center gap-2 border border-crimson bg-crimson px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-crimson-hi focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-crimson"
+          aria-label="Next featured material"
+        >
+          Next <Icon name="ArrowRight" size={14} />
+        </button>
       </div>
     </section>
   )
