@@ -120,7 +120,7 @@ export default function Header() {
         <nav aria-label="Primary" className="hidden xl:block">
           <ul className="flex items-center gap-4 2xl:gap-6">
             {NAV.map((item) =>
-              item.children ? (
+              item.children?.length ? (
                 <Dropdown key={item.label} item={item} pathname={pathname} />
               ) : (
                 <li key={item.label}>
@@ -158,7 +158,7 @@ export default function Header() {
                   <Link to={item.to} className={`block py-4 font-display text-[26px] uppercase ${isActive(pathname, item) ? 'text-crimson-hi' : 'text-paper'}`}>
                     {item.label}
                   </Link>
-                  {item.children && (
+                  {item.children?.length > 0 && (
                     <button
                       type="button"
                       className="p-3 text-mist"
