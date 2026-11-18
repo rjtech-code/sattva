@@ -68,7 +68,7 @@ export const RANGES = [
       layout: 'strata',
       texture: tex.stonir,
       // Range card / portfolio image: a Stonir installation from the catalogue's project gallery.
-      coverImage: { src: '/media/stonir/applications/living-room-feature-wall.webp', srcSmall: '/media/stonir/applications/living-room-feature-wall-sm.webp', width: 692, height: 490, alt: 'Stonir flexible stone veneer feature wall in a living room' },
+      coverImage: { src: '/media/stonir/applications/meeting-area-accent-wall.webp', srcSmall: '/media/stonir/applications/meeting-area-accent-wall-sm.webp', width: 692, height: 490, alt: 'Stonir flexible stone veneer feature wall in a living room' },
     },
     viewer: { kind: 'slab', texture: '/media/stonir/natural-series/ssv-3000-1.webp', flex: true },
     viewerProduct: { collection: 'natural-series', slug: 'ssv-3000-1' },
