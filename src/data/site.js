@@ -50,7 +50,7 @@ function whatsappNumber(raw = '') {
 
 export const CONTACT = {
   location: COMPANY.location,
-  phone: null,
+  phone: "+919512481000",
   email: null,
   // Business WhatsApp number (country code + number, digits only, e.g. 9198xxxxxxxx).
   // Enquiries and catalogue requests are sent here. Set VITE_WHATSAPP_NUMBER in the host env.
@@ -59,7 +59,10 @@ export const CONTACT = {
     const d = this.whatsapp
     return d && d.length === 12 && d.startsWith('91') ? `+91 ${d.slice(2, 7)} ${d.slice(7)}` : d && `+${d}`
   },
-  social: [], // e.g. { label: 'LinkedIn', href: 'https://…' }
+  social: [
+    { label: "Instagram", href: "https://www.instagram.com/sattva.sattvik" },
+    { label: "Facebook", href: "https://www.facebook.com/sattva.decor" },
+  ], // e.g. { label: 'LinkedIn', href: 'https://…' }
 }
 
 export const NAV = [
