@@ -61,7 +61,7 @@ function ProductDetail() {
       </div>
 
       <section className="section !pt-10">
-        <div className="wrap grid gap-10 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
+        <div className="wrap grid items-stretch gap-10 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
           <div className="min-w-0">
             <ProductViewer key={shot} config={viewer} photo={current && { ...current, alt: `${fullName} — ${VIEW_LABEL[current.alt] || 'photo'}` }} photoFit={isApplication ? 'cover' : 'contain'} initialLit={current?.alt === 'backlit'} title={fullName} className="h-[460px] sm:h-[560px] lg:h-[620px]" />
             {images.length > 1 && (
@@ -85,7 +85,7 @@ function ProductDetail() {
             )}
           </div>
 
-          <div>
+          <div className="flex flex-col justify-center">
             <Eyebrow className="mb-5">{range.name} · {collection.name}</Eyebrow>
             <h1 className="display-lg">{title}</h1>
             <p className="mt-3 text-[12px] uppercase tracking-[0.2em] text-ash">{range.tagline} · <span className="text-paper">Italian design</span> · Made in India</p>
