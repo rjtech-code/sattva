@@ -5,19 +5,24 @@ import { NAV, BRAND, COMPANY } from '../../data/site'
 import { ButtonLink } from '../ui/Bits'
 import ThemeToggle from '../ui/ThemeToggle'
 
-// Company name first (client direction), with the Ston-i Surfaces brand and its Italian
-// design origin beneath it.
+// Brand-first lockup matching the supplied brochure: symbol + Ston-i name,
+// with Sattva Sattvik and the Italian design line beneath.
 export function Wordmark({ compact = false }) {
   return (
-    <Link to="/" className="group flex flex-col leading-none" aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}>
-      <span className="whitespace-nowrap font-display text-[18px] tracking-[0.1em] text-paper sm:text-[24px] sm:tracking-[0.14em] xl:text-[27px]">
-        SATTVA SATTVIK <span className="align-middle text-[0.5em] tracking-[0.14em] text-mist">PVT. LTD.</span>
-      </span>
-      {!compact && (
-        <span className="mt-1.5 whitespace-nowrap text-[8px] uppercase tracking-[0.26em] text-ash sm:text-[8.5px] sm:tracking-[0.32em]">
-          STON<span className="text-crimson-hi">-</span>I SURFACES · <span className="text-crimson-hi">{BRAND.italy.badge}</span>
+    <Link to="/" className="group flex min-w-0 items-center gap-2 sm:gap-3" aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}>
+      <img src="/media/ston-i-mark.svg" alt="" aria-hidden="true" className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" width="48" height="48" />
+      <span className="flex min-w-0 flex-col justify-center leading-none">
+        <span className="whitespace-nowrap font-display text-[17px] tracking-[0.035em] text-paper sm:text-[21px] xl:text-[23px]">
+          STON<span className="text-crimson-hi">-</span>I SURFACES
         </span>
-      )}
+        {!compact && (
+          <span className="mt-1.5 whitespace-nowrap text-[7px] font-medium uppercase tracking-[0.13em] text-mist sm:text-[8px] sm:tracking-[0.2em]">
+            BY <span className="text-paper">SATTVA SATTVIK</span>
+            <span className="mx-1 text-crimson-hi">·</span>
+            <span className="text-crimson-hi">DESIGNED IN ITALY</span>
+          </span>
+        )}
+      </span>
     </Link>
   )
 }
