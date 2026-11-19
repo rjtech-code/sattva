@@ -88,7 +88,12 @@ export const productsFor = (range, collection) =>
   PRODUCTS.filter((p) => p.range === range && (!collection || p.collection === collection))
 export const getProduct = (range, collection, slug) =>
   PRODUCTS.find((p) => p.range === range && p.collection === collection && p.slug === slug)
-export const collectionCover = (c) => productsFor(c.range, c.slug)[0]?.images?.[0]
+export const collectionCover = (c) => {
+  const products = productsFor(c.range, c.slug)
+  // Keep ACV-01 exclusive to its own product detail page; use the next design as the collection visual.
+  const featured = c.range === 'art-i-canvas-veneer' ? products[1] : products[0]
+  return featured?.images?.[0]
+}
 export const productImage = (range, collection, slug, i = 0) => {
   const imgs = getProduct(range, collection, slug)?.images
   return imgs?.[i] || imgs?.[0]
