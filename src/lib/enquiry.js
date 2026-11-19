@@ -59,7 +59,7 @@ export function validateEnquiry(data) {
   if (!data.name) errors.name = 'Please enter your name.'
   if (!data.phone) errors.phone = 'Please enter your mobile number.'
   else if (!MOBILE_RE.test(data.phone)) errors.phone = 'Enter a valid 10-digit Indian mobile number.'
-  if (data.email && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(data.email)) errors.email = 'Enter a valid email address.'
+  if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.email = 'Enter a valid email address.'
   if (!data.city) errors.city = 'Please enter your city.'
   if (!data.state) errors.state = 'Please select your state.'
   else if (!STATES.includes(data.state)) errors.state = 'Please select a state from the list.'
