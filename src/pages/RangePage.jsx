@@ -131,6 +131,7 @@ export default function RangePage() {
   const crumbs = [{ label: 'Home', to: '/' }, { label: 'Products', to: '/products' }, { label: range.name }]
   const collections = collectionsFor(range.slug)
   const products = productsFor(range.slug)
+  const featuredCanvasDesigns = range.slug === 'art-i-canvas-veneer' ? products.slice(1, 4) : []
   const apps = applicationsFor(range.slug).slice(0, 4)
   const appAspect = slotAspect(apps.map((a) => a.image))
   const coverAspect = slotAspect(collections.map((c) => collectionCover(c)), { landscape: !!LANDSCAPE_COVERS[range.slug] })
@@ -201,9 +202,27 @@ export default function RangePage() {
       <section id="collections" className="section scroll-mt-20 border-t border-line bg-coal">
         <div className="wrap">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <SectionHead eyebrow={range.slug === 'stonit' ? 'Designs' : 'Collections'} title={range.slug === 'stonit' ? 'StonIT designs' : `${range.name} collections`} />
-            <p className="text-[13px] text-ash">{products.length} products · {collections.length} {collections.length === 1 ? 'collection' : 'collections'}</p>
+            <SectionHead eyebrow={range.slug === 'stonit' || featuredCanvasDesigns.length ? 'Designs' : 'Collections'} title={range.slug === 'stonit' ? 'StonIT designs' : featuredCanvasDesigns.length ? 'Canvas collection' : `${range.name} collections`} />
+            <p className="text-[13px] text-ash">{featuredCanvasDesigns.length ? `${products.length} designs · 1 collection` : `${products.length} products · ${collections.length} ${collections.length === 1 ? 'collection' : 'collections'}`}</p>
           </div>
+          {featuredCanvasDesigns.length > 0 ? (
+            <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {featuredCanvasDesigns.map((product, i) => {
+                const image = product.images?.find((im) => im.alt === 'design') || product.images?.[0]
+                return (
+                  <Reveal as="li" key={product.slug} delay={i * 70}>
+                    <Link to={`/products/${range.slug}/${product.collection}/${product.slug}`} className="group panel !bg-ink flex h-full flex-col hover:border-line-2">
+                      <Picture image={image} aspect={coverAspect} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 33vw, 100vw" alt={`${product.code || product.name} — Canvas Series`} />
+                      <div className="flex flex-1 items-center justify-between gap-4 p-5 sm:p-6">
+                        <div><p className="display-sm">{product.code || product.name}</p><p className="mt-1 text-[12px] text-ash">Canvas Series · 4′ × 8′</p></div>
+                        <span className="link-arrow shrink-0">View<Icon name="ArrowRight" size={14} strokeWidth={1.75} /></span>
+                      </div>
+                    </Link>
+                  </Reveal>
+                )
+              })}
+            </ul>
+          ) : (
           <ul className={`mt-12 grid gap-3 sm:gap-4 ${collections.length > 6 ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
             {collections.map((c, i) => {
               const n = productsFor(range.slug, c.slug).length
@@ -222,6 +241,7 @@ export default function RangePage() {
               )
             })}
           </ul>
+          )}
         </div>
       </section>
 
