@@ -70,6 +70,21 @@ function Dropdown({ item, pathname }) {
                 <span className="block text-[13px] text-paper group-hover:text-crimson-hi transition-colors">{c.label}</span>
                 <span className="block text-[11.5px] text-ash">{c.note}</span>
               </Link>
+              {c.children?.length > 0 && (
+                <ul className="ml-5 mb-2 border-l border-line pl-3">
+                  {c.children.map((child) => (
+                    <li key={child.to + child.label}>
+                      <Link to={child.to} onClick={() => setOpen(false)} className="group flex items-start gap-2 px-2 py-2 hover:bg-coal-3">
+                        <span aria-hidden="true" className="mt-[2px] text-crimson-hi">•</span>
+                        <span>
+                          <span className="block text-[12px] text-mist group-hover:text-paper transition-colors">{child.label}</span>
+                          <span className="block text-[10.5px] text-ash">{child.note}</span>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
@@ -178,6 +193,18 @@ export default function Header() {
                           {c.label}
                           <span className="text-[11.5px] text-ash text-right">{c.note}</span>
                         </Link>
+                        {c.children?.length > 0 && (
+                          <ul className="mb-2 ml-4 border-l border-line pl-3">
+                            {c.children.map((child) => (
+                              <li key={child.label}>
+                                <Link to={child.to} className="flex items-baseline gap-2 py-2 text-[13px] text-ash hover:text-paper">
+                                  <span aria-hidden="true" className="text-crimson-hi">•</span>
+                                  <span>{child.label}</span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </li>
                     ))}
                   </ul>
