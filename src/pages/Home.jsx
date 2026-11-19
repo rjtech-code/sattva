@@ -42,7 +42,7 @@ function Hero() {
       <div className="wrap grid min-h-[100svh] items-center gap-8 pb-12 pt-28 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:gap-8 lg:pb-10 lg:pt-28 xl:gap-14">
         <Reveal className="relative z-10 max-w-[44rem]">
           <div className="mb-7 flex flex-wrap items-center gap-x-6 gap-y-3"><ItalyBadge /><Eyebrow>{BRAND.name}</Eyebrow></div>
-          <h1 className="display-xl">Surfaces that expand the possibilities of design.</h1>
+          <h1 className="display-xl">Born in Italy.</h1>
           <p className="lede mt-7 max-w-[30rem]">
             Italian-born architectural surface materials — designed in Italy, manufactured in India by {COMPANY.shortName}, and developed for B2B markets worldwide.
           </p>
@@ -67,9 +67,11 @@ function Hero() {
               const rotateY = depth === 0 ? -2 : depth === 1 ? -12 : -19
               const translateZ = depth === 0 ? 55 : depth === 1 ? -35 : -115
               return (
-                <div
+                <Link
                   key={r.slug}
-                  className="material-stack-card absolute left-1/2 top-0 h-full w-[43%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
+                  to={'/products/' + r.slug}
+                  aria-label={'Explore ' + r.name}
+                  className="material-stack-card absolute left-1/2 top-0 block h-full w-[43%] cursor-pointer overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
                   style={{
                     transform: `translateX(calc(-50% + ${x}%)) translateZ(${translateZ}px) rotateY(${rotateY}deg) rotateZ(${depth === 0 ? 0 : -2}deg) scale(${scale})`,
                     transformOrigin: 'center center',
@@ -83,7 +85,7 @@ function Hero() {
                   <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
                   <span className="absolute left-3 top-3 font-display text-[11px] tracking-[0.16em] text-white sm:left-5 sm:top-5 sm:text-[15px]">{r.wordmark}</span>
-                </div>
+                </Link>
               )
             })}
           </div>
