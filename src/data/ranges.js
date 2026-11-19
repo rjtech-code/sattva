@@ -22,8 +22,8 @@ export const RANGES = [
     summary:
       'Natural stone character in a lightweight, flexible veneer.',
     description: [
-      'Stonir brings the natural character and visual richness of stone into a lightweight, flexible format — developed to offer greater versatility in handling, application and design, while retaining the distinctive look and texture of natural stone.',
-      'Flexible stone veneer is made by slicing thin layers of real stone and backing them with a flexible base such as fiberglass or polyester resin. It keeps the texture and look of real stone while making it easier to apply on curved or uneven surfaces, for both interior and exterior applications.',
+      'Real stone texture in a lightweight, flexible format for versatile architectural applications.',
+      'Thin natural stone layers are bonded to flexible backing, making installation easier on curved and flat surfaces.',
     ],
     features: [
       { icon: 'Feather', title: 'Lightweight & flexible', text: 'Lightweight natural stone veneer bends around curved and uneven surfaces.' },
@@ -83,8 +83,8 @@ export const RANGES = [
     summary:
       'FRP rock panels with textured finishes for interior and exterior cladding.',
     description: [
-      'StonIT is an architectural surface range specialising in FRP-based (Fiber Reinforced Polymer) rock stone panels, blending the timeless appeal of stone with the performance of composite materials.',
-      'The result is lightweight, highly durable and aesthetically rich cladding for both interior and exterior applications — 3D relief designs from Haveli Arch to Modular Cube, in 8+ colours and 25+ designs, with customised colours also available.',
+      'StonIT combines the look of natural rock with durable FRP-based architectural panels.',
+      'Explore dimensional designs, multiple colours and custom options for interior and exterior cladding.',
     ],
     stats: [['25+', 'Designs'], ['8+', 'Colours'], ['Custom', 'Colours available']],
     features: [
@@ -130,8 +130,8 @@ export const RANGES = [
     summary:
       'High-definition designs printed on flexible natural slate and quartzite veneer.',
     description: [
-      'Art-i Canvas on Flexible Stone Veneer is a curated dialogue between the timeless texture of natural stone and the boundless potential of high-definition artistry.',
-      'By treating ultra-thin flexible stone veneers as a “living canvas”, Canvas Print technology infuses natural slate and quartzite with bespoke patterns, intricate textures and vibrant imagery — without losing the tactile soul of the stone. Suited to high-end interior feature walls, with exterior cladding possible on veneers engineered for it.',
+      'Art-i pairs natural stone texture with expressive, high-definition printed artwork.',
+      'Canvas printing adds distinctive patterns and imagery to flexible slate and quartzite veneer for expressive interiors.',
     ],
     features: [
       { icon: 'Feather', title: 'Lightweight', text: 'Ultra-thin natural stone veneer with a flexible backing.' },
