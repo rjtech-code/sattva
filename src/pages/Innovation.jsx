@@ -1,7 +1,6 @@
 import Seo from '../components/ui/Seo'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
-import { ArrowLink } from '../components/ui/Bits'
 import PageHero from '../components/sections/PageHero'
 import { CtaBand, ItalyBadge, SectionHead } from '../components/sections/Blocks'
 import { RND } from '../data/content'
@@ -49,7 +48,6 @@ export default function Innovation() {
             <p className="lede">The Ston-i Surfaces portfolio is designed to grow. New categories developed by our team can join Stonir, StonIT and Art-i Canvas Veneer as future brands.</p>
             <div className="mt-8 flex flex-wrap gap-8">
               <ArrowLink to="/products#future-brands">Future brands</ArrowLink>
-              <ArrowLink to="/manufacturing">Manufacturing</ArrowLink>
             </div>
           </Reveal>
         </div>
