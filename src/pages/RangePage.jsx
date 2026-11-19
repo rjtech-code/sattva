@@ -144,6 +144,23 @@ export default function RangePage() {
       <Seo title={`${range.name} — ${range.tagline}`} path={`/products/${range.slug}`} description={`${range.summary} A ${BRAND.name} range by Sattva Sattvik Private Limited.`} image={cover?.src} />
       <Hero range={range} crumbs={crumbs} />
 
+      {/* Real-time 3D preview, built from a real product photograph */}
+      <section className="section border-t border-line" aria-labelledby="viewer-h">
+        <div className="wrap grid items-stretch gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
+          <ProductViewer config={range.viewer} title={`${range.name} — 3D preview`} className="h-[380px] sm:h-[460px] lg:h-[520px]" />
+          <Reveal className="flex flex-col justify-center py-4">
+            <Eyebrow className="mb-6">Interactive 3D</Eyebrow>
+            <h2 id="viewer-h" className="display-md">See the surface in 3D.</h2>
+            <p className="mt-5 text-[14.5px] leading-relaxed text-mist">
+              Every {range.name} product page includes a real-time 3D panel built from that product’s own catalogue photograph — drag to rotate, pinch or scroll to zoom.
+            </p>
+            {range.viewer.flex && <p className="mt-4 text-[14.5px] leading-relaxed text-mist">The gentle bend reflects the flexible veneer format.</p>}
+            {vp && <ArrowLink to={`/products/${range.slug}/${vp.collection}/${vp.slug}`} className="mt-7">View this product</ArrowLink>}
+          </Reveal>
+        </div>
+      </section>
+
+
       {/* Introduction + key features */}
       <section className="section">
         <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-20">
@@ -205,22 +222,6 @@ export default function RangePage() {
               )
             })}
           </ul>
-        </div>
-      </section>
-
-      {/* Real-time 3D preview, built from a real product photograph */}
-      <section className="section border-t border-line" aria-labelledby="viewer-h">
-        <div className="wrap grid items-start gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
-          <ProductViewer config={range.viewer} title={`${range.name} — 3D preview`} />
-          <Reveal>
-            <Eyebrow className="mb-6">Interactive 3D</Eyebrow>
-            <h2 id="viewer-h" className="display-md">See the surface in 3D.</h2>
-            <p className="mt-5 text-[14.5px] leading-relaxed text-mist">
-              Every {range.name} product page includes a real-time 3D panel built from that product’s own catalogue photograph — drag to rotate, pinch or scroll to zoom.
-            </p>
-            {range.viewer.flex && <p className="mt-4 text-[14.5px] leading-relaxed text-mist">The gentle bend reflects the flexible veneer format.</p>}
-            {vp && <ArrowLink to={`/products/${range.slug}/${vp.collection}/${vp.slug}`} className="mt-7">View this product</ArrowLink>}
-          </Reveal>
         </div>
       </section>
 
