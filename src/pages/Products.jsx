@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import Seo from '../components/ui/Seo'
 import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
-import Icon from '../components/ui/Icon'
 import { ButtonLink, Eyebrow } from '../components/ui/Bits'
 import PageHero from '../components/sections/PageHero'
 import { CtaBand } from '../components/sections/Blocks'
@@ -80,7 +79,6 @@ export default function Products() {
             <Eyebrow className="mb-6">Future brands</Eyebrow>
             <h2 className="display-lg">Expanding the possibilities of surface materials.</h2>
             <p className="lede mt-6">{BRAND.name} is built as a brand ecosystem. As {COMPANY.shortName} develops new surface-material categories, they will join the portfolio here — each with its own range page, collections, documents and applications.</p>
-            <Link to="/innovation" className="link-arrow mt-8">Our R&amp;D<Icon name="ArrowRight" size={14} strokeWidth={1.75} /></Link>
           </Reveal>
         </div>
       </section>
