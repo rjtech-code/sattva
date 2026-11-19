@@ -34,87 +34,69 @@ function Hero() {
   const showNext = () => setActiveSheet((current) => (current + 1) % HERO_SHEETS.length)
 
   return (
-    <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden border-b border-line lg:items-center">
+    <section className="relative isolate min-h-[100svh] overflow-hidden border-b border-line">
       <Picture image={tex.marbleCrimson} priority className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-80" alt="" />
       <div className="absolute inset-0 -z-10 scrim-l" aria-hidden="true" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-transparent to-ink/40" aria-hidden="true" />
 
-      {/* Three material panels form a receding 3D stack, each peeking out to the right. */}
-      <div
-        className="pointer-events-none absolute right-[3%] top-1/2 z-0 hidden h-[68%] w-[40%] -translate-y-1/2 [perspective:1600px] lg:block xl:right-[5%]"
-        aria-label="Featured material ranges"
-        aria-roledescription="carousel"
-      >
-        {HERO_SHEETS.map(({ range: r, image: im }, i) => {
-          if (!im) return null
-          const depth = (i - activeSheet + HERO_SHEETS.length) % HERO_SHEETS.length
-          const isFront = depth === 0
-          const x = depth === 0 ? -22 : depth === 1 ? 11 : 40
-          const scale = depth === 0 ? 1 : depth === 1 ? 0.91 : 0.82
-          const rotateY = depth === 0 ? -2 : depth === 1 ? -12 : -19
-          const translateZ = depth === 0 ? 55 : depth === 1 ? -35 : -115
-          return (
-            <div
-              key={r.slug}
-              className="material-stack-card absolute top-0 h-full w-[43%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
-              style={{
-                left: '50%',
-                transform: `translateX(calc(-50% + ${x}%)) translateZ(${translateZ}px) rotateY(${rotateY}deg) rotateZ(${depth === 0 ? 0 : -2}deg) scale(${scale})`,
-                transformOrigin: 'center center',
-                zIndex: 5 - depth,
-                opacity: 1,
-                transition: 'transform 1350ms cubic-bezier(0.22, 1, 0.36, 1)',
-                willChange: 'transform',
-                animationDelay: `${depth * 180}ms`,
-              }}
-            >
-              <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
-              <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
-              <span className="absolute left-5 top-5 font-display text-[15px] tracking-[0.2em] text-white">{r.wordmark}</span>
-            </div>
-          )
-        })}
-      </div>
-
-      <div className="wrap pb-16 pt-32 lg:py-40">
-        <Reveal className="max-w-[44rem] lg:max-w-[57%]">
+      <div className="wrap grid min-h-[100svh] items-center gap-8 pb-12 pt-28 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:gap-8 lg:pb-10 lg:pt-28 xl:gap-14">
+        <Reveal className="relative z-10 max-w-[44rem]">
           <div className="mb-7 flex flex-wrap items-center gap-x-6 gap-y-3"><ItalyBadge /><Eyebrow>{BRAND.name}</Eyebrow></div>
           <h1 className="display-xl">Surfaces that expand the possibilities of design.</h1>
           <p className="lede mt-7 max-w-[30rem]">
             Italian-born architectural surface materials — designed in Italy, manufactured in India by {COMPANY.shortName}, and developed for B2B markets worldwide.
           </p>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink to="/products">Explore Products</ButtonLink>
             <ButtonLink to="/partners#enquiry" variant="ghost">B2B Enquiry</ButtonLink>
           </div>
-          <OriginStrip className="mt-12" compact />
+          <OriginStrip className="mt-8" compact />
           <p className="mt-5 flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-ash">
             <span className="h-px w-8 bg-crimson" aria-hidden="true" />
             {BRAND.attribution}
           </p>
         </Reveal>
-      </div>
 
-      <div className="absolute bottom-[4.5%] right-[6%] z-20 hidden items-center gap-3 lg:flex">
-        <button
-          type="button"
-          onClick={showPrevious}
-          className="pointer-events-auto inline-flex items-center gap-2 border border-white/25 bg-ink/80 px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm transition-colors hover:border-crimson hover:bg-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-crimson"
-          aria-label="Previous featured material"
-        >
-          <Icon name="ArrowLeft" size={14} /> Previous
-        </button>
-        <span className="font-mono text-[10px] tracking-[0.2em] text-white/65" aria-live="polite">
-          0{activeSheet + 1} / 0{HERO_SHEETS.length}
-        </span>
-        <button
-          type="button"
-          onClick={showNext}
-          className="pointer-events-auto inline-flex items-center gap-2 border border-crimson bg-crimson px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-crimson-hi focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-crimson"
-          aria-label="Next featured material"
-        >
-          Next <Icon name="ArrowRight" size={14} />
-        </button>
+        <div className="relative flex min-h-[340px] flex-col [perspective:1600px] sm:min-h-[420px] lg:min-h-0 lg:h-full lg:py-8" aria-label="Featured material ranges" aria-roledescription="carousel">
+          <div className="relative min-h-[300px] flex-1 sm:min-h-[370px] lg:min-h-0">
+            {HERO_SHEETS.map(({ range: r, image: im }, i) => {
+              if (!im) return null
+              const depth = (i - activeSheet + HERO_SHEETS.length) % HERO_SHEETS.length
+              const x = depth === 0 ? -22 : depth === 1 ? 11 : 40
+              const scale = depth === 0 ? 1 : depth === 1 ? 0.91 : 0.82
+              const rotateY = depth === 0 ? -2 : depth === 1 ? -12 : -19
+              const translateZ = depth === 0 ? 55 : depth === 1 ? -35 : -115
+              return (
+                <div
+                  key={r.slug}
+                  className="material-stack-card absolute left-1/2 top-0 h-full w-[43%] overflow-hidden border border-line-2 shadow-[0_40px_80px_-20px_rgb(0_0_0/0.9)] motion-reduce:transition-none"
+                  style={{
+                    transform: `translateX(calc(-50% + ${x}%)) translateZ(${translateZ}px) rotateY(${rotateY}deg) rotateZ(${depth === 0 ? 0 : -2}deg) scale(${scale})`,
+                    transformOrigin: 'center center',
+                    zIndex: 5 - depth,
+                    opacity: 1,
+                    transition: 'transform 1350ms cubic-bezier(0.22, 1, 0.36, 1)',
+                    willChange: 'transform',
+                    animationDelay: `${depth * 180}ms`,
+                  }}
+                >
+                  <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
+                  <span className="absolute left-3 top-3 font-display text-[11px] tracking-[0.16em] text-white sm:left-5 sm:top-5 sm:text-[15px]">{r.wordmark}</span>
+                </div>
+              )
+            })}
+          </div>
+          <div className="relative z-20 mt-3 flex items-center justify-center gap-2 sm:gap-3 lg:mt-5">
+            <button type="button" onClick={showPrevious} className="inline-flex items-center gap-2 border border-white/25 bg-ink/80 px-3 py-2.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-white backdrop-blur-sm transition-colors hover:border-crimson hover:bg-crimson sm:px-4 sm:py-3 sm:text-[10px]" aria-label="Previous featured material">
+              <Icon name="ArrowLeft" size={14} /> Previous
+            </button>
+            <span className="min-w-[3.5rem] text-center font-mono text-[10px] tracking-[0.2em] text-white/65" aria-live="polite">0{activeSheet + 1} / 0{HERO_SHEETS.length}</span>
+            <button type="button" onClick={showNext} className="inline-flex items-center gap-2 border border-crimson bg-crimson px-3 py-2.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-crimson-hi sm:px-4 sm:py-3 sm:text-[10px]" aria-label="Next featured material">
+              Next <Icon name="ArrowRight" size={14} />
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   )
@@ -241,7 +223,6 @@ function ManufacturingTeaser() {
           <SectionHead eyebrow="Manufacturing" title={<span id="mfg-teaser">Built in India. Growing across the world.</span>} />
           <Reveal>
             <p className="lede">We don’t merely trade these products — {COMPANY.shortName} manufactures and develops them, from material preparation to dispatch.</p>
-            <ArrowLink to="/manufacturing" className="mt-6">Our manufacturing</ArrowLink>
           </Reveal>
         </div>
         <div className="mt-16"><ProcessSteps /></div>
