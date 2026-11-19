@@ -149,8 +149,8 @@ export const RANGES = [
       Spaces: ['Residential areas', 'Commercial areas', 'Hospitals', 'Public places', 'Shops & malls', 'Hotels & restaurants'],
     },
     identity: { layout: 'canvas', texture: tex.arti, cover: { collection: 'canvas-series', slug: 'acv-13', image: 1 } },
-    viewer: { kind: 'slab', texture: '/media/art-i/canvas-series/acv-01.webp', flex: true },
-    viewerProduct: { collection: 'canvas-series', slug: 'acv-01' },
+    viewer: { kind: 'slab', texture: '/media/art-i/canvas-series/acv-02.webp', flex: true },
+    viewerProduct: { collection: 'canvas-series', slug: 'acv-02' },
     documents: [DOCS.artiCanvas],
   },
 ]
