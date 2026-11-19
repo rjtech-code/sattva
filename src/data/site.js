@@ -71,11 +71,17 @@ export const NAV = [
     label: 'Products',
     to: '/products',
     children: [
-      { label: 'Ston-i Surfaces', to: '/products', note: 'The full portfolio' },
-      { label: 'Stonir', to: '/products/stonir', note: 'Flexible Stone Veneer' },
-      { label: 'StonIT', to: '/products/stonit', note: 'Innovative Surface Solutions' },
-      { label: 'Art-i Canvas Veneer', to: '/products/art-i-canvas-veneer', note: 'Art Meets Surface' },
-      { label: 'Future Brands', to: '/products#future-brands', note: 'Expanding the portfolio' },
+      {
+        label: 'Ston-i Surfaces',
+        to: '/products',
+        note: 'The full portfolio',
+        children: [
+          { label: 'StonIT', to: '/products/stonit', note: 'Innovative Surface Solutions' },
+          { label: 'Stonir', to: '/products/stonir', note: 'Flexible Stone Veneer' },
+          { label: 'Art-i Canvas Veneer', to: '/products/art-i-canvas-veneer', note: 'Art Meets Surface' },
+        ],
+      },
+      { label: 'Brands', to: '/products#future-brands', note: 'Explore our brand portfolio' },
     ],
   },
   { label: 'Applications', to: '/applications' },
