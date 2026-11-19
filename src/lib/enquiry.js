@@ -1,5 +1,5 @@
 // Shared by the browser form and the server handler so both enforce the same rules.
-// Short, India-first form: name, mobile (WhatsApp), city, state; the rest optional.
+// Shared enquiry form: name, mobile (WhatsApp), city and state required; email is optional.
 
 export const ENQUIRY_TYPES = [
   { value: 'b2b-partnership', label: 'Dealership / distribution' },
@@ -27,7 +27,7 @@ export const STATES = [
   'Jammu & Kashmir', 'Ladakh', 'Lakshadweep', 'Puducherry',
 ]
 
-const LIMITS = { name: 80, company: 120, city: 60, message: 1000 }
+const LIMITS = { name: 80, company: 120, city: 60, message: 1000, email: 254 }
 const MOBILE_RE = /^[6-9]\d{9}$/
 
 // Accepts "+91 98290 12345", "098290-12345", "9829012345" → "9829012345".
@@ -43,6 +43,7 @@ export function normalizeEnquiry(raw = {}) {
     name: s(raw.name),
     company: s(raw.company),
     phone: normalizeMobile(raw.phone),
+    email: s(raw.email).toLowerCase(),
     city: s(raw.city),
     state: s(raw.state),
     role: s(raw.role),
@@ -58,6 +59,7 @@ export function validateEnquiry(data) {
   if (!data.name) errors.name = 'Please enter your name.'
   if (!data.phone) errors.phone = 'Please enter your mobile number.'
   else if (!MOBILE_RE.test(data.phone)) errors.phone = 'Enter a valid 10-digit Indian mobile number.'
+  if (data.email && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(data.email)) errors.email = 'Enter a valid email address.'
   if (!data.city) errors.city = 'Please enter your city.'
   if (!data.state) errors.state = 'Please select your state.'
   else if (!STATES.includes(data.state)) errors.state = 'Please select a state from the list.'
@@ -74,6 +76,7 @@ export function whatsappMessage(data, { rangeName, documentLabel } = {}) {
   const details = [
     `Name: ${data.name}`,
     data.company && `Company: ${data.company}`,
+    data.email && `Email: ${data.email}`,
     data.role && `I am a: ${data.role}`,
     `City: ${data.city}, ${data.state}`,
     `Mobile: +91 ${data.phone}`,
