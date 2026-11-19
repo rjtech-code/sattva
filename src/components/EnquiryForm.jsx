@@ -134,6 +134,11 @@ export default function EnquiryForm({ defaultType = 'general', title, intro, doc
           {err('phone')}
         </div>
         <div className="field">
+          <label htmlFor={`${uid}-email`}>Email address (optional)</label>
+          <input {...f('email')} type="email" autoComplete="email" placeholder="you@example.com" />
+          {err('email')}
+        </div>
+        <div className="field">
           <label htmlFor={`${uid}-city`}>City *</label>
           <input {...f('city')} autoComplete="address-level2" required />
           {err('city')}
