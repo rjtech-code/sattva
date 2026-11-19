@@ -20,16 +20,16 @@ export const RANGES = [
     tagline: 'Flexible Stone Veneer',
     headline: 'Bold like stone, light like veneer.',
     summary:
-      'Stonir brings the natural character and visual richness of stone into a lightweight, flexible format.',
+      'Natural stone character in a lightweight, flexible veneer.',
     description: [
       'Stonir brings the natural character and visual richness of stone into a lightweight, flexible format — developed to offer greater versatility in handling, application and design, while retaining the distinctive look and texture of natural stone.',
       'Flexible stone veneer is made by slicing thin layers of real stone and backing them with a flexible base such as fiberglass or polyester resin. It keeps the texture and look of real stone while making it easier to apply on curved or uneven surfaces, for both interior and exterior applications.',
     ],
     features: [
-      { icon: 'Feather', title: 'Lightweight & flexible', text: 'Ultra-thin natural stone — approx. 1.5 kg/m² — that bends to curved and uneven surfaces.' },
-      { icon: 'Mountain', title: '100% natural stone surface', text: 'Real stone face on a fiberglass and resin backing, retaining authentic texture.' },
+      { icon: 'Feather', title: 'Lightweight & flexible', text: 'Lightweight natural stone veneer bends around curved and uneven surfaces.' },
+      { icon: 'Mountain', title: '100% natural stone surface', text: 'Authentic stone surface supported by flexible fibreglass and resin backing.' },
       { icon: 'Droplets', title: 'Sealed surface', text: 'Water absorption below 1% on the sealed surface.' },
-      { icon: 'Wrench', title: 'Easy to install', text: 'Cut with a cutter or scissors; fixed with PU-based adhesive on most substrates.' },
+      { icon: 'Wrench', title: 'Easy to install', text: 'Cut easily and install using suitable adhesive on compatible surfaces.' },
     ],
     specs: [
       ['Thickness', '1–2 mm (flexible) · 2–4 mm (board)'],
@@ -81,18 +81,18 @@ export const RANGES = [
     tagline: 'Innovative Surface Solutions',
     headline: 'Lighter. Stronger. Smarter stone.',
     summary:
-      'StonIT specialises in FRP-based (Fiber Reinforced Polymer) rock stone panels — lightweight, durable, richly textured cladding for interiors and exteriors.',
+      'FRP rock panels with textured finishes for interior and exterior cladding.',
     description: [
       'StonIT is an architectural surface range specialising in FRP-based (Fiber Reinforced Polymer) rock stone panels, blending the timeless appeal of stone with the performance of composite materials.',
       'The result is lightweight, highly durable and aesthetically rich cladding for both interior and exterior applications — 3D relief designs from Haveli Arch to Modular Cube, in 8+ colours and 25+ designs, with customised colours also available.',
     ],
     stats: [['25+', 'Designs'], ['8+', 'Colours'], ['Custom', 'Colours available']],
     features: [
-      { icon: 'Mountain', title: 'Natural stone look', text: 'Realistic 3D rock and stone appearance.' },
-      { icon: 'Feather', title: 'Lightweight & easy to handle', text: 'Approx. 20–25 kg per 8 × 4 ft panel.' },
-      { icon: 'Droplets', title: 'Water & weather resistant', text: 'Water, moisture and weather resistant, for interior and exterior use.' },
+      { icon: 'Mountain', title: 'Natural stone look', text: 'Detailed 3D rock textures create a natural stone appearance.' },
+      { icon: 'Feather', title: 'Lightweight & easy to handle', text: 'Panels weigh approximately 20–25 kg in an 8 × 4 ft format.' },
+      { icon: 'Droplets', title: 'Water & weather resistant', text: 'Designed for moisture and weather exposure across interior and exterior spaces.' },
       { icon: 'Flame', title: 'Fire retardant', text: 'Stated as fire retardant in the StonIT technical card.' },
-      { icon: 'Wrench', title: 'Quick installation', text: 'Cut with a diamond blade, fixed with PU-based adhesive.' },
+      { icon: 'Wrench', title: 'Quick installation', text: 'Cut with a diamond blade and install using PU-based adhesive.' },
       { icon: 'Sparkles', title: 'Low maintenance', text: 'Protective coating over a hand-painted stone texture.' },
     ],
     specs: [
@@ -128,17 +128,17 @@ export const RANGES = [
     tagline: 'Art Meets Surface',
     headline: 'Stone as a living canvas.',
     summary:
-      'High-definition artistry on flexible stone veneer — natural slate and quartzite infused with bespoke patterns, textures and imagery.',
+      'High-definition designs printed on flexible natural slate and quartzite veneer.',
     description: [
       'Art-i Canvas on Flexible Stone Veneer is a curated dialogue between the timeless texture of natural stone and the boundless potential of high-definition artistry.',
       'By treating ultra-thin flexible stone veneers as a “living canvas”, Canvas Print technology infuses natural slate and quartzite with bespoke patterns, intricate textures and vibrant imagery — without losing the tactile soul of the stone. Suited to high-end interior feature walls, with exterior cladding possible on veneers engineered for it.',
     ],
     features: [
-      { icon: 'Feather', title: 'Lightweight', text: 'Ultra-thin flexible stone veneer.' },
-      { icon: 'Wrench', title: 'Easy to install', text: 'Flexible 4′ × 8′ panels.' },
+      { icon: 'Feather', title: 'Lightweight', text: 'Ultra-thin natural stone veneer with a flexible backing.' },
+      { icon: 'Wrench', title: 'Easy to install', text: 'Flexible panels supplied in a 4′ × 8′ format.' },
       { icon: 'Sparkles', title: 'Maintenance free', text: 'As stated in the Canvas Series technical features.' },
-      { icon: 'Palette', title: 'High-premium print', text: 'High-definition Canvas Print on natural stone.' },
-      { icon: 'Move', title: 'Flexible', text: 'Bends with the veneer it is printed on.' },
+      { icon: 'Palette', title: 'High-premium print', text: 'High-definition canvas printing on natural stone surfaces.' },
+      { icon: 'Move', title: 'Flexible', text: 'Flexible artwork follows the natural stone veneer.' },
     ],
     specs: [
       ['Base', 'Ultra-thin flexible natural stone veneer (slate / quartzite)'],
