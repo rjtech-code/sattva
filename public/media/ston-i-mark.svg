@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+<title id="title">Ston-i Surfaces woven mark</title>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+  <path stroke="#b82a35" d="M17 56c-9-15 3-34 20-34 12 0 20 8 20 20v8c0 9-7 16-16 16H29c-8 0-14 6-14 14s6 14 14 14h7"/>
+  <path stroke="#b82a35" d="M103 64c9 15-3 34-20 34-12 0-20-8-20-20v-8c0-9 7-16 16-16h12c8 0 14-6 14-14s-6-14-14-14h-7"/>
+  <path stroke="#101114" d="M57 12c-17 0-27 20-17 34l30 42c10 14 0 32-17 32-12 0-21-9-21-21"/>
+  <path stroke="#101114" d="M63 108c17 0 27-20 17-34L50 32c-10-14 0-32 17-32 12 0 21 9 21 21"/>
+</g>
+<circle cx="37" cy="43" r="4" fill="#b82a35"/><circle cx="83" cy="77" r="4" fill="#b82a35"/>
+</svg>
