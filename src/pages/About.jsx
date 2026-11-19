@@ -95,8 +95,6 @@ export default function About() {
             ))}
           </ul>
           <div className="mt-12 flex flex-wrap gap-8">
-            <ArrowLink to="/manufacturing">Manufacturing</ArrowLink>
-            <ArrowLink to="/innovation">R&amp;D / Innovation</ArrowLink>
             <ArrowLink to="/partners">B2B partnerships</ArrowLink>
           </div>
         </div>
