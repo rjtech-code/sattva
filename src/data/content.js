@@ -3,16 +3,16 @@
 // Source: client "About Sattva Sattvik" copy.
 export const ABOUT = {
   intro:
-    'Sattva Sattvik Private Limited is a Rajasthan, India–based manufacturing and product-development company focused on creating innovative surface solutions for India and the world.',
+    'Rajasthan-based manufacturer developing architectural surface materials for India and global markets.',
   idea:
-    'At the heart of Sattva Sattvik is a simple idea — to develop better, more versatile surface materials and make them accessible through a strong B2B network across India and worldwide.',
+    'We develop versatile surface materials and make them accessible through a growing B2B network.',
   brand:
-    'Our manufacturing capabilities, product development, and market understanding come together under Ston-i Surfaces, our market-facing brand dedicated to innovative architectural surface solutions.',
+    'Ston-i Surfaces brings our manufacturing expertise to the architectural surface-material market.',
   stoni:
-    'Ston-i Surfaces brings together our expertise in developing surface materials that combine design, versatility, and practicality.',
+    'We create surface materials balancing design, versatility and practical application.',
   // Source: About collage panel.
   purpose:
-    'From material development and manufacturing to quality and supply, we work towards building stronger surface-material brands for the future.',
+    'We develop, manufacture and supply innovative surface materials for evolving markets.',
   mission: 'To build one of the strongest B2B surface-material networks — across India and the world.',
 }
 
@@ -27,10 +27,10 @@ export const STRATEGY = [
 // Descriptions restate client copy only — no sourcing, performance or sustainability claims.
 export const PILLARS = [
   { n: '01', icon: 'Mountain', title: 'Natural Material', text: 'Stonir retains the distinctive look and texture of natural stone.' },
-  { n: '02', icon: 'Lightbulb', title: 'Italian Innovation', text: 'The innovation behind Ston-i began in Italy, and is developed further through Sattva Sattvik’s R&D.' },
-  { n: '03', icon: 'PenTool', title: 'Italian Design', text: 'A brand designed in Italy — the “i” in Ston-i — with three distinct ranges, from stone veneer to art-led canvas.' },
+  { n: '02', icon: 'Lightbulb', title: 'Italian Innovation', text: 'Italian-born ideas move forward through Sattva Sattvik’s product research and development.' },
+  { n: '03', icon: 'PenTool', title: 'Italian Design', text: 'Italian design thinking across three ranges, from flexible stone veneer to printed canvas.' },
   { n: '04', icon: 'Factory', title: 'Made in India', text: 'Manufactured by Sattva Sattvik Private Limited in Rajasthan, India — supplied worldwide.' },
-  { n: '05', icon: 'Shapes', title: 'Versatility', text: 'Developed for versatility in handling, application and design.' },
+  { n: '05', icon: 'Shapes', title: 'Versatility', text: 'Versatile materials for varied handling, applications and design requirements.' },
 ]
 
 // Source: About collage capability row + brief §2.
@@ -45,20 +45,20 @@ export const CAPABILITIES = [
 // Source: Manufacturing collage + brief §11. Generic stages only — per-range specifics
 // are not verified and are deliberately not stated.
 export const PROCESS = [
-  { icon: 'Layers', title: 'Raw Materials', text: 'Selection and preparation of input materials.' },
-  { icon: 'Cog', title: 'Processing', text: 'Production of surface material in our manufacturing facility in India.' },
-  { icon: 'ScanSearch', title: 'Quality Check', text: 'Inspection at defined stages of production.' },
-  { icon: 'Sparkles', title: 'Finishing', text: 'Surface finishing to the range’s specification.' },
-  { icon: 'Package', title: 'Packing', text: 'Packing for protection in transit.' },
-  { icon: 'Truck', title: 'Dispatch', text: 'Supply to B2B partners across India and worldwide.' },
+  { icon: 'Layers', title: 'Raw Materials', text: 'Careful selection and preparation of production materials.' },
+  { icon: 'Cog', title: 'Processing', text: 'Surface materials produced at our Indian manufacturing facility.' },
+  { icon: 'ScanSearch', title: 'Quality Check', text: 'Product checks throughout key production stages.' },
+  { icon: 'Sparkles', title: 'Finishing', text: 'Finishing tailored to each product range.' },
+  { icon: 'Package', title: 'Packing', text: 'Protective packing before dispatch.' },
+  { icon: 'Truck', title: 'Dispatch', text: 'Dispatch to B2B partners across India and global markets.' },
 ]
 
 // Source: R&D collage + brief §12.
 export const RND = [
-  { icon: 'Atom', title: 'New Materials', text: 'Exploring new surface-material possibilities for architecture and interiors.' },
-  { icon: 'Sparkles', title: 'New Finishes', text: 'Developing finishes that extend each range.' },
-  { icon: 'Ruler', title: 'New Formats', text: 'Working on formats that suit how surfaces are specified and installed.' },
-  { icon: 'FlaskConical', title: 'Prototypes & Testing', text: 'Prototyping new products before they reach the portfolio.' },
+  { icon: 'Atom', title: 'New Materials', text: 'Exploring new materials for architecture and interiors.' },
+  { icon: 'Sparkles', title: 'New Finishes', text: 'Developing distinctive finishes across product ranges.' },
+  { icon: 'Ruler', title: 'New Formats', text: 'Creating formats suited to specification and installation.' },
+  { icon: 'FlaskConical', title: 'Prototypes & Testing', text: 'Testing prototypes before adding products to the portfolio.' },
 ]
 
 // Source: brief §13 + B2B collage.
