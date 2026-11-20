@@ -40,7 +40,7 @@ export default function About() {
 
       <section id="vision" className="section scroll-mt-20 border-t border-line bg-coal">
         <div className="wrap">
-          <SectionHead eyebrow="Vision" title="A manufacturing company building the next generation of surface materials." />
+          <SectionHead eyebrow="Vision" title="Building the next generation of surface materials." />
           <div className="mt-14"><MissionPanel /></div>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function About() {
           {/* Corporate → brand → ranges, as two connected identities */}
           <Reveal delay={100} className="flex flex-col">
             {[
-              { k: COMPANY.legalName, v: 'Manufacturing · R&D · Product Development' },
+              { k: COMPANY.legalName, v: 'Product Development · R&D' },
               { k: BRAND.name, v: 'Market-facing architectural surface brand' },
               { k: 'Stonir · StonIT · Art-i Canvas Veneer', v: 'Product ranges' },
             ].map((row, i) => (
