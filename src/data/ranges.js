@@ -122,7 +122,7 @@ export const RANGES = [
   },
   {
     slug: 'art-i-canvas-veneer',
-    name: 'Art-i Canvas Veneer',
+    name: 'Art-I Canvas Veneer',
     wordmark: 'ART-I',
     wordmarkSub: 'CANVAS VENEER',
     tagline: 'Art Meets Surface',
