@@ -13,7 +13,6 @@ export default function Seo({ title, description, path, image = '/textures/marbl
       name: COMPANY.legalName,
       legalName: COMPANY.legalName,
       url: SITE_URL,
-      logo: absolute('/favicon.svg'),
       address: { '@type': 'PostalAddress', addressRegion: 'Rajasthan', addressCountry: 'IN' },
       contactPoint: CONTACT.phone ? [{ '@type': 'ContactPoint', telephone: CONTACT.phone, contactType: 'sales', areaServed: 'IN' }] : undefined,
       sameAs: CONTACT.social.map((item) => item.href),
@@ -24,7 +23,6 @@ export default function Seo({ title, description, path, image = '/textures/marbl
       '@id': `${SITE_URL}/#brand`,
       name: BRAND.name,
       url: SITE_URL,
-      parentOrganization: { '@id': `${SITE_URL}/#organization` },
     },
     {
       '@type': 'WebSite',
