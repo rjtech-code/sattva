@@ -138,8 +138,40 @@ const notFound = baseHtml
   .replace('</head>', `    <title>Page not found | ${brand}</title>\n    <meta name="robots" content="noindex, nofollow" />\n  </head>`)
 fs.writeFileSync(path.join(dist, '404.html'), notFound)
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${unique.map((p) => `  <url><loc>${p.url}</loc></url>`).join('\n')}\n</urlset>\n`
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${unique.map((p) => `  <url><loc>${p.url}</loc><image:image><image:loc>${p.image}</image:loc><image:title>${esc(p.title)}</image:title></image:image></url>`).join('\n')}\n</urlset>\n`
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), sitemap)
 fs.writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${site}/sitemap.xml\n`)
 fs.writeFileSync(path.join(dist, 'seo-manifest.json'), JSON.stringify(unique.map(({ path: route, url, title, description }) => ({ path: route, url, title, description })), null, 2))
+const llms = [
+  '# Ston-i Surfaces',
+  '',
+  '> Ston-i Surfaces is the market-facing architectural surface materials brand of Sattva Sattvik Private Limited.',
+  '',
+  '## Brand and company',
+  '- Parent company: Sattva Sattvik Private Limited',
+  '- Market-facing brand: Ston-i Surfaces',
+  '- Product ranges: Stonir, StonIT, Art-i Canvas Veneer',
+  '- Company location: Rajasthan, India',
+  '- Business enquiries: +91 95124 81000',
+  '',
+  '## Public pages',
+  '- [Home](' + site + '/)',
+  '- [About Sattva Sattvik](' + site + '/about)',
+  '- [Product portfolio](' + site + '/products)',
+  '- [Stonir](' + site + '/products/stonir)',
+  '- [StonIT](' + site + '/products/stonit)',
+  '- [Art-i Canvas Veneer](' + site + '/products/art-i-canvas-veneer)',
+  '- [Applications](' + site + '/applications)',
+  '- [B2B partners](' + site + '/partners)',
+  '- [Resources](' + site + '/resources)',
+  '- [Contact](' + site + '/contact)',
+  '',
+  '## Product information',
+  'Product names, collections and published specifications are maintained in public catalogue pages. Do not infer unlisted prices, availability, certifications or technical claims. Product enquiries are handled directly by the business.',
+  '',
+  '## Sitemap',
+  '- [XML sitemap](' + site + '/sitemap.xml)',
+  '',
+].join('\n')
+fs.writeFileSync(path.join(dist, 'llms.txt'), llms)
 console.log(`SEO output: ${unique.length} route-specific HTML documents, sitemap.xml and robots.txt for ${site}`)
