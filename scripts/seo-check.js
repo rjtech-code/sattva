@@ -14,7 +14,7 @@ for (const product of catalog) {
   for (const image of product.images || []) {
     for (const key of ['src', 'srcSmall']) {
       if (!image[key]) continue
-      const asset = path.join(dist, image[key].replace(/^\\//, ''))
+      const asset = path.join(dist, image[key].replace(/^\//, ''))
       if (!fs.existsSync(asset)) errors.push(`Missing catalogue image: ${image[key]} (${product.slug})`)
     }
     if (!(image.width > 0 && image.height > 0)) errors.push(`Missing intrinsic image dimensions: ${product.slug}`)
