@@ -12,95 +12,58 @@ import { RANGES, getRange } from '../data/ranges'
 import { applicationsFor, collectionCover, collectionsFor, productImage, productsFor, rangeCover } from '../data/catalog'
 import { BRAND } from '../data/site'
 
-/* Three hero compositions — one per range identity — sharing the same type system. */
-
+/* One consistent, split editorial hero for every product range. */
 function StrataHero({ range, crumbs }) {
-  // Stonir: real veneer swatches layered like stone strata, oversized wordmark, red highlight line.
-  const layers = [
-    productImage('stonir', 'natural-series', 'ssv-15000-3'),
-    productImage('stonir', 'grainy-series', 'ssv-41000-2'),
-    productImage('stonir', 'natural-series', 'ssv-3000-1'),
-  ]
+  const products = productsFor(range.slug)
+  const featured = range.slug === 'stonir'
+    ? [
+        products.find((p) => p.slug === 'ssv-15000-3'),
+        products.find((p) => p.slug === 'ssv-41000-2'),
+        products.find((p) => p.slug === 'ssv-3000-1'),
+      ]
+    : products.filter((p) => p.images?.some((im) => im.alt === 'panel' || im.alt === 'design')).slice(0, 3)
+
+  const layers = featured.filter(Boolean).map((product) => {
+    const image = product.images.find((im) => im.alt === 'panel' || im.alt === 'design') || product.images[0]
+    return {
+      image,
+      to: `/products/${range.slug}/${product.collection}/${product.slug}`,
+      label: product.code || product.name,
+    }
+  })
+
   return (
     <section className="relative isolate min-h-[92svh] overflow-hidden border-b border-line">
       <div className="absolute inset-0 -z-20 stage-glow" />
       <Picture image={range.identity.texture} className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-25" alt="" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
-      <div className="pointer-events-none absolute right-[16%] top-[15%] -z-10 hidden h-[68%] w-[14%] lg:block" aria-hidden="true">
-        {layers.map((im, i) => im && (
-          <div key={im.src} className="material-stack-card absolute left-0 top-0 h-full overflow-hidden border border-line-2 shadow-2xl shadow-black" style={{ aspectRatio: im.width / im.height, transform: `translate(${(i - 1) * -38}%, ${(i - 1) * 6}%) rotate(${-6 + i * 4}deg)`, zIndex: i, animationDelay: `${i * 180}ms` }}>
-            <img src={im.src} alt="" className="h-full w-full object-cover" width={im.width} height={im.height} />
-          </div>
-        ))}
-        <span className="absolute -left-[46%] top-[52%] z-10 h-[2px] w-[44%] bg-crimson" />
-      </div>
-      <div className="wrap flex min-h-[92svh] flex-col justify-end pb-16 pt-32 lg:pb-24">
-        <Breadcrumbs items={crumbs} />
-        <Reveal className="mt-10">
-          <ItalyBadge className="mb-6" />
-          <p className="eyebrow mb-6">{range.tagline}</p>
-          <h1 className="font-display text-[clamp(4rem,14vw,11rem)] leading-[0.82] tracking-[0.04em]">{range.wordmark}</h1>
-          <p className="display-sm mt-8 !normal-case italic text-paper/90">{range.headline}</p>
-          <p className="lede mt-5">{range.summary}</p>
-          <HeroCtas range={range} label="Explore Collections" />
-        </Reveal>
-      </div>
-    </section>
-  )
-}
-
-function FlowHero({ range, crumbs }) {
-  // StonIT: a real installation behind a deep radial scrim, centred editorial composition.
-  return (
-    <section className="relative isolate min-h-[92svh] overflow-hidden border-b border-line">
-      <Picture image={range.identity.texture} priority className="!absolute inset-0 -z-20" imgClassName="h-full w-full object-cover opacity-70" alt="" />
-      <div className="absolute inset-0 -z-10 scrim-radial" />
-      <div className="wrap flex min-h-[92svh] flex-col pb-16 pt-28">
-        <Breadcrumbs items={crumbs} />
-        <Reveal className="my-auto py-16 text-center">
-          <div className="mb-8"><ItalyBadge /></div>
-          <p className="eyebrow mb-8 justify-center">A {BRAND.name} range</p>
-          <h1 className="font-display text-[clamp(4rem,15vw,12rem)] leading-[0.8] tracking-[0.08em]">{range.wordmark}</h1>
-          <div className="mx-auto mt-10 h-[2px] w-16 bg-crimson" aria-hidden="true" />
-          <p className="mt-8 text-[13px] uppercase tracking-[0.32em] text-paper">{range.tagline}</p>
-          <p className="mt-3 font-display text-[1.35rem] italic text-mist">{range.headline}</p>
-          <p className="lede mx-auto mt-6 text-center">{range.summary}</p>
-          <HeroCtas range={range} label="Explore Designs" center />
-        </Reveal>
-      </div>
-    </section>
-  )
-}
-
-function CanvasHero({ range, crumbs }) {
-  // Art-i: a real design presented as a framed canvas with a gallery-style label.
-  const art = productImage('art-i-canvas-veneer', 'canvas-series', 'acv-13')
-  return (
-    <section className="relative isolate overflow-hidden border-b border-line">
-      <div className="absolute inset-0 -z-10 stage-glow" />
-      <div className="wrap grid min-h-[92svh] items-center gap-12 pb-20 pt-28 lg:grid-cols-[1fr_0.9fr]">
-        <div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/75 to-ink/20" />
+      <div className="wrap grid min-h-[92svh] items-center gap-10 pb-16 pt-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:pb-20">
+        <div className="relative z-10">
           <Breadcrumbs items={crumbs} />
-          <Reveal className="mt-12">
+          <Reveal className="mt-10">
             <ItalyBadge className="mb-6" />
             <p className="eyebrow mb-6">{range.tagline}</p>
-            <h1 className="font-display leading-[0.85]">
-              <span className="block text-[clamp(4rem,12vw,9rem)] tracking-[0.06em]">{range.wordmark}</span>
-              <span className="mt-3 block text-[clamp(1.4rem,3vw,2.4rem)] uppercase tracking-[0.3em] text-mist">{range.wordmarkSub}</span>
-            </h1>
-            <p className="display-sm mt-8 !normal-case italic">{range.headline}</p>
+            <h1 className="font-display text-[clamp(4rem,13vw,10rem)] leading-[0.82] tracking-[0.035em]">{range.wordmark}</h1>
+            {range.wordmarkSub && <p className="mt-3 font-display text-[clamp(1.4rem,3vw,2.4rem)] uppercase tracking-[0.22em] text-mist">{range.wordmarkSub}</p>}
+            <p className="display-sm mt-8 !normal-case italic text-paper/90">{range.headline}</p>
             <p className="lede mt-5">{range.summary}</p>
-            <HeroCtas range={range} label="Explore Designs" />
+            <HeroCtas range={range} label={range.slug === 'stonir' ? 'Explore Collections' : 'Explore Designs'} />
           </Reveal>
         </div>
-        <Reveal delay={150} className="relative mx-auto w-full max-w-[440px]">
-          <div className="border border-line-2 bg-coal-2 p-4 shadow-[0_50px_100px_-30px_rgb(0_0_0)] sm:p-6">
-            <Picture image={art} priority aspect={0.5} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 34vw, 100vw" alt="Art-i Canvas Veneer design ACV-13" />
-          </div>
-          <div className="absolute -bottom-6 left-4 border-l-2 border-crimson bg-ink px-5 py-3 sm:left-8">
-            <p className="font-display text-[17px] uppercase tracking-[0.12em]">ACV-13</p>
-            <p className="text-[11px] uppercase tracking-[0.2em] text-ash">Canvas Series · 4′ × 8′</p>
-          </div>
+        <Reveal delay={150} className="relative mx-auto h-[390px] w-full max-w-[570px] sm:h-[480px] lg:h-[560px]">
+          {layers.map((item, i) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              aria-label={`View ${range.name} ${item.label}`}
+              className="material-stack-card group absolute top-[5%] h-[88%] w-[43%] overflow-hidden border border-line-2 bg-coal-2 shadow-2xl shadow-black transition-transform duration-500 hover:z-20 hover:scale-[1.025] focus-visible:z-20"
+              style={{ left: `${8 + i * 17}%`, transform: `translateY(${i * 5}%) rotate(${-6 + i * 5}deg)`, zIndex: i + 1, animationDelay: `${i * 180}ms` }}
+            >
+              <Picture image={item.image} aspect={0.62} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 24vw, 43vw" alt={`${range.name} ${item.label}`} />
+              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-3 pb-4 pt-12 text-[10px] uppercase tracking-[0.18em] text-white sm:px-4 sm:text-[11px]">{item.label}</span>
+            </Link>
+          ))}
+          <span className="pointer-events-none absolute left-0 top-[52%] z-10 h-[2px] w-[25%] bg-crimson" />
         </Reveal>
       </div>
     </section>
@@ -116,7 +79,7 @@ function HeroCtas({ range, label, center }) {
   )
 }
 
-const HEROES = { strata: StrataHero, flow: FlowHero, canvas: CanvasHero }
+const HEROES = { strata: StrataHero, flow: StrataHero, canvas: StrataHero }
 
 // Card shapes are the average shape of the images they show (slotAspect), so they fill with
 // little or no cropping. Stonir sheets are laid landscape (rotated) as wide strips.
@@ -124,6 +87,10 @@ const LANDSCAPE_COVERS = { stonir: true }
 
 export default function RangePage() {
   const { range: slug } = useParams()
+  return <RangePageContent key={slug} slug={slug} />
+}
+
+function RangePageContent({ slug }) {
   const range = getRange(slug)
   if (!range) return <NotFound />
 
