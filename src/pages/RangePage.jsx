@@ -103,7 +103,21 @@ function RangePageContent({ slug }) {
 
   return (
     <>
-      <Seo title={`${range.name} — ${range.tagline}`} path={`/products/${range.slug}`} description={`${range.summary} A ${BRAND.name} range by Sattva Sattvik Private Limited.`} image={cover?.src} />
+      <Seo
+        title={`${range.name} — ${range.tagline}`}
+        path={`/products/${range.slug}`}
+        description={`${range.summary} A ${BRAND.name} range by Sattva Sattvik Private Limited.`}
+        image={cover?.src}
+        schema={[{
+          '@type': 'ItemList',
+          name: `${range.name} products`,
+          numberOfItems: products.length,
+          itemListElement: products.slice(0, 100).map((p, i) => ({
+            '@type': 'ListItem', position: i + 1, name: p.code || p.name || p.slug,
+            item: `/products/${p.range}/${p.collection}/${p.slug}`,
+          })),
+        }]}
+      />
       <Hero range={range} crumbs={crumbs} />
 
       {/* Real-time 3D preview, built from a real product photograph */}
