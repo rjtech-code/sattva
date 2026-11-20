@@ -7,7 +7,7 @@ import Picture, { slotAspect } from '../components/ui/Picture'
 import ProductViewer from '../components/viewer/ProductViewer'
 import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
-import { getRange } from '../data/ranges'
+import { getRange } from '../data/ranges'\nimport { SITE_URL } from '../data/site'
 import { getCollection, getProduct, productsFor } from '../data/catalog'
 
 const VIEW_LABEL = { 'natural light': 'Natural light', backlit: 'Backlit', application: 'Application', panel: 'Panel', design: 'Design' }
@@ -53,6 +53,16 @@ function ProductDetail() {
         path={`${base}/${product.slug}`}
         description={`${title} from the ${collection.name} collection — ${range.name}, ${range.tagline}, by Ston-i Surfaces.${specs.length ? ' ' + specs.map(([k, v]) => `${k}: ${v}`).join('. ') + '.' : ''}`}
         image={images[0]?.src}
+        schema={[{
+          '@type': 'Product',
+          name: fullName,
+          description: `${title} from the ${collection.name} collection — ${range.name}, ${range.tagline}, by Ston-i Surfaces.`,
+          image: images.map((im) => im.src),
+          url: `${base}/${product.slug}`,
+          brand: { '@id': `${SITE_URL}/#brand` },
+          manufacturer: { '@id': `${SITE_URL}/#organization` },
+          category: collection.name,
+        }]}
       />
       <div className="pt-28">
         <div className="wrap">
