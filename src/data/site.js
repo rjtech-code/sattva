@@ -79,8 +79,8 @@ export const NAV = [
         to: '/products',
         note: 'The full portfolio',
         children: [
-          { label: 'StonIT', to: '/products/stonit', note: 'Innovative Surface Solutions' },
           { label: 'Stonir', to: '/products/stonir', note: 'Flexible Stone Veneer' },
+          { label: 'StonIT', to: '/products/stonit', note: 'Innovative Surface Solutions' },
           { label: 'Art-i Canvas Veneer', to: '/products/art-i-canvas-veneer', note: 'Art Meets Surface' },
         ],
       },
