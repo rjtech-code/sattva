@@ -29,7 +29,6 @@ const collections = collectionMap.map((c) => {
   const items = products.filter((p) => p.range === c.range && p.collection === c.slug)
   return { ...c, rangeName: range?.name || c.range, name: c.slug.split('-').map((x) => x[0]?.toUpperCase() + x.slice(1)).join(' '), items, image: items[c.range === 'art-i-canvas-veneer' ? 1 : 0]?.images?.[0]?.src }
 })
-const getCollection = (range, slug) => collections.find((c) => c.range === range && c.slug === slug)
 const getRangeImage = (r) => {
   if (r.identity?.coverImage?.src) return r.identity.coverImage.src
   const c = r.identity?.cover
