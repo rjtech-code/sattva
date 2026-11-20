@@ -7,7 +7,8 @@ import Picture, { slotAspect } from '../components/ui/Picture'
 import ProductViewer from '../components/viewer/ProductViewer'
 import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
-import { getRange } from '../data/ranges'\nimport { SITE_URL } from '../data/site'
+import { getRange } from '../data/ranges'
+import { SITE_URL } from '../data/site'
 import { getCollection, getProduct, productsFor } from '../data/catalog'
 
 const VIEW_LABEL = { 'natural light': 'Natural light', backlit: 'Backlit', application: 'Application', panel: 'Panel', design: 'Design' }
