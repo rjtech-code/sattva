@@ -41,12 +41,14 @@ for (const page of pages) {
     } catch { errors.push(`${page.path}: invalid JSON-LD`) }
   }
 }
-if (!sitemap.trim().startsWith('<?xml') || !sitemap.includes('<urlset')) errors.push('Sitemap is not a valid urlset document')
+if (!sitemap.trim().startsWith('<?xml') || !sitemap.includes('<urlset') || !sitemap.includes('xmlns:image=')) errors.push('Sitemap is not a valid urlset with image namespace')
+if ([...sitemap.matchAll(/<url>/g)].length !== [...sitemap.matchAll(/<image:image>/g)].length) errors.push('Each sitemap URL should include its primary image')
 if (new Set(sitemapUrls).size !== sitemapUrls.length) errors.push('Sitemap contains duplicate URLs')
 for (const url of sitemapUrls) if (!expectedUrls.has(url)) errors.push(`Sitemap URL is not in route manifest: ${url}`)
 for (const url of expectedUrls) if (!sitemapUrls.includes(url)) errors.push(`Indexable route missing from sitemap: ${url}`)
 if (sitemap.includes('/manufacturing')) errors.push('Redirected /manufacturing route must not be in sitemap')
 if (!fs.readFileSync(path.join(dist, 'robots.txt'), 'utf8').includes(`Sitemap: ${host}/sitemap.xml`)) errors.push('robots.txt sitemap directive missing or incorrect')
+if (!fs.existsSync(path.join(dist, 'llms.txt'))) errors.push('Public llms.txt was not generated')
 const notFound = fs.readFileSync(path.join(dist, '404.html'), 'utf8')
 if (!/name="robots" content="noindex, nofollow"/.test(notFound)) errors.push('404 document must be noindex')
 
