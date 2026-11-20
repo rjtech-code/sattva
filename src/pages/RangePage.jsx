@@ -104,6 +104,7 @@ function RangePageContent({ slug }) {
   return (
     <>
       <Seo
+        pageType="CollectionPage"
         title={`${range.name} — ${range.tagline}`}
         path={`/products/${range.slug}`}
         description={`${range.summary} A ${BRAND.name} range by Sattva Sattvik Private Limited.`}
