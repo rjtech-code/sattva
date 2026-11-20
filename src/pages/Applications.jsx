@@ -15,6 +15,7 @@ export default function Applications() {
   return (
     <>
       <Seo
+        pageType="CollectionPage"
         title="Applications by Product"
         path="/applications"
         description="Where to use Stonir flexible stone veneer, StonIT FRP rock panels and Art-i Canvas Veneer — interior and exterior applications from each range’s catalogue."
