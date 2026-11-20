@@ -14,6 +14,7 @@ export default function Resources() {
   return (
     <>
       <Seo
+        pageType="CollectionPage"
         title="Resources — Catalogues, Technical Information & FAQs"
         path="/resources"
         description="Ston-i Surfaces resource centre — product catalogues, shade cards, technical information, specifications, installation guides and FAQs."
