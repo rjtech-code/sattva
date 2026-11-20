@@ -1,7 +1,7 @@
 // Brand hierarchy and site-wide constants.
 // Source of every statement here is recorded in docs/CONTENT_AND_ASSET_MAP.md.
 
-export const SITE_URL = (import.meta.env.VITE_SITE_URL || '').replace(/\/$/, '')
+export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://www.sattvasattvik.com').replace(/\/$/, '')
 
 export const COMPANY = {
   legalName: 'Sattva Sattvik Private Limited',
