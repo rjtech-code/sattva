@@ -67,7 +67,7 @@ export async function handleEnquiry(raw, env = process.env, { devStore } = {}) {
       return { status: 502, body: { ok: false, error: 'archive_read_failed' } }
     }
     const line = JSON.stringify(record)
-    const content = Buffer.from(`${previous}${previous && !previous.endsWith('\\n') ? '\\n' : ''}${line}\\n`).toString('base64')
+    const content = Buffer.from(`${previous}${previous && !previous.endsWith('\n') ? '\n' : ''}${line}\n`).toString('base64')
     const saved = await fetch(api, {
       method: 'PUT',
       headers,
