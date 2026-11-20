@@ -80,7 +80,14 @@ export const COLLECTIONS = [
 // Stone sheets (every Stonir image, StonIT panel swatches) may be turned 90° to fill a landscape
 // slot; Art-i artwork and application photos never are.
 const canRotate = (p, im) => p.range === 'stonir' ? im.alt !== 'application' : im.alt === 'panel'
-export const PRODUCTS = generated.map((p) => ({ ...p, images: p.images.map((im) => ({ ...im, rotatable: canRotate(p, im) })) }))
+// The supplied Modular Cube application visual was flagged as incorrect; hide it until the
+// client provides the verified replacement rather than publishing a mismatched project image.
+export const PRODUCTS = generated.map((p) => ({
+  ...p,
+  images: p.images
+    .filter((im) => !(p.range === 'stonit' && p.collection === 'modular-cube' && im.alt === 'application'))
+    .map((im) => ({ ...im, rotatable: canRotate(p, im) })),
+}))
 
 export const collectionsFor = (range) => COLLECTIONS.filter((c) => c.range === range && PRODUCTS.some((p) => p.range === range && p.collection === c.slug))
 export const getCollection = (range, slug) => COLLECTIONS.find((c) => c.range === range && c.slug === slug)
