@@ -2,7 +2,7 @@ import { SITE_URL, BRAND, COMPANY, CONTACT } from '../../data/site'
 
 const absolute = (value) => value?.startsWith('http') ? value : value ? `${SITE_URL}${value.startsWith('/') ? '' : '/'}${value}` : undefined
 
-export default function Seo({ title, description, path, image = '/textures/marble-crimson.webp', noindex = false, schema = [] }) {
+export default function Seo({ title, description, path, image = '/textures/marble-crimson.webp', noindex = false, schema = [], pageType = 'WebPage' }) {
   const fullTitle = title ? `${title} | ${BRAND.name}` : `${BRAND.name} — Italian-Designed Architectural Surfaces`
   const url = path != null && !noindex ? absolute(path) : null
   const img = absolute(image)
@@ -33,7 +33,7 @@ export default function Seo({ title, description, path, image = '/textures/marbl
       inLanguage: 'en-IN',
     },
     ...(url ? [{
-      '@type': 'WebPage',
+      '@type': pageType,
       '@id': `${url}#webpage`,
       url,
       name: fullTitle,
