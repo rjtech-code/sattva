@@ -46,7 +46,13 @@ export default function Seo({ title, description, path, image = '/textures/marbl
     },
     ...schema,
   ].filter(Boolean)
-  const cleanGraph = JSON.parse(JSON.stringify(graph))
+  const normalizeSchema = (value, key = '') => {
+    if (Array.isArray(value)) return value.map((item) => normalizeSchema(item, key))
+    if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, normalizeSchema(v, k)]))
+    if (typeof value === 'string' && ['url', 'image', 'item'].includes(key) && value.startsWith('/')) return absolute(value)
+    return value
+  }
+  const cleanGraph = normalizeSchema(JSON.parse(JSON.stringify(graph)))
   return (
     <>
       <title>{fullTitle}</title>
