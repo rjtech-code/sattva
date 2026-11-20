@@ -217,22 +217,6 @@ function ApplicationsTeaser() {
   )
 }
 
-function ManufacturingTeaser() {
-  return (
-    <section className="section border-t border-line bg-coal" aria-labelledby="mfg-teaser">
-      <div className="wrap">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-end">
-          <SectionHead eyebrow="Manufacturing" title={<span id="mfg-teaser">Built in India. Growing across the world.</span>} />
-          <Reveal>
-            <p className="lede">We don’t merely trade these products — {COMPANY.shortName} manufactures and develops them, from material preparation to dispatch.</p>
-          </Reveal>
-        </div>
-        <div className="mt-16"><ProcessSteps /></div>
-      </div>
-    </section>
-  )
-}
-
 function Partners() {
   return (
     <section className="section border-t border-line" aria-labelledby="b2b-teaser">
@@ -266,7 +250,6 @@ export default function Home() {
       <Portfolio />
       <Architecture />
       <ApplicationsTeaser />
-      <ManufacturingTeaser />
       <Partners />
       <CtaBand
         eyebrow="Catalogue & product information"
