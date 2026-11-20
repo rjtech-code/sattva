@@ -82,7 +82,7 @@ function Hero() {
                     animationDelay: `${depth * 180}ms`,
                   }}
                 >
-                  <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} />
+                  <img src={im.src} alt={r.name} className="h-full w-full object-cover" width={im.width} height={im.height} fetchPriority={i === 0 ? 'high' : undefined} loading={i === 0 ? 'eager' : 'lazy'} />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
                   <span className="absolute left-3 top-3 font-display text-[11px] tracking-[0.16em] text-white sm:left-5 sm:top-5 sm:text-[15px]">{r.wordmark}</span>
                 </Link>
