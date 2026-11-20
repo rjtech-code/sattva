@@ -10,7 +10,8 @@ import ThemeToggle from '../ui/ThemeToggle'
 export function Wordmark({ compact = false }) {
   return (
     <Link to="/" className="group flex min-w-0 items-center gap-2 sm:gap-3" aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}>
-      <img src="/media/ston-i-mark.svg" alt="" aria-hidden="true" className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" width="48" height="48" />
+      <img src="/media/ston-i-mark.svg" alt="" aria-hidden="true" className="only-dark h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" width="48" height="48" />
+      <img src="/media/ston-i-mark-dark.svg" alt="" aria-hidden="true" className="only-light h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" width="48" height="48" />
       <span className="flex min-w-0 flex-col justify-center leading-none">
         <span className="whitespace-nowrap font-display text-[17px] tracking-[0.035em] text-paper sm:text-[21px] xl:text-[23px]">
           STON<span className="text-crimson-hi">-</span>I SURFACES
