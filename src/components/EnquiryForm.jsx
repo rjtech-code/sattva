@@ -1,7 +1,7 @@
 import { useId, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { ArrowRight, AlertTriangle, MessageCircle } from 'lucide-react'
-import { ENQUIRY_TYPES, ROLES, STATES, normalizeEnquiry, validateEnquiry, whatsappMessage } from '../lib/enquiry'
+import { ENQUIRY_TYPES, ROLES, normalizeEnquiry, validateEnquiry, whatsappMessage } from '../lib/enquiry'
 import { RANGES } from '../data/ranges'
 import { CONTACT } from '../data/site'
 
@@ -144,12 +144,9 @@ export default function EnquiryForm({ defaultType = 'general', title, intro, doc
           {err('city')}
         </div>
         <div className="field">
-          <label htmlFor={`${uid}-state`}>State *</label>
-          <select {...f('state')} defaultValue="" required>
-            <option value="" disabled>Select state</option>
-            {STATES.map((s) => <option key={s}>{s}</option>)}
-          </select>
-          {err('state')}
+          <label htmlFor={`${uid}-country`}>Country *</label>
+          <input {...f('country')} autoComplete="country-name" defaultValue="India" required />
+          {err('country')}
         </div>
         <div className="field">
           <label htmlFor={`${uid}-role`}>I am a</label>
