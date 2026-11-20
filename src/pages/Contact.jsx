@@ -61,7 +61,7 @@ export default function Contact() {
             <div className="pointer-events-none absolute left-4 top-4 border border-white/15 bg-ink/55 px-4 py-3 shadow-xl backdrop-blur-md sm:left-7 sm:top-7">
               <div className="flex items-center gap-2 text-crimson-hi"><MapPin size={15} /><span className="text-[10px] uppercase tracking-[0.22em]">Ston-i Surfaces</span></div>
               <p className="mt-1 font-display text-xl text-white">Jaipur, India</p>
-              <p className="mt-1 text-[11px] text-white/65">Rajasthan · Manufacturing base region</p>
+              <p className="mt-1 text-[11px] text-white/65">Rajasthan · India</p>
             </div>
             <div className="pointer-events-none absolute bottom-4 right-4 border border-white/10 bg-ink/45 px-3 py-2 text-[9px] uppercase tracking-[0.2em] text-white/75 backdrop-blur-md sm:bottom-7 sm:right-7">Ston-i Surfaces · Rajasthan</div>
           </div>
