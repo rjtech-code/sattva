@@ -115,7 +115,7 @@ export const rangeCover = (r) => {
 // Application gallery for a range: Stonir's curated project photos, or each product's own
 // application visual (one per StonIT design, every Art-i design). Items link to the product.
 export const applicationsFor = (rangeSlug) => {
-  if (rangeSlug === 'stonir') return STONIR_APPLICATIONS.map((a) => ({ ...a, to: '/products/stonir' }))
+  if (rangeSlug === 'stonir') return [...new Map(STONIR_APPLICATIONS.map((a) => [a.image.src, a])).values()].map((a) => ({ ...a, to: '/products/stonir' }))
   const seen = new Set()
   return productsFor(rangeSlug)
     .filter((p) => p.images?.some((im) => im.alt === 'application'))
