@@ -39,12 +39,12 @@ const getRangeImage = (r) => {
 const commonGraph = () => [
   {
     '@type': 'Organization', '@id': `${site}/#organization`, name: company, legalName: company, url: site,
-    logo: abs('/favicon.svg'), sameAs: social,
+    sameAs: social,
     address: { '@type': 'PostalAddress', addressRegion: 'Rajasthan', addressCountry: 'IN' },
     contactPoint: [{ '@type': 'ContactPoint', telephone: phone, contactType: 'sales', areaServed: 'IN' }],
     brand: { '@id': `${site}/#brand` },
   },
-  { '@type': 'Brand', '@id': `${site}/#brand`, name: brand, url: site, parentOrganization: { '@id': `${site}/#organization` } },
+  { '@type': 'Brand', '@id': `${site}/#brand`, name: brand, url: site },
   { '@type': 'WebSite', '@id': `${site}/#website`, url: site, name: brand, publisher: { '@id': `${site}/#organization` }, inLanguage: 'en-IN' },
 ]
 const pages = []
