@@ -5,7 +5,7 @@ import Picture, { slotAspect } from '../components/ui/Picture'
 import Reveal from '../components/ui/Reveal'
 import Icon from '../components/ui/Icon'
 import { ArrowLink, ButtonLink, Eyebrow } from '../components/ui/Bits'
-import { BrandOrigin, CtaBand, ItalyBadge, OriginStrip, PartnerGrid, ProcessSteps, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
+import { BrandOrigin, CtaBand, ItalyBadge, OriginStrip, PartnerGrid, RangeCards, SectionHead, WhyStoni } from '../components/sections/Blocks'
 import { tex } from '../data/media'
 import { RANGES } from '../data/ranges'
 import { applicationsFor, productImage } from '../data/catalog'
@@ -117,9 +117,9 @@ function Intro() {
         </Reveal>
         <Reveal delay={120}>
           <Eyebrow className="mb-6">The company behind the brand</Eyebrow>
-          <h2 className="display-lg">Built by manufacturing. Defined by material innovation.</h2>
+          <h2 className="display-lg">Defined by material innovation.</h2>
           <p className="lede mt-7">
-            {BRAND.name} is an architectural surface-material brand by <span className="text-paper">{COMPANY.legalName}</span>, a manufacturing and product-development company based in {COMPANY.region}.
+            {BRAND.name} is an architectural surface-material brand by <span className="text-paper">{COMPANY.legalName}</span>, a product-development company based in {COMPANY.region}.
           </p>
           <p className="lede mt-4">Through {BRAND.name}, {COMPANY.shortName} develops and supplies innovative surface materials for B2B markets in India and worldwide.</p>
           <ArrowLink to="/about" className="mt-9">Discover Sattva Sattvik</ArrowLink>
