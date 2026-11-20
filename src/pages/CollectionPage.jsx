@@ -10,6 +10,10 @@ import { getCollection, productsFor } from '../data/catalog'
 
 export default function CollectionPage() {
   const { range: rangeSlug, collection: slug } = useParams()
+  return <CollectionContent key={`${rangeSlug}/${slug}`} rangeSlug={rangeSlug} slug={slug} />
+}
+
+function CollectionContent({ rangeSlug, slug }) {
   const range = getRange(rangeSlug)
   const collection = range && getCollection(range.slug, slug)
   if (!collection) return <NotFound />
