@@ -9,22 +9,16 @@ import ProductViewer from '../components/viewer/ProductViewer'
 import { DocRequestList } from '../components/CatalogueRequest'
 import NotFound from './NotFound'
 import { RANGES, getRange } from '../data/ranges'
-import { applicationsFor, collectionCover, collectionsFor, productImage, productsFor, rangeCover } from '../data/catalog'
+import { applicationsFor, collectionCover, collectionsFor, productsFor, rangeCover } from '../data/catalog'
 import { BRAND } from '../data/site'
 
 /* One consistent, split editorial hero for every product range. */
 function StrataHero({ range, crumbs }) {
   const products = productsFor(range.slug)
-  const featured = range.slug === 'stonir'
-    ? [
-        products.find((p) => p.slug === 'ssv-15000-3'),
-        products.find((p) => p.slug === 'ssv-41000-2'),
-        products.find((p) => p.slug === 'ssv-3000-1'),
-      ]
-    : products.filter((p) => p.images?.some((im) => im.alt === 'panel' || im.alt === 'design')).slice(0, 3)
+  const featured = products.filter((product) => product.images?.length).slice(0, 3)
 
   const layers = featured.filter(Boolean).map((product) => {
-    const image = product.images.find((im) => im.alt === 'panel' || im.alt === 'design') || product.images[0]
+    const image = product.images[0]
     return {
       image,
       to: `/products/${range.slug}/${product.collection}/${product.slug}`,
