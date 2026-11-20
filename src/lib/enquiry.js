@@ -1,5 +1,5 @@
 // Shared by the browser form and the server handler so both enforce the same rules.
-// Shared enquiry form: name, mobile (WhatsApp), city and state required; email is optional.
+// Shared enquiry form: name, mobile (WhatsApp), city and country required; email is optional.
 
 export const ENQUIRY_TYPES = [
   { value: 'b2b-partnership', label: 'Dealership / distribution' },
@@ -18,16 +18,7 @@ export const ROLES = [
   'Other',
 ]
 
-export const STATES = [
-  'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Goa', 'Gujarat', 'Haryana',
-  'Himachal Pradesh', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Manipur',
-  'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana',
-  'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal',
-  'Andaman & Nicobar Islands', 'Chandigarh', 'Dadra & Nagar Haveli and Daman & Diu', 'Delhi',
-  'Jammu & Kashmir', 'Ladakh', 'Lakshadweep', 'Puducherry',
-]
-
-const LIMITS = { name: 80, company: 120, city: 60, message: 1000, email: 254 }
+const LIMITS = { name: 80, company: 120, city: 60, country: 80, message: 1000, email: 254 }
 const MOBILE_RE = /^[6-9]\d{9}$/
 
 // Accepts "+91 98290 12345", "098290-12345", "9829012345" → "9829012345".
@@ -45,7 +36,7 @@ export function normalizeEnquiry(raw = {}) {
     phone: normalizeMobile(raw.phone),
     email: s(raw.email).toLowerCase(),
     city: s(raw.city),
-    state: s(raw.state),
+    country: s(raw.country),
     role: s(raw.role),
     range: s(raw.range),
     product: s(raw.product),
@@ -61,8 +52,7 @@ export function validateEnquiry(data) {
   else if (!MOBILE_RE.test(data.phone)) errors.phone = 'Enter a valid 10-digit Indian mobile number.'
   if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.email = 'Enter a valid email address.'
   if (!data.city) errors.city = 'Please enter your city.'
-  if (!data.state) errors.state = 'Please select your state.'
-  else if (!STATES.includes(data.state)) errors.state = 'Please select a state from the list.'
+  if (!data.country) errors.country = 'Please enter your country.'
   if (!ENQUIRY_TYPES.some((t) => t.value === data.type)) errors.type = 'Please choose an enquiry type.'
   for (const [k, max] of Object.entries(LIMITS)) {
     if (data[k] && data[k].length > max) errors[k] = `Please keep this under ${max} characters.`
@@ -78,7 +68,8 @@ export function whatsappMessage(data, { rangeName, documentLabel } = {}) {
     data.company && `Company: ${data.company}`,
     data.email && `Email: ${data.email}`,
     data.role && `I am a: ${data.role}`,
-    `City: ${data.city}, ${data.state}`,
+    `City: ${data.city}`,
+    `Country: ${data.country}`,
     `Mobile: +91 ${data.phone}`,
     rangeName && `Interested in: ${rangeName}`,
     data.product && `Product: ${data.product}`,
