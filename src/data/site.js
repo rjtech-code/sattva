@@ -54,7 +54,7 @@ export const CONTACT = {
   email: null,
   // Business WhatsApp number (country code + number, digits only, e.g. 9198xxxxxxxx).
   // Enquiries and catalogue requests are sent here. Set VITE_WHATSAPP_NUMBER in the host env.
-  whatsapp: whatsappNumber(import.meta.env.VITE_WHATSAPP_NUMBER),
+  whatsapp: whatsappNumber(import.meta.env.VITE_WHATSAPP_NUMBER || '+919512481000'),
   get whatsappDisplay() {
     const d = this.whatsapp
     return d && d.length === 12 && d.startsWith('91') ? `+91 ${d.slice(2, 7)} ${d.slice(7)}` : d && `+${d}`
