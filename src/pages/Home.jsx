@@ -110,10 +110,7 @@ function Intro() {
       <div className="wrap grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <Reveal className="relative">
           <Picture image={tex.marbleDark} aspect={5 / 4} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 50vw, 100vw" alt="" />
-          <div className="absolute -bottom-6 -right-2 hidden border border-line bg-ink px-6 py-5 sm:block lg:-right-8">
-            <p className="text-[10px] uppercase tracking-[0.26em] text-ash">Manufactured in</p>
-            <p className="mt-1 font-display text-[22px]">{COMPANY.region}</p>
-          </div>
+
         </Reveal>
         <Reveal delay={120}>
           <Eyebrow className="mb-6">The company behind the brand</Eyebrow>
