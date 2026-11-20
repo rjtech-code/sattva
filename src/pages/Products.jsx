@@ -17,6 +17,7 @@ export default function Products() {
   return (
     <>
       <Seo
+        pageType="CollectionPage"
         title="Products — The Ston-i Surfaces Portfolio"
         path="/products"
         description="Explore the Ston-i Surfaces portfolio by Sattva Sattvik: Stonir flexible stone veneer, StonIT innovative surface solutions and Art-i Canvas Veneer."
