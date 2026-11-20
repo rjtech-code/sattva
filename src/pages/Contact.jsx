@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <>
-      <Seo title="Contact" path="/contact" description="Contact Ston-i Surfaces in Jaipur, Rajasthan for product information, partnerships and enquiries." />
+      <Seo pageType="ContactPage" title="Contact" path="/contact" description="Contact Ston-i Surfaces in Jaipur, Rajasthan for product information, partnerships and enquiries." />
       <section className="relative isolate overflow-hidden pt-32">
         <Picture image={tex.marbleCrimson} priority className="!absolute right-0 top-0 -z-10 h-[70vh] w-full lg:w-2/3" imgClassName="h-full w-full object-cover opacity-50" alt="" />
         <div className="absolute inset-0 -z-10 scrim-l" />
