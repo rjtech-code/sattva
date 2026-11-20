@@ -1,5 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/((?!api/|assets/|textures/|media/|docs/|favicon|robots.txt|sitemap.xml).*)", "destination": "/index.html" }
+  "redirects": [
+    { "source": "/manufacturing", "destination": "/about", "permanent": true },
+    { "source": "/projects", "destination": "/applications", "permanent": true }
   ]
 }
