@@ -28,7 +28,16 @@ function CollectionContent({ rangeSlug, slug }) {
         title={`${collection.name} — ${range.name}`}
         path={path}
         description={collection.description || `${collection.name}, a ${range.name} (${range.tagline}) collection by Ston-i Surfaces.`}
-        image={collection.image?.src}
+        image={products[range.slug === 'art-i-canvas-veneer' ? 1 : 0]?.images?.[0]?.src}
+        schema={[{
+          '@type': 'ItemList',
+          name: `${collection.name} products`,
+          numberOfItems: products.length,
+          itemListElement: products.slice(0, 100).map((p, i) => ({
+            '@type': 'ListItem', position: i + 1, name: p.code || p.name || p.slug,
+            item: `${path}/${p.slug}`,
+          })),
+        }]}
       />
       <section className="border-b border-line pt-32">
         <div className="wrap pb-14">
