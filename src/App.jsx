@@ -5,7 +5,6 @@ import Home from './pages/Home'
 
 // Home ships in the main bundle; every other route is code-split.
 const About = lazy(() => import('./pages/About'))
-const Manufacturing = lazy(() => import('./pages/Manufacturing'))
 const Innovation = lazy(() => import('./pages/Innovation'))
 const Products = lazy(() => import('./pages/Products'))
 const RangePage = lazy(() => import('./pages/RangePage'))
@@ -24,7 +23,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/manufacturing" element={<Manufacturing />} />
+        <Route path="/manufacturing" element={<Navigate to="/about" replace />} />
         <Route path="/innovation" element={<Innovation />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:range" element={<RangePage />} />
