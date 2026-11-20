@@ -53,7 +53,7 @@ function StrataHero({ range, crumbs }) {
               className="material-stack-card group absolute top-[5%] h-[88%] w-[43%] overflow-hidden border border-line-2 bg-coal-2 shadow-2xl shadow-black transition-transform duration-500 hover:z-20 hover:scale-[1.025] focus-visible:z-20"
               style={{ left: `${8 + i * 17}%`, transform: `translateY(${i * 5}%) rotate(${-6 + i * 5}deg)`, zIndex: i + 1, animationDelay: `${i * 180}ms` }}
             >
-              <Picture image={item.image} aspect={0.62} imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 24vw, 43vw" alt={`${range.name} ${item.label}`} />
+              <Picture image={item.image} className="absolute inset-0 h-full w-full" imgClassName="h-full w-full object-cover" sizes="(min-width:1024px) 24vw, 43vw" alt={`${range.name} ${item.label}`} />
               <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-3 pb-4 pt-12 text-[10px] uppercase tracking-[0.18em] text-white sm:px-4 sm:text-[11px]">{item.label}</span>
             </Link>
           ))}
