@@ -25,6 +25,7 @@ function CollectionContent({ rangeSlug, slug }) {
   return (
     <>
       <Seo
+        pageType="CollectionPage"
         title={`${collection.name} — ${range.name}`}
         path={path}
         description={collection.description || `${collection.name}, a ${range.name} (${range.tagline}) collection by Ston-i Surfaces.`}
