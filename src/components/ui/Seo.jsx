@@ -34,7 +34,7 @@ export default function Seo({ title, description, path, image = '/textures/marbl
       publisher: { '@id': `${SITE_URL}/#organization` },
       inLanguage: 'en-IN',
     },
-    {
+    ...(url ? [{
       '@type': 'WebPage',
       '@id': `${url}#webpage`,
       url,
@@ -43,7 +43,7 @@ export default function Seo({ title, description, path, image = '/textures/marbl
       isPartOf: { '@id': `${SITE_URL}/#website` },
       about: { '@id': `${SITE_URL}/#brand` },
       inLanguage: 'en-IN',
-    },
+    }] : []),
     ...schema,
   ].filter(Boolean)
   const normalizeSchema = (value, key = '') => {
