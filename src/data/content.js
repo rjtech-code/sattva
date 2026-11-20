@@ -84,7 +84,6 @@ const stonirApp = (slug, title, area, w, h) => ({
 })
 export const STONIR_APPLICATIONS = [
   stonirApp('meeting-area-accent-wall', 'Meeting area accent wall', 'Interior', 692, 490),
-  stonirApp('meeting-area-accent-wall', 'Meeting area accent wall', 'Interior', 730, 361),
   stonirApp('partition-wall', 'Partition wall', 'Interior', 730, 360),
   stonirApp('fireplace-wall', 'Fireplace wall', 'Interior', 730, 361),
   stonirApp('bar-counter', 'Bar counter', 'Interior', 800, 395),
