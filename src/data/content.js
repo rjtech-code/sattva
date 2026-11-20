@@ -35,7 +35,6 @@ export const PILLARS = [
 
 // Source: About collage capability row + brief §2.
 export const CAPABILITIES = [
-  { icon: 'Factory', title: 'Manufacturing' },
   { icon: 'FlaskConical', title: 'Product Development' },
   { icon: 'Atom', title: 'R&D' },
   { icon: 'ShieldCheck', title: 'Quality' },
