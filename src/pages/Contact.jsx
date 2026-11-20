@@ -42,7 +42,7 @@ export default function Contact() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-12 border-t border-line pt-6 text-[12px] uppercase tracking-[0.2em] text-ash">{COMPANY.legalName}<br /><span className="normal-case tracking-normal">Manufacturing · R&amp;D · Product Development</span></p>
+              <p className="mt-12 border-t border-line pt-6 text-[12px] uppercase tracking-[0.2em] text-ash">{COMPANY.legalName}</p>
             </div>
             <EnquiryForm defaultType="general" />
           </div>
