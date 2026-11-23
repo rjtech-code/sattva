@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { ChevronDown, Facebook, Instagram, Menu, X } from 'lucide-react'
 import { NAV, BRAND, COMPANY } from '../../data/site'
 import { ButtonLink } from '../ui/Bits'
 import ThemeToggle from '../ui/ThemeToggle'
@@ -9,18 +9,27 @@ import ThemeToggle from '../ui/ThemeToggle'
 // with Sattva Sattvik and the Italian design line beneath.
 export function Wordmark({ compact = false }) {
   return (
-    <Link to="/" className="group flex min-w-0 items-center gap-2 sm:gap-3" aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}>
-      <img src="/media/ston-i-mark.svg" alt="" aria-hidden="true" className="only-dark h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" width="48" height="48" />
-      <img src="/media/ston-i-mark-dark.svg" alt="" aria-hidden="true" className="only-light h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" width="48" height="48" />
+    <Link
+      to="/"
+      className="group inline-flex min-w-0 items-center gap-2.5 border border-black/10 bg-[#f8f7f3] px-3 py-2 shadow-[0_3px_18px_rgb(0_0_0/0.16)] sm:gap-3 sm:px-4 sm:py-2.5"
+      aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}
+    >
+      <img
+        src="/media/ston-i-mark-dark.svg"
+        alt=""
+        aria-hidden="true"
+        className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
+        width="48"
+        height="48"
+      />
       <span className="flex min-w-0 flex-col justify-center leading-none">
-        <span className="whitespace-nowrap font-display text-[17px] tracking-[0.035em] text-paper sm:text-[21px] xl:text-[23px]">
-          STON<span className="text-crimson-hi">-</span>I SURFACES
+        <span className="whitespace-nowrap font-display text-[17px] font-semibold tracking-[0.025em] text-[#172b2c] sm:text-[21px] xl:text-[23px]">
+          STON<span className="text-[#c8102e]">-I</span> SURFACES
         </span>
         {!compact && (
-          <span className="mt-1.5 whitespace-nowrap text-[7px] font-medium uppercase tracking-[0.13em] text-mist sm:text-[8px] sm:tracking-[0.2em]">
-            BY <span className="text-paper">SATTVA SATTVIK</span>
-            <span className="mx-1 text-crimson-hi">·</span>
-            <span className="text-crimson-hi">DESIGNED IN ITALY</span>
+          <span className="mt-1.5 whitespace-nowrap text-[6.5px] font-semibold uppercase tracking-[0.12em] text-[#263637] sm:text-[8px] sm:tracking-[0.16em]">
+            INNOVATIVE STONE <span className="mx-1 text-[#c8102e]">|</span>
+            <span className="text-[#a51c30]">DESIGNED IN ITALY</span>
           </span>
         )}
       </span>
@@ -154,7 +163,11 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="hidden items-center gap-1.5 lg:flex" aria-label="Social media">
+            <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-8 w-8 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><Facebook size={15} /></a>
+            <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-8 w-8 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><Instagram size={15} /></a>
+          </div>
           <ThemeToggle />
           <ButtonLink to="/partners#enquiry" className="hidden sm:inline-flex !min-h-[40px] !px-4 !text-[10px]">B2B Enquiry</ButtonLink>
           <button

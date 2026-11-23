@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, MessageCircle, ExternalLink } from 'lucide-react'
+import { Mail, MapPin, Phone, MessageCircle, ExternalLink, Facebook, Instagram } from 'lucide-react'
 import Seo from '../components/ui/Seo'
 import { Breadcrumbs, Eyebrow } from '../components/ui/Bits'
 import EnquiryForm from '../components/EnquiryForm'
@@ -15,6 +15,8 @@ export default function Contact() {
     CONTACT.phone && { icon: Phone, label: 'Phone', value: CONTACT.phone, href: `tel:${CONTACT.phone.replace(/\\s/g, '')}` },
     CONTACT.email && { icon: Mail, label: 'Email', value: CONTACT.email, href: `mailto:${CONTACT.email}` },
     CONTACT.whatsapp && { icon: MessageCircle, label: 'WhatsApp', value: CONTACT.whatsappDisplay, href: `https://wa.me/${CONTACT.whatsapp}` },
+    { icon: Facebook, label: 'Facebook', value: 'sattva.decor', href: 'https://www.facebook.com/sattva.decor/', external: true },
+    { icon: Instagram, label: 'Instagram', value: '@sattva.sattvik', href: 'https://www.instagram.com/sattva.sattvik/', external: true },
   ].filter(Boolean)
 
   return (
@@ -37,7 +39,7 @@ export default function Contact() {
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-crimson/60 text-crimson-hi"><c.icon size={17} aria-hidden="true" /></span>
                     <div>
                       <p className="text-[10.5px] uppercase tracking-[0.22em] text-ash">{c.label}</p>
-                      {c.href ? <a href={c.href} className="text-[15px] hover:text-crimson-hi">{c.value}</a> : <p className="text-[15px]">{c.value}</p>}
+                      {c.href ? <a href={c.href} target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener noreferrer' : undefined} className="text-[15px] hover:text-crimson-hi">{c.value}{c.external && <ExternalLink size={12} className="ml-2 inline" aria-hidden="true" />}</a> : <p className="text-[15px]">{c.value}</p>}
                     </div>
                   </li>
                 ))}
