@@ -26,6 +26,21 @@ export default function Footer() {
             {CONTACT.phone && <li className="flex items-center gap-3"><Phone size={15} className="text-crimson-hi" aria-hidden="true" /><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`} className="hover:text-paper">{CONTACT.phone}</a></li>}
             {CONTACT.email && <li className="flex items-center gap-3"><Mail size={15} className="text-crimson-hi" aria-hidden="true" /><a href={`mailto:${CONTACT.email}`} className="hover:text-paper">{CONTACT.email}</a></li>}
           </ul>
+          <div className="mt-5">
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-ash">Follow us</p>
+            <ul className="flex items-center gap-2" aria-label="Social media links">
+              <li>
+                <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sattva Sattvik on Facebook" className="flex h-9 w-9 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi">
+                  <FacebookIcon size={16} />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sattva Sattvik on Instagram" className="flex h-9 w-9 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi">
+                  <InstagramIcon size={16} />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <FooterCol title="Products" links={[{ label: 'Ston-i Surfaces', to: '/products' }, ...RANGES.map((r) => ({ label: r.name, to: `/products/${r.slug}` }))]} />
