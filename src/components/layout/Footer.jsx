@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Mail, MessageCircle, Phone, Facebook, Instagram } from 'lucide-react'
+import { MapPin, Mail, MessageCircle, Phone } from 'lucide-react'
+import { FacebookIcon, InstagramIcon } from '../ui/SocialIcons'
 import { COMPANY, CONTACT, NAV } from '../../data/site'
 import { RANGES } from '../../data/ranges'
 import { Wordmark } from './Header'
@@ -38,8 +39,8 @@ export default function Footer() {
           <p className="uppercase tracking-[0.24em] text-[10px]">Designed in Italy · Made in India</p>
           {CONTACT.social.length > 0 && (
             <ul className="flex items-center gap-2" aria-label="Social media">
-              <li><a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-9 w-9 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><Facebook size={16} /></a></li>
-              <li><a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-9 w-9 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><Instagram size={16} /></a></li>
+              <li><a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-9 w-9 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><FacebookIcon size={16} /></a></li>
+              <li><a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-9 w-9 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><InstagramIcon size={16} /></a></li>
             </ul>
           )}
         </div>

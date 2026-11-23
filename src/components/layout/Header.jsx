@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { ChevronDown, Facebook, Instagram, Menu, X } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
+import { FacebookIcon, InstagramIcon } from '../ui/SocialIcons'
 import { NAV, BRAND, COMPANY } from '../../data/site'
 import { ButtonLink } from '../ui/Bits'
 import ThemeToggle from '../ui/ThemeToggle'
@@ -165,8 +166,8 @@ export default function Header() {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="hidden items-center gap-1.5 lg:flex" aria-label="Social media">
-            <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-8 w-8 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><Facebook size={15} /></a>
-            <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-8 w-8 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><Instagram size={15} /></a>
+            <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-8 w-8 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><FacebookIcon size={15} /></a>
+            <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-8 w-8 items-center justify-center border border-line text-mist transition-colors hover:border-crimson hover:text-crimson-hi"><InstagramIcon size={15} /></a>
           </div>
           <ThemeToggle />
           <ButtonLink to="/partners#enquiry" className="hidden sm:inline-flex !min-h-[40px] !px-4 !text-[10px]">B2B Enquiry</ButtonLink>
@@ -232,8 +233,8 @@ export default function Header() {
             ))}
             <li className="flex items-center gap-3 border-b border-line py-5">
               <span className="mr-2 text-[10px] uppercase tracking-[0.2em] text-ash">Follow us</span>
-              <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-10 w-10 items-center justify-center border border-line text-mist hover:border-crimson hover:text-crimson-hi"><Facebook size={18} /></a>
-              <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-10 w-10 items-center justify-center border border-line text-mist hover:border-crimson hover:text-crimson-hi"><Instagram size={18} /></a>
+              <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-10 w-10 items-center justify-center border border-line text-mist hover:border-crimson hover:text-crimson-hi"><FacebookIcon size={18} /></a>
+              <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-10 w-10 items-center justify-center border border-line text-mist hover:border-crimson hover:text-crimson-hi"><InstagramIcon size={18} /></a>
             </li>
             <li className="pt-6">
               <ButtonLink to="/partners#enquiry" className="w-full">B2B Enquiry</ButtonLink>

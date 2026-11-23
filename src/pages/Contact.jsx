@@ -1,4 +1,5 @@
-import { Mail, MapPin, Phone, MessageCircle, ExternalLink, Facebook, Instagram } from 'lucide-react'
+import { Mail, MapPin, Phone, MessageCircle, ExternalLink } from 'lucide-react'
+import { FacebookIcon, InstagramIcon } from '../components/ui/SocialIcons'
 import Seo from '../components/ui/Seo'
 import { Breadcrumbs, Eyebrow } from '../components/ui/Bits'
 import EnquiryForm from '../components/EnquiryForm'
@@ -15,8 +16,8 @@ export default function Contact() {
     CONTACT.phone && { icon: Phone, label: 'Phone', value: CONTACT.phone, href: `tel:${CONTACT.phone.replace(/\\s/g, '')}` },
     CONTACT.email && { icon: Mail, label: 'Email', value: CONTACT.email, href: `mailto:${CONTACT.email}` },
     CONTACT.whatsapp && { icon: MessageCircle, label: 'WhatsApp', value: CONTACT.whatsappDisplay, href: `https://wa.me/${CONTACT.whatsapp}` },
-    { icon: Facebook, label: 'Facebook', value: 'sattva.decor', href: 'https://www.facebook.com/sattva.decor/', external: true },
-    { icon: Instagram, label: 'Instagram', value: '@sattva.sattvik', href: 'https://www.instagram.com/sattva.sattvik/', external: true },
+    { icon: FacebookIcon, label: 'Facebook', value: 'sattva.decor', href: 'https://www.facebook.com/sattva.decor/', external: true },
+    { icon: InstagramIcon, label: 'Instagram', value: '@sattva.sattvik', href: 'https://www.instagram.com/sattva.sattvik/', external: true },
   ].filter(Boolean)
 
   return (
