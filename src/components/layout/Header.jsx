@@ -12,25 +12,33 @@ export function Wordmark({ compact = false }) {
   return (
     <Link
       to="/"
-      className="group inline-flex min-w-0 items-center gap-2.5 border border-black/10 bg-[#f8f7f3] px-3 py-2 shadow-[0_3px_18px_rgb(0_0_0/0.16)] sm:gap-3 sm:px-4 sm:py-2.5"
+      className="group inline-flex min-w-0 items-center gap-2.5 bg-transparent px-1 py-2 sm:gap-3 sm:px-0 sm:py-2.5"
       aria-label={`${COMPANY.legalName} — ${BRAND.name}, home`}
     >
+      <img
+        src="/media/ston-i-mark.svg"
+        alt=""
+        aria-hidden="true"
+        className="only-dark h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
+        width="48"
+        height="48"
+      />
       <img
         src="/media/ston-i-mark-dark.svg"
         alt=""
         aria-hidden="true"
-        className="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
+        className="only-light h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12"
         width="48"
         height="48"
       />
       <span className="flex min-w-0 flex-col justify-center leading-none">
-        <span className="whitespace-nowrap font-display text-[17px] font-semibold tracking-[0.025em] text-[#172b2c] sm:text-[21px] xl:text-[23px]">
+        <span className="whitespace-nowrap font-display text-[17px] font-semibold tracking-[0.025em] text-paper sm:text-[21px] xl:text-[23px]">
           STON<span className="text-[#c8102e]">-I</span> SURFACES
         </span>
         {!compact && (
-          <span className="mt-1.5 whitespace-nowrap text-[6.5px] font-semibold uppercase tracking-[0.12em] text-[#263637] sm:text-[8px] sm:tracking-[0.16em]">
+          <span className="mt-1.5 whitespace-nowrap text-[6.5px] font-semibold uppercase tracking-[0.12em] text-mist sm:text-[8px] sm:tracking-[0.16em]">
             INNOVATIVE STONE <span className="mx-1 text-[#c8102e]">|</span>
-            <span className="text-[#a51c30]">DESIGNED IN ITALY</span>
+            <span className="text-crimson-hi">DESIGNED IN ITALY</span>
           </span>
         )}
       </span>
