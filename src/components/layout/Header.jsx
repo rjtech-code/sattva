@@ -230,7 +230,12 @@ export default function Header() {
                 )}
               </li>
             ))}
-            <li className="pt-8">
+            <li className="flex items-center gap-3 border-b border-line py-5">
+              <span className="mr-2 text-[10px] uppercase tracking-[0.2em] text-ash">Follow us</span>
+              <a href="https://www.facebook.com/sattva.decor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook — opens in a new tab" className="flex h-10 w-10 items-center justify-center border border-line text-mist hover:border-crimson hover:text-crimson-hi"><Facebook size={18} /></a>
+              <a href="https://www.instagram.com/sattva.sattvik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in a new tab" className="flex h-10 w-10 items-center justify-center border border-line text-mist hover:border-crimson hover:text-crimson-hi"><Instagram size={18} /></a>
+            </li>
+            <li className="pt-6">
               <ButtonLink to="/partners#enquiry" className="w-full">B2B Enquiry</ButtonLink>
             </li>
           </ul>
